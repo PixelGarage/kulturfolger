@@ -1,0 +1,59 @@
+/*
+ *  TinyMCE: define styles for wysiwyg-editor
+ */
+.kf-normal {
+    margin: 0 auto;
+    max-width: 620px;
+    font-family: 'Droid Serif', serif;
+    font-size: 18px;
+    letter-spacing: 1.1px;
+    text-align: center;
+    color: #222;
+}
+.kf-style1 {
+    font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
+    font-size: 50px;
+    letter-spacing: 1.4px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222;
+}
+.kf-style2 {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    max-width: 620px;
+    font-family: 'Droid Serif', serif;
+    font-size: 18px;
+    letter-spacing: 1.1px;
+    text-align: center;
+    color: #222;
+    border-bottom: 1px solid #222;
+}
+.kf-style3 {
+    margin: 0 auto;
+    max-width: 520px;
+    font-family: BrandonGrotesque-Thin, "Helvetica Neue Light", sans-serif;
+    font-size: 38px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222;
+}
+.kf-style4 {
+    font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
+    font-size: 21px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222;
+}
+.kf-style5 {
+    margin: 0 auto;
+    max-width: 650px;
+    font-family: BrandonGrotesque-Bold, "Arial", sans-serif;
+    font-size: 76px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222;
+}

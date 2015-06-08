@@ -1,0 +1,223 @@
+/*
+ *  KFPage content type
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+@webform-max-width: 710px;
+
+
+// Mixins
+// -------------------------
+.wysiwyg-body() {
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 10px;
+    font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
+    font-size: 21px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: @text-color;
+  }
+
+  p {
+    margin-bottom: 70px;
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+
+  a {
+    //text-decoration: underline;
+    border-bottom: 1px solid @text-color;
+
+    &:hover, &.active {
+      text-decoration: none;
+      border-bottom: none;
+    }
+  }
+
+  tbody td {
+    font-family: @pxl-text-font;
+    font-size: @font-size-base;
+  }
+
+  pre, address {
+    font-family: @pxl-text-font-light;
+    font-size: @font-size-base;
+  }
+
+  hr {
+    border: 0;
+    border-bottom: 2px solid @text-color;
+    background: none;
+  }
+
+  img, embed, video, audio, iframe {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+// Main settings
+// -------------------------
+.node-kfpage {
+  .row {
+    .col-sm-12 {
+      // background image placement
+      &.bg-image-topleft {
+        background: no-repeat left top / 25% auto;
+      }
+      &.bg-image-topcenter {
+        background: no-repeat center top / 25% auto;
+      }
+      &.bg-image-topright {
+        background: no-repeat right top / 25% auto;
+      }
+      &.bg-image-centerleft {
+        background: no-repeat left center / 25% auto;
+      }
+      &.bg-image-center {
+        background: no-repeat center center / 25% auto;
+      }
+      &.bg-image-centerright {
+        background: no-repeat right center / 25% auto;
+      }
+      &.bg-image-bottomleft {
+        background: no-repeat left bottom / 25% auto;
+      }
+      &.bg-image-bottomcenter {
+        background: no-repeat center bottom / 25% auto;
+      }
+      &.bg-image-bottomright {
+        background: no-repeat right bottom / 25% auto;
+      }
+      &.bg-image-full {
+        background: no-repeat left top / cover;
+      }
+      div.bg-image-webform {
+        background: no-repeat left top / cover;
+      }
+
+
+      .field-name-body .field-item,
+      .field-name-field-text .field-item {
+        .wysiwyg-body();
+      }
+
+      .webform-client-form {
+        margin-bottom: 20px;
+        padding: 90px 0 30px;
+        width: 100%;
+
+        .webform-component {
+          overflow: hidden;
+          margin: 0 auto 30px;
+          padding: 15px 25px;
+          max-width: @webform-max-width;
+          background-color: #fff;
+
+          &.webform-container-inline {
+            position: relative;
+
+            label, input {
+              display: inline-block;
+            }
+
+            input {
+              position: absolute;
+              right: 20px;
+              width: 65%;
+            }
+          }
+
+          div.description {
+            display: none;
+          }
+
+          label {
+            width: auto;
+            font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
+            font-size: 21px;
+            letter-spacing: 1.2px;
+            text-align: left;
+            text-transform: uppercase;
+            color: @text-color;
+          }
+
+          input, textarea {
+            overflow: hidden;
+            font-family: 'Droid Serif', serif;
+            font-size: 18px;
+            letter-spacing: 1.1px;
+            text-align: left;
+            color: @text-color;
+            border-radius: 0;
+            box-shadow: none;
+            border: none;
+            border-bottom: 1px solid @text-color;
+          }
+
+          .form-textarea-wrapper {
+            div.grippie {
+              display: none;
+            }
+          }
+
+          .form-managed-file {
+            input {
+              position: relative;
+              float: none;
+              text-align: left;
+              width: 50%
+            }
+
+            span.input-group-btn {
+              button {
+                padding: 1.3em 1em;
+                font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
+                font-size: 21px;
+                letter-spacing: 1.2px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #fff;
+                border-radius: 0;
+                background-color: @text-color;
+
+                &:hover {
+                  background-color: lighten(@text-color, 15%);
+                }
+              }
+            }
+          }
+        }
+
+        div.form-actions {
+          margin: 0 auto 30px;
+          max-width: @webform-max-width;
+
+          button {
+            padding: 1.3em 1em;
+            font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
+            font-size: 21px;
+            letter-spacing: 1.2px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+            border-radius: 0;
+            border: none;
+            background-color: @text-color;
+
+            &:hover {
+              background-color: lighten(@text-color, 15%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
