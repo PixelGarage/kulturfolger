@@ -6,6 +6,8 @@
 
 (function ($) {
 
+    var fixedHeaderScrollPos = 100;
+
     /**
      * This behavior adds shadow to header on scroll.
      *
@@ -13,21 +15,32 @@
     Drupal.behaviors.addHeaderShadow = {
         attach: function (context) {
             $(window).on("scroll", function() {
-                var $header = $("header.navbar .container");
+                var $header = $("header.navbar"),
+                    $headerCont = $("header.navbar .container");
 
-                if ($(window).scrollTop() > 10) {
+                if ($(window).scrollTop() > fixedHeaderScrollPos) {
+                    // keep header fixed at this scroll position
+                    $header.css({position: 'fixed', top: -fixedHeaderScrollPos + 'px'});
+                    $header.removeClass('navbar-static-top').addClass('navbar-fixed-top');
+                    $('body').removeClass('navbar-is-static-top').addClass('navbar-is-fixed-top');
+
                     // add shadow to header
-                    $header.css( "box-shadow", "0 4px 3px -4px gray");
+                    $headerCont.css( "box-shadow", "0 4px 3px -4px gray");
                 } else {
+                    // set header to static in top scroll region (> 110px)
+                    $header.css({position: 'static', top: 'auto'});
+                    $header.removeClass('navbar-fixed-top').addClass('navbar-static-top');
+                    $('body').removeClass('navbar-is-fixed-top').addClass('navbar-is-static-top');
+
                     // remove shadow to header
-                    $header.css( "box-shadow", "none");
+                    $headerCont.css( "box-shadow", "none");
                 }
             });
         }
     };
 
     /**
-     * This behavior adds shadow to header on scroll.
+     * Show / hide the carousel controls depending on the number of items.
      *
      */
     Drupal.behaviors.manageCarouselControls = {
@@ -52,10 +65,11 @@
     Drupal.behaviors.smoothScrollingToAnchor = {
         attach: function () {
             var $header = $("header.navbar .container"),
+                headerHeight = $header.height() - fixedHeaderScrollPos,
                 $anchorMenus = $('a#menu-contact, a#menu-about, a#menu-submit'),
                 _animatedScrollTo = function(anchor) {
                     $('html, body').stop().animate({
-                        scrollTop: $(anchor).offset().top - $header.height() - 30
+                        scrollTop: $(anchor).offset().top - headerHeight - 30
                     }, 600);
                 };
 

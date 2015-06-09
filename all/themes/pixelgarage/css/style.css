@@ -9117,10 +9117,10 @@ form#user-login {
  *  Header section (navigation)
  * --------------------------------------------------*/
 body.navbar-is-fixed-top {
-  padding-top: 310px !important;
+  padding-top: 270px !important;
 }
 body.navbar-is-fixed-top.admin-menu {
-  padding-top: 310px !important;
+  padding-top: 270px !important;
 }
 header#navbar {
   border-bottom: none;
@@ -9175,7 +9175,7 @@ header#navbar .container .navbar-header .region-navigation #block-locale-languag
   text-decoration: underline;
 }
 header#navbar .container .navbar-header p.lead {
-  margin: 30px auto;
+  margin: 20px auto;
   padding: 0;
   width: 80%;
   font-family: 'BrandonGrotesque-Medium', "Helvetica Neue", sans-serif;
@@ -9186,7 +9186,7 @@ header#navbar .container .navbar-header p.lead {
 }
 header#navbar .container .navbar-header a.navbar-brand {
   float: none;
-  margin: 0 0 30px;
+  margin: 0 0 20px;
   padding: 0;
   height: auto;
   font-family: 'BrandonGrotesque-Black', "Arial Black", sans-serif;
@@ -9202,7 +9202,7 @@ header#navbar .container .navbar-header .navbar-toggle {
   padding: 5px 10px;
 }
 header#navbar .container .navbar-collapse {
-  margin: 0 auto 30px;
+  margin: 0 auto 10px;
   max-width: 620px;
 }
 header#navbar .container .navbar-collapse nav ul.navbar-nav {
