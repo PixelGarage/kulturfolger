@@ -1,5 +1,6 @@
 @import '../fonts/BrandonGrotesque/BrandonGrotesque-Licence.css';
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+@import "../css/tinymce.css";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -3318,11 +3319,7 @@ fieldset[disabled] .btn-link:focus {
   text-decoration: none;
 }
 .btn-lg,
-.btn-group-lg > .btn,
-.page-user-login .btn,
-#user-create-account .login-register,
-#user-register-form .form-actions .btn,
-#user-pass .form-actions .btn {
+.btn-group-lg > .btn {
   padding: 10px 16px;
   font-size: 20px;
   line-height: 1.3333333;
@@ -8659,6 +8656,9 @@ div.features-export-list .form-type-checkbox input[type=checkbox] {
   font-size: 18px;
   color: #222222;
 }
+.view .views-row-3 .node-kfartwork .row .col-sm-12 .field-name-field-artist-name {
+  font-size: 12px;
+}
 /*
  *  KFPage content type
  * --------------------------------------------------*/
@@ -8904,30 +8904,21 @@ div.features-export-list .form-type-checkbox input[type=checkbox] {
   width: auto;
 }
 .page-user-login .btn,
-#user-create-account .login-register,
-#user-register-form .form-actions .btn,
-#user-pass .form-actions .btn {
-  border: none;
+#user-create-account .login-register {
+  padding: 1.3em 1em;
+  font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
+  font-size: 21px;
+  letter-spacing: 1.2px;
+  text-align: center;
+  text-transform: uppercase;
   color: #fff;
-  -moz-border-radius: 0.25em;
-  -webkit-border-radius: 0.25em;
-  border-radius: 0.25em;
-  background-image: -webkit-linear-gradient(top, #a70014 0%, #410008 100%);
-  background-image: -o-linear-gradient(top, #a70014 0%, #410008 100%);
-  background-image: linear-gradient(to bottom, #a70014 0%, #410008 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa70014', endColorstr='#ff410008', GradientType=0);
+  border-radius: 0;
+  border: none;
+  background-color: #222222;
 }
 .page-user-login .btn:hover,
-#user-create-account .login-register:hover,
-#user-register-form .form-actions .btn:hover,
-#user-pass .form-actions .btn:hover {
-  background-image: -webkit-linear-gradient(top, #410008 0%, #a70014 100%);
-  background-image: -o-linear-gradient(top, #410008 0%, #a70014 100%);
-  background-image: linear-gradient(to bottom, #410008 0%, #a70014 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff410008', endColorstr='#ffa70014', GradientType=0);
-  text-decoration: none;
+#user-create-account .login-register:hover {
+  background-color: #494949;
 }
 /* User login page */
 form#user-login {
@@ -8964,6 +8955,9 @@ form#user-login {
   border: 0;
   border-bottom: 1px solid #eeeeee;
 }
+#user_login_form h1 {
+  text-transform: uppercase;
+}
 #user_login_form .form-actions-wrapper {
   position: relative;
   padding: 1em 0 0;
@@ -8976,18 +8970,19 @@ form#user-login {
   margin: 0;
 }
 #user_login_form .btn {
-  background-image: -webkit-linear-gradient(top, #2698f2 0%, #0a62a8 100%);
-  background-image: -o-linear-gradient(top, #2698f2 0%, #0a62a8 100%);
-  background-image: linear-gradient(to bottom, #2698f2 0%, #0a62a8 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2698f2', endColorstr='#ff0a62a8', GradientType=0);
+  padding: 1.3em 1em;
+  font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
+  font-size: 21px;
+  letter-spacing: 1.2px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 0;
+  border: none;
+  background-color: #222222;
 }
 #user_login_form .btn:hover {
-  background-image: -webkit-linear-gradient(top, #0a62a8 0%, #2698f2 100%);
-  background-image: -o-linear-gradient(top, #0a62a8 0%, #2698f2 100%);
-  background-image: linear-gradient(to bottom, #0a62a8 0%, #2698f2 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0a62a8', endColorstr='#ff2698f2', GradientType=0);
+  background-color: #494949;
 }
 #user_login_form .login-password {
   display: inline-block;
@@ -9043,6 +9038,20 @@ form#user-login {
 #user-register-form .form-actions .btn,
 #user-pass .form-actions .btn {
   float: right;
+  padding: 1.3em 1em;
+  font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
+  font-size: 21px;
+  letter-spacing: 1.2px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 0;
+  border: none;
+  background-color: #222222;
+}
+#user-register-form .form-actions .btn:hover,
+#user-pass .form-actions .btn:hover {
+  background-color: #494949;
 }
 /*
  *  ShareThis component
@@ -9177,7 +9186,7 @@ header#navbar .container .navbar-header .region-navigation #block-locale-languag
 header#navbar .container .navbar-header p.lead {
   margin: 20px auto;
   padding: 0;
-  width: 80%;
+  width: 90%;
   font-family: 'BrandonGrotesque-Medium', "Helvetica Neue", sans-serif;
   font-size: 22px;
   text-align: center;

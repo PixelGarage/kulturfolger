@@ -30,15 +30,19 @@
 
 .page-user-login {
   .btn {
-    &:extend(.btn-lg);
-    border: none;
+    padding: 1.3em 1em;
+    font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
+    font-size: 21px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    text-transform: uppercase;
     color: #fff;
-    #pxl-mixins.border-radius(0.25em);
-    #gradient.vertical(@pxl-login-red, @pxl-login-dark-red);
+    border-radius: 0;
+    border: none;
+    background-color: @text-color;
 
     &:hover {
-      #gradient.vertical(@pxl-login-dark-red, @pxl-login-red);
-      text-decoration: none;
+      background-color: lighten(@text-color, 15%);
     }
   }
 }
@@ -83,6 +87,10 @@ form#user-login {
   border: 0;
   border-bottom: 1px solid @hr-border;
 
+  h1 {
+    text-transform: uppercase;
+  }
+
   .form-actions-wrapper {
     position: relative;
     padding: 1em 0 0;
@@ -97,10 +105,19 @@ form#user-login {
   }
 
   .btn {
-    #gradient.vertical(@pxl-login-blue, @pxl-login-dark-blue);
+    padding: 1.3em 1em;
+    font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
+    font-size: 21px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 0;
+    border: none;
+    background-color: @text-color;
 
     &:hover {
-      #gradient.vertical(@pxl-login-dark-blue, @pxl-login-blue);
+      background-color: lighten(@text-color, 15%);
     }
   }
 
@@ -158,11 +175,20 @@ form#user-login {
     }
 
     .btn {
-      &:extend(.page-user-login .btn);
       float: right;
+      padding: 1.3em 1em;
+      font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
+      font-size: 21px;
+      letter-spacing: 1.2px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      border-radius: 0;
+      border: none;
+      background-color: @text-color;
 
       &:hover {
-        &:extend(.page-user-login .btn:hover);
+        background-color: lighten(@text-color, 15%);
       }
     }
   }
