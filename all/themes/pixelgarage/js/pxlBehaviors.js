@@ -73,13 +73,25 @@
     Drupal.behaviors.smoothScrollingToAnchor = {
         attach: function () {
             var $header = $("header.navbar .container"),
-                headerHeight = $header.height() - fixedHeaderScrollPos,
                 $anchorMenus = $('a#menu-contact, a#menu-about, a#menu-submit'),
                 _animatedScrollTo = function(anchor) {
+                    var $width = $(window).width(),
+                        headerHeight = 100,
+                        offset = 60;
+
+                    if ($width <= 450) {
+                        headerHeight = $header.height() - 80;
+                    } else if ($width <= 550) {
+                        headerHeight = $header.height() - 90;
+                    } else if ($width <= 650) {
+                        headerHeight = $header.height() - 97;
+                    }
+
                     $('html, body').stop().animate({
-                        scrollTop: $(anchor).offset().top - headerHeight - 30
+                        scrollTop: $(anchor).offset().top - headerHeight - offset
                     }, 600);
                 };
+
 
             // anchor menu click (same page active)
             $header.once('click', function () {
