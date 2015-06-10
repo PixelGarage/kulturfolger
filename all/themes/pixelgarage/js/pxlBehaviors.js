@@ -6,8 +6,6 @@
 
 (function ($) {
 
-    var fixedHeaderScrollPos = 100;
-
     /**
      * This behavior adds shadow to header on scroll.
      *
@@ -16,7 +14,17 @@
         attach: function (context) {
             $(window).on("scroll", function() {
                 var $header = $("header.navbar"),
-                    $headerCont = $("header.navbar .container");
+                    $headerCont = $("header.navbar .container"),
+                    fixedHeaderScrollPos = 100,
+                    $width = $(window).width();
+
+                if ($width <= 450) {
+                    fixedHeaderScrollPos = 80;
+                } else if ($width <= 550) {
+                    fixedHeaderScrollPos = 90;
+                } else if ($width <= 650) {
+                    fixedHeaderScrollPos = 97;
+                }
 
                 if ($(window).scrollTop() > fixedHeaderScrollPos) {
                     // keep header fixed at this scroll position

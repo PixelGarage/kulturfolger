@@ -6,6 +6,7 @@
 // -------------------------
 @pxl-navbar-header-width: 650px;
 
+@narrow:  ~"screen and (min-width: 480px)";
 @header-media:  ~"screen and (min-width: @{pxl-navbar-header-width})";
 
 // Mixins
@@ -16,12 +17,26 @@
 // Main settings
 // -------------------------
 body.navbar-is-fixed-top {
-  padding-top: 270px !important;
+  padding-top: 180px !important;
 
   &.admin-menu {
-    padding-top: 270px !important;
+    padding-top: 180px !important;
   }
 
+  @media @narrow {
+    padding-top: 223px !important;
+
+    &.admin-menu {
+      padding-top: 223px !important;
+    }
+  }
+  @media @header-media {
+    padding-top: 270px !important;
+
+    &.admin-menu {
+      padding-top: 270px !important;
+    }
+  }
 }
 
 
@@ -123,7 +138,7 @@ header#navbar {
     // collapse part
     .navbar-collapse {
       margin: 0 auto 10px;
-      max-width: @pxl-navbar-header-width - 30px;
+      max-width: @pxl-navbar-header-width - @grid-gutter-width;
 
       nav {
         ul.navbar-nav {

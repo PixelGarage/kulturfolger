@@ -9203,10 +9203,26 @@ form#user-login {
  *  Header section (navigation)
  * --------------------------------------------------*/
 body.navbar-is-fixed-top {
-  padding-top: 270px !important;
+  padding-top: 180px !important;
 }
 body.navbar-is-fixed-top.admin-menu {
-  padding-top: 270px !important;
+  padding-top: 180px !important;
+}
+@media screen and (min-width: 480px) {
+  body.navbar-is-fixed-top {
+    padding-top: 223px !important;
+  }
+  body.navbar-is-fixed-top.admin-menu {
+    padding-top: 223px !important;
+  }
+}
+@media screen and (min-width: 650px) {
+  body.navbar-is-fixed-top {
+    padding-top: 270px !important;
+  }
+  body.navbar-is-fixed-top.admin-menu {
+    padding-top: 270px !important;
+  }
 }
 header#navbar {
   margin-bottom: 0;
