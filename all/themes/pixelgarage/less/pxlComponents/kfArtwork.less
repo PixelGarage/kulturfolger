@@ -15,7 +15,11 @@
 // -------------------------
 .node-kfartwork {
   .row {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media @tablet {
+      margin-bottom: 50px;
+    }
 
     .col-sm-12 {
       text-align: center;
@@ -62,19 +66,27 @@
       .field-name-title {
         display: inline-block;
         font-family: BrandonGrotesque-Bold, "Arial", sans-serif;
-        font-size: 18px;
+        font-size: 11px;
         font-weight: bold;
         text-transform: uppercase;
         color: @text-color;
         letter-spacing: 1.2px;
+
+        @media @tablet {
+          font-size: 18px;
+        }
       }
 
       .field-name-field-artist-name {
         display: inline-block;
         margin-left: 5px;
         font-family: 'Droid Serif', serif;
-        font-size: 18px;
+        font-size: 11px;
         color: @text-color;
+
+        @media @tablet {
+          font-size: 18px;
+        }
       }
     }
   }
@@ -86,7 +98,11 @@
     .row {
       .col-sm-12 {
         .field-name-field-artist-name {
-          font-size: @font-size-smaller;
+          font-size: 8px;
+
+          @media @tablet {
+            font-size: @font-size-smaller;
+          }
         }
 
       }

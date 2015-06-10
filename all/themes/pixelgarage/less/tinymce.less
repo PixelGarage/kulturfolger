@@ -5,6 +5,12 @@
 // Variables
 // -------------------------
 @text-color: #222;
+@kf-sm-width: 550px;
+@kf-md-width: 620px;
+@kf-max-width: 650px;
+
+@narrow:  ~"screen and (min-width: 480px)";
+@tablet:  ~"screen and (min-width: 768px)";
 
 // Mixins
 // -------------------------
@@ -15,57 +21,84 @@
 // -------------------------
 .kf-normal {
   margin: 0 auto;
-  max-width: 620px;
+  max-width: @kf-md-width;
   font-family: 'Droid Serif', serif;
-  font-size: 18px;
+  font-size: 11px;
   letter-spacing: 1.1px;
   text-align: center;
   color: @text-color;
+
+  @media @tablet {
+    font-size: 18px;
+  }
 }
 .kf-style1 {
   font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
-  font-size: 50px;
+  font-size: 6.5vw;
   letter-spacing: 1.4px;
   text-align: center;
   text-transform: uppercase;
   color: @text-color;
+
+  @media @tablet {
+    font-size: 50px;
+  }
 }
 .kf-style2 {
   margin: 0 auto;
   padding-bottom: 20px;
-  max-width: 620px;
+  max-width: @kf-md-width;
   font-family: 'Droid Serif', serif;
-  font-size: 18px;
+  font-size: 11px;
   letter-spacing: 1.1px;
   text-align: center;
   color: @text-color;
   border-bottom: 1px solid @text-color;
+
+  @media @narrow {
+    font-size: 2.3vw;
+  }
+  @media @tablet {
+    font-size: 18px;
+  }
 }
 .kf-style3 {
   margin: 0 auto;
-  max-width: 520px;
+  max-width: @kf-sm-width;
   font-family: BrandonGrotesque-Thin, "Helvetica Neue Light", sans-serif;
-  font-size: 38px;
+  font-size: 5.2vw;
   letter-spacing: 1.2px;
   text-align: center;
   text-transform: uppercase;
   color: @text-color;
+
+  @media @tablet {
+    font-size: 38px;
+  }
 }
 .kf-style4 {
   font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
-  font-size: 21px;
+  font-size: 3vw;
   letter-spacing: 1.2px;
   text-align: center;
   text-transform: uppercase;
   color: @text-color;
+
+  @media @tablet {
+    font-size: 21px;
+  }
 }
 .kf-style5 {
   margin: 0 auto;
-  max-width: 650px;
+  max-width: @kf-max-width;
   font-family: BrandonGrotesque-Bold, "Arial", sans-serif;
-  font-size: 76px;
+  font-size: 9.9vw;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   color: @text-color;
+
+  @media @tablet {
+    font-size: 76px;
+  }
 }

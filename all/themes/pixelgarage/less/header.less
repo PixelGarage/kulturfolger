@@ -4,8 +4,9 @@
 
 // Variables
 // -------------------------
-@pxl-navbar-header-width: 620px;
+@pxl-navbar-header-width: 650px;
 
+@header-media:  ~"screen and (min-width: @{pxl-navbar-header-width})";
 
 // Mixins
 // -------------------------
@@ -25,6 +26,7 @@ body.navbar-is-fixed-top {
 
 
 header#navbar {
+  margin-bottom: 0;
   border-bottom: none;
   background: transparent none;
 
@@ -81,26 +83,35 @@ header#navbar {
         padding: 0;
         width: 90%;
         font-family: @pxl-text-font-medium;
-        font-size: 22px;
+        font-size: 3.5vw;
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 1.2px;
+
+        @media @header-media {
+          font-size: 22px;
+        }
       }
 
       a.navbar-brand {
         // title
+        display: block;
         float: none;
-        margin: 0 0 20px;
+        margin: 0 auto;
         padding: 0;
         height: auto;
         font-family: @pxl-text-font-black;
-        font-size: 84px;
+        font-size: 13vw;
         text-align: center;
         text-transform: uppercase;
         color: @text-color;
         letter-spacing: -2px;
         line-height: 1;
         outline: none;
+
+        @media @header-media {
+          font-size: 84px;
+        }
       }
 
       .navbar-toggle {
@@ -112,7 +123,7 @@ header#navbar {
     // collapse part
     .navbar-collapse {
       margin: 0 auto 10px;
-      max-width: @pxl-navbar-header-width;
+      max-width: @pxl-navbar-header-width - 30px;
 
       nav {
         ul.navbar-nav {
@@ -131,12 +142,16 @@ header#navbar {
             a {
               padding: 0;
               font-family: @pxl-text-font-bold;
-              font-size: 36px;
+              font-size: 5.8vw;
               text-transform: uppercase;
               text-align: center;
               color: @text-color;
               line-height: 1;
               outline: none;
+
+              @media @header-media {
+                font-size: 36px;
+              }
 
               &#menu-about {
                 text-align: left;
