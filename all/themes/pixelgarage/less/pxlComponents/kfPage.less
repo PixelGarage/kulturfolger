@@ -76,6 +76,42 @@
   }
 }
 
+.form-label() {
+  width: auto;
+  font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
+  font-size: 2.6vw;
+  letter-spacing: 1.2px;
+  text-align: left;
+  text-transform: uppercase;
+  color: @text-color;
+
+  @media @tablet {
+    font-size: 21px;
+  }
+}
+
+.form-button(@fsize: 3vw; @max-fsize: 21px) {
+  padding: 1.3em 1em;
+  font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
+  font-size: @fsize;
+  letter-spacing: 1.2px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  background-color: @text-color;
+
+  @media @tablet {
+    font-size: @max-fsize;
+  }
+
+  &:hover {
+    background-color: lighten(@text-color, 15%);
+  }
+
+}
+
 
 // Main settings
 // -------------------------
@@ -129,6 +165,7 @@
         width: 100%;
 
         .webform-component {
+          /* webform component */
           overflow: hidden;
           margin: 0 auto 30px;
           padding: 15px 25px;
@@ -154,21 +191,11 @@
           }
 
           div.description {
-            display: none;
+            display: inline-block;
           }
 
           label {
-            width: auto;
-            font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
-            font-size: 2.6vw;
-            letter-spacing: 1.2px;
-            text-align: left;
-            text-transform: uppercase;
-            color: @text-color;
-
-            @media @tablet {
-              font-size: 21px;
-            }
+            .form-label;
           }
 
           input, textarea {
@@ -194,36 +221,74 @@
             }
           }
 
-          .form-managed-file {
-            input {
-              position: relative;
-              float: none;
-              text-align: left;
-              width: 100%;
+        }
 
-              @media @tablet {
-                width: 45%;
+        [id$=ajax-wrapper] {
+          /* multi-file upload container */
+          overflow: hidden;
+          margin: 0 auto 30px;
+          max-width: @webform-max-width;
+          background-color: #fff;
+
+          fieldset {
+            padding: 15px 25px;
+            border: none;
+
+            .panel-heading{
+              padding: 0;
+              border: none;
+              background-color: transparent;
+
+              .panel-title {
+                .form-label;
               }
             }
 
-            span.input-group-btn {
-              button {
-                padding: 1.3em 1em;
-                font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
-                font-size: 3vw;
-                letter-spacing: 1.2px;
-                text-align: center;
-                text-transform: uppercase;
-                color: #fff;
-                border-radius: 0;
-                background-color: @text-color;
+            .panel-body {
+              padding: 0;
 
-                @media @tablet {
-                  font-size: 21px;
+              .table-responsive {
+                table {
+                  tbody {
+                    button {
+                      .form-button(2vw, 14px);
+                      padding: 0.8em 1em;
+                    }
+                  }
+                }
+              }
+
+              .webform-component-multiple-file {
+                margin: 0;
+                max-width: 100%;
+
+                label {
+                  font-size: 2vw;
+
+                  @media @tablet {
+                    font-size: 16px;
+                  }
                 }
 
-                &:hover {
-                  background-color: lighten(@text-color, 15%);
+                .form-managed-file {
+                  input {
+                    position: relative;
+                    float: none;
+                    text-align: left;
+                    width: 60%;
+
+                    @media @tablet {
+                      width: 75%;
+                    }
+                  }
+
+                  span.input-group-btn {
+                    display: inline-block;
+
+                    button {
+                      .form-button();
+                    }
+                  }
                 }
               }
             }
@@ -231,28 +296,12 @@
         }
 
         div.form-actions {
+          /* form buttons */
           margin: 0 auto 30px;
           max-width: @webform-max-width;
 
           button {
-            padding: 1.3em 1em;
-            font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
-            font-size: 3vw;
-            letter-spacing: 1.2px;
-            text-align: center;
-            text-transform: uppercase;
-            color: #fff;
-            border-radius: 0;
-            border: none;
-            background-color: @text-color;
-
-            @media @tablet {
-              font-size: 21px;
-            }
-
-            &:hover {
-              background-color: lighten(@text-color, 15%);
-            }
+            .form-button();
           }
         }
       }
