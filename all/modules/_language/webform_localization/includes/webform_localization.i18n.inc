@@ -79,6 +79,9 @@ function _webform_localization_translate_component(&$element, $component) {
             if ($property == 'markup' && $current_element['#type'] == 'markup') {
               $current_element['#' . $property] = i18n_string($name, $current_element['#' . $property], array('format' => $current_element['#format']));
             }
+            elseif ($property == 'description') {
+              $current_element['#' . $property] = i18n_string($name, $current_element['#' . $property], array('format' => I18N_STRING_FILTER_XSS));
+            }
             else {
               $current_element['#' . $property] = i18n_string($name, $current_element['#' . $property]);
             }
