@@ -23,7 +23,7 @@
                 } else if ($width <= 550) {
                     fixedHeaderScrollPos = 90;
                 } else if ($width <= 650) {
-                    fixedHeaderScrollPos = 97;
+                    fixedHeaderScrollPos = 100;
                 }
 
                 if ($(window).scrollTop() > fixedHeaderScrollPos) {
@@ -77,14 +77,19 @@
                 _animatedScrollTo = function(anchor) {
                     var $width = $(window).width(),
                         headerHeight = 100,
-                        offset = 60;
+                        offset = 80;
 
-                    if ($width <= 450) {
+                    if ($width <= 350) {
+                        headerHeight = $header.height() - 80
+                        offset = 20;
+                    } else if ($width <= 450) {
                         headerHeight = $header.height() - 80;
+                        offset = 30;
                     } else if ($width <= 550) {
                         headerHeight = $header.height() - 90;
+                        offset = 30;
                     } else if ($width <= 650) {
-                        headerHeight = $header.height() - 97;
+                        headerHeight = $header.height() - 100;
                     }
 
                     $('html, body').stop().animate({

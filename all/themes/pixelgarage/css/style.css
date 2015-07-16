@@ -1,6 +1,6 @@
+@import "../css/tinymce.css";
 @import '../fonts/BrandonGrotesque/BrandonGrotesque-Licence.css';
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif);
-@import "../css/tinymce.css";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -8832,13 +8832,13 @@ div.features-export-list .form-type-checkbox input[type=checkbox] {
 .node-kfpage .row .col-sm-12 .webform-client-form .webform-component.webform-container-inline input {
   display: inline-block;
 }
-.node-kfpage .row .col-sm-12 .webform-client-form .webform-component.webform-container-inline input {
+.node-kfpage .row .col-sm-12 .webform-client-form .webform-component.webform-container-inline input.form-text {
   position: absolute;
   right: 20px;
   width: 40%;
 }
-@media screen and (min-width: 480px) {
-  .node-kfpage .row .col-sm-12 .webform-client-form .webform-component.webform-container-inline input {
+@media screen and (min-width: 767px) {
+  .node-kfpage .row .col-sm-12 .webform-client-form .webform-component.webform-container-inline input.form-text {
     width: 50%;
   }
 }
@@ -8883,12 +8883,13 @@ div.features-export-list .form-type-checkbox input[type=checkbox] {
 }
 .node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] {
   /* multi-file upload container */
-  overflow: hidden;
+  overflow: auto;
   margin: 0 auto 30px;
   max-width: 80%;
   background-color: #fff;
 }
 .node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] fieldset {
+  min-width: 350px;
   padding: 15px 25px;
   border: none;
 }
@@ -8937,6 +8938,7 @@ div.features-export-list .form-type-checkbox input[type=checkbox] {
 }
 .node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] fieldset .panel-body .webform-component-multiple-file {
   margin: 0;
+  padding: 0;
   max-width: 100%;
 }
 .node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] fieldset .panel-body .webform-component-multiple-file label {
@@ -8951,15 +8953,16 @@ div.features-export-list .form-type-checkbox input[type=checkbox] {
   position: relative;
   float: none;
   text-align: left;
-  width: 60%;
+  width: 70%;
 }
 @media screen and (min-width: 768px) {
   .node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] fieldset .panel-body .webform-component-multiple-file .form-managed-file input {
-    width: 75%;
+    width: 74%;
   }
 }
 .node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] fieldset .panel-body .webform-component-multiple-file .form-managed-file span.input-group-btn {
   display: inline-block;
+  margin-left: 1%;
 }
 .node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] fieldset .panel-body .webform-component-multiple-file .form-managed-file span.input-group-btn button {
   padding: 1.3em 1em;
@@ -9280,7 +9283,7 @@ body.navbar-is-fixed-top {
 body.navbar-is-fixed-top.admin-menu {
   padding-top: 180px !important;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   body.navbar-is-fixed-top {
     padding-top: 223px !important;
   }
@@ -9396,15 +9399,25 @@ header#navbar .container .navbar-collapse nav ul.navbar-nav {
   margin: 0;
   padding: 0;
   width: 100%;
+  text-align: justify;
+  line-height: 0;
+}
+header#navbar .container .navbar-collapse nav ul.navbar-nav:after {
+  content: '';
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  line-height: 0;
 }
 header#navbar .container .navbar-collapse nav ul.navbar-nav li {
   display: inline-block;
   float: none;
   margin: 0 -2px;
   padding: 0;
-  width: 33.333333%;
 }
 header#navbar .container .navbar-collapse nav ul.navbar-nav li a {
+  margin-bottom: 0.15em;
   padding: 0;
   font-family: 'BrandonGrotesque-Bold', "Arial Black", sans-serif;
   font-size: 5.8vw;
@@ -9426,8 +9439,10 @@ header#navbar .container .navbar-collapse nav ul.navbar-nav li a#menu-submit {
   text-align: right;
 }
 header#navbar .container .navbar-collapse nav ul.navbar-nav li a:hover {
-  text-decoration: underline;
+  margin-bottom: 0;
+  text-decoration: none;
   outline: none;
+  border-bottom: 0.15em solid #222222;
 }
 /*
  *  Content section (main content)

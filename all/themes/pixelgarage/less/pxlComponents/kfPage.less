@@ -7,8 +7,6 @@
 
 @webform-max-width: 80%;
 
-@narrow:  ~"screen and (min-width: 480px)";
-
 
 // Mixins
 // -------------------------
@@ -179,7 +177,7 @@
               display: inline-block;
             }
 
-            input {
+            input.form-text {
               position: absolute;
               right: 20px;
               width: 40%;
@@ -225,12 +223,13 @@
 
         [id$=ajax-wrapper] {
           /* multi-file upload container */
-          overflow: hidden;
+          overflow: auto;
           margin: 0 auto 30px;
           max-width: @webform-max-width;
           background-color: #fff;
 
           fieldset {
+            min-width: 350px;
             padding: 15px 25px;
             border: none;
 
@@ -260,6 +259,7 @@
 
               .webform-component-multiple-file {
                 margin: 0;
+                padding: 0;
                 max-width: 100%;
 
                 label {
@@ -275,15 +275,16 @@
                     position: relative;
                     float: none;
                     text-align: left;
-                    width: 60%;
+                    width: 70%;
 
                     @media @tablet {
-                      width: 75%;
+                      width: 74%;
                     }
                   }
 
                   span.input-group-btn {
                     display: inline-block;
+                    margin-left: 1%;
 
                     button {
                       .form-button();
