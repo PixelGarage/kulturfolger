@@ -80,7 +80,7 @@
                         offset = 80;
 
                     if ($width <= 350) {
-                        headerHeight = $header.height() - 80
+                        headerHeight = $header.height() - 80;
                         offset = 20;
                     } else if ($width <= 450) {
                         headerHeight = $header.height() - 80;
