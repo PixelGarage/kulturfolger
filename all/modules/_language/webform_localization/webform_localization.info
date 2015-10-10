@@ -1,16 +1,33 @@
-
+; $Id: $
 name = Webform Localization
 description = Enables localization features to forms and questionnaires.
-dependencies[] = webform
-dependencies[] = i18n_string
 core = 7.x
 package = Webform
+php = 5.3
+dependencies[] = locale
+dependencies[] = block
+dependencies[] = translation
+dependencies[] = i18n
+dependencies[] = i18n_translation
+dependencies[] = i18n_block
+dependencies[] = i18n_string
+dependencies[] = webform
+dependencies[] = entity_translation
+test_dependencies[] = locale
+test_dependencies[] = block
+test_dependencies[] = translation
+test_dependencies[] = i18n
+test_dependencies[] = i18n_translation
+test_dependencies[] = i18n_block
+test_dependencies[] = i18n_string
+test_dependencies[] = webform
+test_dependencies[] = entity_translation
 
 files[] = tests/webform_localization.test
 
-; Information added by Drupal.org packaging script on 2014-03-28
+; Information added by Drupal.org packaging script on 2015-10-07
 version = "7.x-4.x-dev"
 core = "7.x"
 project = "webform_localization"
-datestamp = "1396049366"
+datestamp = "1444237149"
 
