@@ -19,7 +19,7 @@ class WebformLocalizationWebTestCase extends DrupalWebTestCase {
    * Implements setUp().
    */
   function setUp($added_modules = array()) {
-    // Enable Webform and Token module if available.
+    // Set the following variable to FALSE if you're testing locally.
     $drupalorg = TRUE;
     
     if (module_exists('webform_localization') || $drupalorg) {
@@ -37,9 +37,6 @@ class WebformLocalizationWebTestCase extends DrupalWebTestCase {
     if (module_exists('ctools') || $drupalorg ) {
       $added_modules = array_merge(array('ctools'), $added_modules);
     }
-    if (module_exists('entity_translation') || $drupalorg ) {
-      $added_modules = array_merge(array('entity_translation'), $added_modules);
-    }
     if (module_exists('i18n_translation') || $drupalorg ) {
       $added_modules = array_merge(array('i18n_translation'), $added_modules);
     }
@@ -48,6 +45,9 @@ class WebformLocalizationWebTestCase extends DrupalWebTestCase {
     }
     if (module_exists('i18n') || $drupalorg ) {
       $added_modules = array_merge(array('i18n'), $added_modules);
+    }
+    if (module_exists('variable') || $drupalorg ) {
+      $added_modules = array_merge(array('variable'), $added_modules);
     }
     if (module_exists('translation') || $drupalorg ) {
       $added_modules = array_merge(array('translation'), $added_modules);
@@ -58,7 +58,6 @@ class WebformLocalizationWebTestCase extends DrupalWebTestCase {
     if (module_exists('block') || $drupalorg ) {
       $added_modules = array_merge(array('block'), $added_modules);
     }
-    //debug($added_modules);
     parent::setUp($added_modules);
 
     // We load webform test class to reuse webform and components creation functions.
@@ -68,7 +67,6 @@ class WebformLocalizationWebTestCase extends DrupalWebTestCase {
     /* Reset the permissions cache prior to calling drupalCreateUser
      * see notes here: https://api.drupal.org/comment/28739#comment-28739
      */
-//  drupal_flush_all_caches();
     $this->checkPermissions(array(), TRUE);
     // Setup users.
     $this->adminuser = $this->drupalCreateUser(array('bypass node access', 'administer nodes', 'administer languages', 'administer content types', 'administer blocks', 'access administration pages', 'translate content', 'create webform content',
@@ -100,7 +98,7 @@ class WebformLocalizationWebTestCase extends DrupalWebTestCase {
 
     // Fix for reuse of webform test class.
     $this->wtc->webform_users['admin'] = $this->adminuser;
-    $this->wtc->webform_users['admin']->profile_gender = array('Female', 'Male');
+    $this->wtc->webform_users['admin']->gender = array(LANGUAGE_NONE => array(array('value' => 'Female')));
 
     $this->drupalLogin($this->adminuser);
 
@@ -163,8 +161,9 @@ class WebformLocalizationWebTestCase extends DrupalWebTestCase {
      */
     unset($components['select_no_default_zero']);
     unset($components['radios_zero']);
+    unset($components['checkboxes_zero']);
+    unset($components['grid_keyed']);
     unset($components['select_zero']);
-    unset($components['select_optgroup']);
 
     $cid = 0;
     foreach ($components as $key => $component_info) {
@@ -455,6 +454,30 @@ class WebformLocalizationStringTranslationTestCase extends WebformLocalizationWe
         CONTINUE;
       }
       $this->assertRaw($translation, format_string('%c translation is present.', array('%c' => $name)), 'Deutsch Webform translation');
+    }
+
+    // Log in as normal user and add a answer to webform so string
+    // translatability can be tested at various webform report pages.
+    $this->drupalLogin($this->normaluser);
+    $this->drupalPost('node/' . $node->nid, array(), t('Submit'));
+    // Log back to admin account and download results, using Deutsch Webform
+    // translations
+    $this->drupalLogin($this->adminuser);
+    $edit = array(
+      'format' => 'delimited',
+    );
+    $this->drupalPost('de/node/' . $node->nid . '/webform-results/download', $edit, t('Download'));
+    // Previous form submission batch created the export file. Click the link
+    // to access export file itself.
+    $this->clickLink(t('download the file here'));
+    // Export file should contain all element titles translated
+    foreach ($options as $key => $value) {
+      $context = $value['context'];
+      if (substr($context, -5) != ':#title') {
+        continue;
+      }
+      $translation = 'de:' . $value['source'];
+      $this->assertRaw($translation, t('%c translation is present.', array('%c' => $value['source'])), 'Deutsch Webform translation');
     }
   }
 
