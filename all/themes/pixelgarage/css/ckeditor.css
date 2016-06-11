@@ -1,0 +1,108 @@
+/*
+ *  CKEditor styles
+ * --------------------------------------------------*/
+.kf-normal {
+  font-family: 'BrandonText-Regular', sans-serif;
+  line-height: 18px;
+  text-align: left;
+  color: #222222;
+  font-size: 14px;
+}
+@media screen and (min-width: 480px) {
+  .kf-normal {
+    font-size: 2.91666667vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .kf-normal {
+    font-size: 16px;
+  }
+}
+.kf-style1 {
+  font-family: 'BrandonText-Bold', sans-serif;
+  line-height: 29px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #222222;
+  font-size: 17px;
+}
+@media screen and (min-width: 480px) {
+  .kf-style1 {
+    font-size: 3.54166667vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .kf-style1 {
+    font-size: 24px;
+  }
+}
+.kf-style2 {
+  font-family: 'BrandonText-Bold', sans-serif;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #222222;
+  font-size: 16px;
+}
+@media screen and (min-width: 480px) {
+  .kf-style2 {
+    font-size: 3.33333333vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .kf-style2 {
+    font-size: 21px;
+  }
+}
+.kf-style3 {
+  font-family: 'BrandonText-Bold', sans-serif;
+  line-height: 53px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #222222;
+  font-size: 29px;
+}
+@media screen and (min-width: 480px) {
+  .kf-style3 {
+    font-size: 6.04166667vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .kf-style3 {
+    font-size: 46px;
+  }
+}
+.kf-style4 {
+  font-family: 'BrandonText-Bold', sans-serif;
+  line-height: 18px;
+  text-align: left;
+  color: #222222;
+  font-size: 14px;
+}
+@media screen and (min-width: 480px) {
+  .kf-style4 {
+    font-size: 2.91666667vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .kf-style4 {
+    font-size: 16px;
+  }
+}
+.kf-style5 {
+  font-family: 'BrandonText-Bold', sans-serif;
+  line-height: 26px;
+  text-align: center;
+  color: #222222;
+  font-size: 17px;
+}
+@media screen and (min-width: 480px) {
+  .kf-style5 {
+    font-size: 3.54166667vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .kf-style5 {
+    font-size: 21px;
+  }
+}

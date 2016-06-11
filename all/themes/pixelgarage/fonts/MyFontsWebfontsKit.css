@@ -1,0 +1,46 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3230092, 2016-06-08T09:38:54-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: BrandonTextWeb-BoldItalic by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brandon-text/bold-italic/
+ * 
+ * Webfont: BrandonTextWeb-Bold by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brandon-text/bold/
+ * 
+ * Webfont: BrandonTextWeb-Italic by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brandon-text/italic/
+ * 
+ * Webfont: BrandonTextWeb-Regular by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brandon-text/regular/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3230092
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright (c) 2015 by Hannes von Doehren. All rights reserved.
+ * 
+ * © 2016 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/31498c");
+
+  
+@font-face {font-family: 'BrandonTextWeb-BoldItalic';src: url('webfonts/31498C_0_0.eot');src: url('webfonts/31498C_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/31498C_0_0.woff2') format('woff2'),url('webfonts/31498C_0_0.woff') format('woff'),url('webfonts/31498C_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'BrandonTextWeb-Bold';src: url('webfonts/31498C_1_0.eot');src: url('webfonts/31498C_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/31498C_1_0.woff2') format('woff2'),url('webfonts/31498C_1_0.woff') format('woff'),url('webfonts/31498C_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'BrandonTextWeb-Italic';src: url('webfonts/31498C_2_0.eot');src: url('webfonts/31498C_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/31498C_2_0.woff2') format('woff2'),url('webfonts/31498C_2_0.woff') format('woff'),url('webfonts/31498C_2_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'BrandonTextWeb-Regular';src: url('webfonts/31498C_3_0.eot');src: url('webfonts/31498C_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/31498C_3_0.woff2') format('woff2'),url('webfonts/31498C_3_0.woff') format('woff'),url('webfonts/31498C_3_0.ttf') format('truetype');}
+ 

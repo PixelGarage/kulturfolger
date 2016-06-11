@@ -1,0 +1,89 @@
+/*
+ *  Node exhibition component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+
+
+
+// General settings
+// -------------------------
+.node.node-exhibition {
+  .row {
+    div.col-sm-12 {
+      width: 100%;
+
+
+      .field-name-field-images {
+        .field-item {
+          .carousel {
+            #pxl-mixins.carousel();
+          }
+        }
+      }
+
+      div.group-inner-node {
+        margin: 50px auto;
+        max-width: 635px;
+
+        .field-name-title {
+          h2 {
+            margin: 20px 0 30px;
+            #pxl-mixins.kf-style3;
+          }
+        }
+
+        .field-name-artists-in-exhibition {
+          .field-item {
+            a, span {
+              #pxl-mixins.kf-style2;
+
+              &:hover, &:focus {
+                color: @link-hover-color;
+                text-decoration: none;
+                background: none;
+              }
+            }
+
+            a:before {
+              content: "\f178";
+              font-family: @pxl-icon-font;
+              padding-right: 10px;
+            }
+          }
+        }
+
+        .field-name-field-location {
+          .field-item {
+            #pxl-mixins.kf-style2;
+          }
+        }
+
+        .field-name-field-period {
+          .field-item {
+            .date-display-range {
+              #pxl-mixins.kf-style2;
+            }
+          }
+        }
+
+        .field-name-field-opening-hours {
+          .field-item {
+            #pxl-mixins.kf-style2;
+          }
+        }
+
+        .field-name-body {
+          margin: 20px auto;
+          #pxl-mixins.wysiwyg-body;
+        }
+
+      }
+    }
+  }
+}

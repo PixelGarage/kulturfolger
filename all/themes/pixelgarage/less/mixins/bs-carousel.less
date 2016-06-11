@@ -1,0 +1,100 @@
+/*
+ *  pxltrade bs-carousel component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+@carousel-control-width: 55px;
+@carousel-control-shift-small: 0;
+@carousel-control-shift: 0;
+
+@carousel-control-shadow-left: 2px 0 2px rgba(100,100,100, 0.4);
+@carousel-control-shadow-right: -2px 0 2px rgba(100,100,100, 0.4);
+
+// Mixins
+// -------------------------
+#pxl-mixins {
+  //
+  // Bootstrap carousel
+  .carousel() {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: auto;
+
+    > .carousel-inner {
+      margin-top: 0;
+
+      .item {
+        div {
+          height: 200px !important;
+
+          @media @narrow {
+            height: 300px !important;
+          }
+          @media @tablet {
+            height: 365px !important;
+          }
+          @media @normal {
+            height: 512px !important;
+          }
+          @media @normal {
+            height: 655px !important;
+          }
+        }
+
+        &.active {
+
+        }
+      }
+    }
+
+    > .carousel-indicators {
+      display: none;
+
+      li {
+        margin: 0 5px;
+        width: 14px;
+        height: 14px;
+        border-color: #aaa;
+
+        &.active {
+          width: 17px;
+          height: 17px;
+        }
+      }
+    }
+
+    > a.carousel-control {
+      display: block;
+      position: absolute;
+      top: auto;
+      bottom: 0;
+      padding: 0;
+      width: @carousel-control-width;
+      font-size: 30px;
+      text-shadow: none;
+      color: @text-color;
+      background: none;
+
+      &.left {
+        left: @carousel-control-shift-small;
+
+        @media @tablet {
+          left: @carousel-control-shift;
+        }
+      }
+
+      &.right {
+        right: @carousel-control-shift-small;
+
+        @media @tablet {
+          right: @carousel-control-shift;
+        }
+      }
+    }
+  }
+
+}
+
+

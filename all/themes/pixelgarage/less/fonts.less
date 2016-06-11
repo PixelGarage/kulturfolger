@@ -4,11 +4,9 @@
 //
 //
 // webfont licences
-@import '../fonts/BrandonGrotesque/BrandonGrotesque-Licence.css';
 
 //
 // Google fonts
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
 
 //
 // Awesome icon font
@@ -24,31 +22,55 @@
 @pxl-icon-font: 'fontawesome';
 
 // title font
-@pxl-title-font: 'BrandonGrotesque-Medium', "Helvetica Neue", sans-serif;
+@pxl-title-font: 'BrandonText-Bold', sans-serif;
 
 // text fonts
-@pxl-text-font: 'BrandonGrotesque-Medium', "Helvetica Neue", sans-serif;
-@pxl-text-font-serif: 'Droid Serif', serif;
-@pxl-text-font-light: 'BrandonGrotesque-Thin', "Helvetica Neue Light", sans-serif;
-@pxl-text-font-medium: 'BrandonGrotesque-Medium', "Helvetica Neue", sans-serif;
-@pxl-text-font-bold: 'BrandonGrotesque-Bold', "Arial Black", sans-serif;
-@pxl-text-font-black: 'BrandonGrotesque-Black', "Arial Black", sans-serif;
+@pxl-text-font: 'BrandonText-Regular', sans-serif;
+@pxl-text-font-italic: 'BrandonText-RegularItalic', sans-serif;
+@pxl-text-font-light: 'BrandonText-RegularItalic', sans-serif;
+@pxl-text-font-medium: 'BrandonText-Regular', sans-serif;
+@pxl-text-font-bold: 'BrandonText-Bold', sans-serif;
+@pxl-text-font-bold-italic: 'BrandonText-BoldItalic', sans-serif;
 
 // form font
 @pxl-form-font: @pxl-text-font;
 
+// serif font
+@pxl-text-font-serif: 'Droid Serif', serif;
+
+
 //
 // font faces
 //
-// Subtitle
-@font-face {font-family: 'BrandonGrotesque-Medium';src: url('../fonts/BrandonGrotesque/2E5845_1_0.eot');src: url('../fonts/BrandonGrotesque/2E5845_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/BrandonGrotesque/2E5845_1_0.woff2') format('woff2'),url('../fonts/BrandonGrotesque/2E5845_1_0.woff') format('woff'),url('../fonts/BrandonGrotesque/2E5845_1_0.ttf') format('truetype');}
-
-// Stil 1 (50px) / Stil 4 (21px):
-@font-face {font-family: 'BrandonGrotesque-Black';src: url('../fonts/BrandonGrotesque/2E5845_3_0.eot');src: url('../fonts/BrandonGrotesque/2E5845_3_0.eot?#iefix') format('embedded-opentype'),url('../fonts/BrandonGrotesque/2E5845_3_0.woff2') format('woff2'),url('../fonts/BrandonGrotesque/2E5845_3_0.woff') format('woff'),url('../fonts/BrandonGrotesque/2E5845_3_0.ttf') format('truetype');}
-
-// Stil 3 (38px):
-@font-face {font-family: 'BrandonGrotesque-Thin';src: url('../fonts/BrandonGrotesque/2E5845_0_0.eot');src: url('../fonts/BrandonGrotesque/2E5845_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/BrandonGrotesque/2E5845_0_0.woff2') format('woff2'),url('../fonts/BrandonGrotesque/2E5845_0_0.woff') format('woff'),url('../fonts/BrandonGrotesque/2E5845_0_0.ttf') format('truetype');}
-
-// Stil 5 (76px)
-@font-face {font-family: 'BrandonGrotesque-Bold';src: url('../fonts/BrandonGrotesque/2E5845_2_0.eot');src: url('../fonts/BrandonGrotesque/2E5845_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/BrandonGrotesque/2E5845_2_0.woff2') format('woff2'),url('../fonts/BrandonGrotesque/2E5845_2_0.woff') format('woff'),url('../fonts/BrandonGrotesque/2E5845_2_0.ttf') format('truetype');}
-
+@font-face {
+  font-family: 'BrandonText-Regular';
+  src: url('@{pxl-font-path}/BrandonText-Regular/BrandonText-Regular.eot');
+  src: url('@{pxl-font-path}/BrandonText-Regular/BrandonText-Regular.eot?#iefix') format('embedded-opentype'),
+  url('@{pxl-font-path}/BrandonText-Regular/BrandonText-Regular.woff2') format('woff2'),
+  url('@{pxl-font-path}/BrandonText-Regular/BrandonText-Regular.woff') format('woff'),
+  url('@{pxl-font-path}/BrandonText-Regular/BrandonText-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'BrandonText-Bold';
+  src: url('@{pxl-font-path}/BrandonText-Bold/BrandonText-Bold.eot');
+  src: url('@{pxl-font-path}/BrandonText-Bold/BrandonText-Bold.eot?#iefix') format('embedded-opentype'),
+  url('@{pxl-font-path}/BrandonText-Bold/BrandonText-Bold.woff2') format('woff2'),
+  url('@{pxl-font-path}/BrandonText-Bold/BrandonText-Bold.woff') format('woff'),
+  url('@{pxl-font-path}/BrandonText-Bold/BrandonText-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'BrandonText-RegularItalic';
+  src: url('@{pxl-font-path}/BrandonText-RegularItalic/BrandonText-RegularItalic.eot');
+  src: url('@{pxl-font-path}/BrandonText-RegularItalic/BrandonText-RegularItalic.eot?#iefix') format('embedded-opentype'),
+  url('@{pxl-font-path}/BrandonText-RegularItalic/BrandonText-RegularItalic.woff2') format('woff2'),
+  url('@{pxl-font-path}/BrandonText-RegularItalic/BrandonText-RegularItalic.woff') format('woff'),
+  url('@{pxl-font-path}/BrandonText-RegularItalic/BrandonText-RegularItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'BrandonText-BoldItalic';
+  src: url('@{pxl-font-path}/BrandonText-BoldItalic/BrandonText-BoldItalic.eot');
+  src: url('@{pxl-font-path}/BrandonText-BoldItalic/BrandonText-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('@{pxl-font-path}/BrandonText-BoldItalic/BrandonText-BoldItalic.woff2') format('woff2'),
+  url('@{pxl-font-path}/BrandonText-BoldItalic/BrandonText-BoldItalic.woff') format('woff'),
+  url('@{pxl-font-path}/BrandonText-BoldItalic/BrandonText-BoldItalic.ttf') format('truetype');
+}

@@ -1,0 +1,162 @@
+/**
+ * Variable Overrides.
+ *
+ * Modify this file to override the Bootstrap Framework variables. You can copy
+ * these variables directly from ../bootstrap/less/variables.less to this file.
+ */
+
+//== Colors
+//
+// Kulturfolger colors
+@pxl-color-main:    #222;
+@pxl-kf-yellow:     #F0FF00; // rgba(240,255,0,0.0)
+@pxl-kf-green:      #D9E9E1; // rgba(217,233,225,0.0)
+@pxl-kf-blue:       #268EC9;
+@pxl-color-border:  #222;
+
+
+
+@gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@pxl-color-primary:      darken(#428bca, 6.5%); // #337ab7
+@pxl-color-success:      #5cb85c;
+@pxl-color-info:         #5bc0de;
+@pxl-color-warning:      #f0ad4e;
+@pxl-color-danger:       #d9534f;
+
+
+//== Scaffolding
+//
+//** Global textual link color.
+@link-color:            darken(@gray-darker, 15%);
+//** Link hover color set via `darken()` function.
+@link-hover-color:      @pxl-kf-blue;
+//** Link hover decoration.
+@link-hover-decoration: underline;
+
+@pxl-box-shadow: 0 0 12px rgba(192,192,192, 0.4);
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+@text-color:            @gray-base;
+@text-color-light:      @gray-light;
+@text-color-disabled:   @gray;
+
+@font-size-base:          16px;
+@font-size-button:        24px;
+@font-size-button-small:  20px;
+@font-size-pane-title:    32px;
+@font-size-pane-subtitle: 20px;
+
+@font-size-large:         ceil((@font-size-base * 1.25));
+@font-size-larger:        ceil((@font-size-base * 1.5));
+@font-size-small:         ceil((@font-size-base * 0.85));
+@font-size-smaller:       ceil((@font-size-base * 0.7));
+
+//
+// responsive font sizes
+@resp-font-size:          3.125vw;
+@resp-font-size-min:      18px;
+@resp-font-size-max:      20px;
+@resp-font-size-large:    4.166667vw;
+@resp-font-size-large-min:20px;
+@resp-font-size-large-max:32px;
+
+
+//== Iconography
+//
+//** Load icon font from this directory.
+@pxl-bs-path: '../bootstrap';
+@icon-font-path: "@{pxl-bs-path}/fonts/";
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+//** Deprecated `@screen-xs-min` as of v3.2.0
+@screen-xs-min:              480px;
+
+// Small screen / tablet
+@screen-sm-min:              768px;
+
+// Medium screen / desktop
+@screen-md-min:              1024px;
+
+// Large screen / wide desktop
+@screen-lg-min:              1280px;
+
+//
+// Media queries maximums
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+
+//== Media queries
+//
+//## Define your custom media queries.
+@narrow:  ~"screen and (min-width: @{screen-xs-min})";
+@tablet:  ~"screen and (min-width: @{screen-sm-min})";
+@normal:  ~"screen and (min-width: @{screen-md-min})";
+@wide:    ~"screen and (min-width: @{screen-lg-min})";
+
+// special break for menu items
+@special-break: ~"screen and (min-width: 640px)";
+
+// Media queries stacked
+@tablet-only:  ~"screen and (min-width: @{screen-sm-min}) and (max-width: @{screen-sm-max})";
+@normal-only:  ~"screen and (min-width: @{screen-md-min}) and (max-width: @{screen-md-max})";
+
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+@grid-columns:              12;
+//** Padding between columns. Gets divided in half for the left and right.
+@grid-gutter-width:         30px;
+@grid-gutter-width-tablet:  110px;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+@grid-float-breakpoint:     3000px;
+//** Point at which the navbar begins collapsing.
+@grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
+
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+@container-tablet:             (657px + @grid-gutter-width-tablet);
+//** For `@screen-sm-min` and up.
+@container-sm:                 @container-tablet;
+
+// Medium screen / desktop
+@container-desktop:            (914px + @grid-gutter-width-tablet);
+//** For `@screen-md-min` and up.
+@container-md:                 @container-desktop;
+
+// Large screen / wide desktop
+@container-large-desktop:      (1170px + @grid-gutter-width-tablet);
+//** For `@screen-lg-min` and up.
+@container-lg:                 @container-large-desktop;
+
+@container-max-width: 1280px;
+@panel-separator-height: 50px;
+
+
+//== Components
+//
+
+

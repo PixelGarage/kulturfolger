@@ -9,7 +9,6 @@
     /**
      * This behavior adds shadow to header on scroll.
      *
-     */
     Drupal.behaviors.addHeaderShadow = {
         attach: function (context) {
             $(window).on("scroll", function() {
@@ -46,6 +45,7 @@
             });
         }
     };
+     */
 
     /**
      * Show / hide the carousel controls depending on the number of items.

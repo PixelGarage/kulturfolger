@@ -1,0 +1,83 @@
+/*
+ *  CKEditor styles
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+@pxl-text-font: 'BrandonText-Regular', sans-serif;
+@pxl-text-font-italic: 'BrandonText-RegularItalic', sans-serif;
+@pxl-text-font-bold: 'BrandonText-Bold', sans-serif;
+@pxl-text-font-bold-italic: 'BrandonText-BoldItalic', sans-serif;
+
+@text-color: #222;
+
+@narrow:  ~"screen and (min-width: 480px)";
+@tablet:  ~"screen and (min-width: 768px)";
+
+// Mixins
+// -------------------------
+.font-size-responsive(@max-size: @resp-font-size-max; @min-size: @resp-font-size-min) {
+  font-size: max(@min-size, @max-size*5/8);   // min = 480 / 768 * max
+
+  @media @narrow {
+    font-size: max(unit(@max-size/7.68, vw), unit(@min-size/4.8, vw));
+  }
+  @media @tablet {
+    font-size: @max-size;
+  }
+}
+
+
+
+// Main settings
+// -------------------------
+.kf-normal {
+  font-family: @pxl-text-font;
+  line-height: 18px;
+  text-align: left;
+  color: @text-color;
+  .font-size-responsive(16px, 14px);
+}
+
+.kf-style1 {
+  font-family: @pxl-text-font-bold;
+  line-height: 29px;
+  text-transform: uppercase;
+  text-align: left;
+  color: @text-color;
+  .font-size-responsive(24px, 17px);
+}
+
+.kf-style2 {
+  font-family: @pxl-text-font-bold;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: left;
+  color: @text-color;
+  .font-size-responsive(21px, 16px);
+}
+
+.kf-style3 {
+  font-family: @pxl-text-font-bold;
+  line-height: 53px;
+  text-transform: uppercase;
+  text-align: left;
+  color: @text-color;
+  .font-size-responsive(46px, 29px);
+}
+
+.kf-style4 {
+  font-family: @pxl-text-font-bold;
+  line-height: 18px;
+  text-align: left;
+  color: @text-color;
+  .font-size-responsive(16px, 14px);
+}
+
+.kf-style5 {
+  font-family: @pxl-text-font-bold;
+  line-height: 26px;
+  text-align: center;
+  color: @text-color;
+  .font-size-responsive(21px, 17px);
+}

@@ -45,22 +45,52 @@ header#navbar {
   background: transparent none;
 
   .container {
-    padding: 0px @grid-gutter-width/2 10px;
+    padding: 10px @grid-gutter-width/2;
+
+    @media @tablet {
+      padding: 10px @grid-gutter-width-tablet/2;
+    }
 
     .navbar-header {
       display: block;
       float: none;
       margin: 0 auto;
-      max-width: @pxl-navbar-header-width;
 
+      // header (branding)
+      a.logo {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+
+        .front & {
+          display: none;
+        }
+
+        img {
+          display: inline-block;
+          max-height: 50px;
+          width: auto;
+
+          @media @tablet {
+            max-height: 70px;
+          }
+
+        }
+      }
+
+      // navigation region
       .region-navigation {
+        display: none;
         font-family: @pxl-text-font;
         font-size: @font-size-small;
         text-transform: uppercase;
         line-height: 1;
 
-        #block-locale-language,
-        #block-menu-menu-meta-menu {
+        .front & {
+          display: inline-block;
+        }
+
+        #block-locale-language {
           display: inline-block;
 
           ul {
@@ -82,120 +112,79 @@ header#navbar {
             }
           }
         }
-        #block-locale-language {
-          a {
-            &:hover, &.active {
-              text-decoration: underline;
-            }
-          }
-        }
-      }
-
-      p.lead {
-        // slogan
-        margin: 20px auto;
-        padding: 0;
-        width: 90%;
-        font-family: @pxl-text-font-medium;
-        font-size: 3.5vw;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 1.2px;
-
-        @media @header-media {
-          font-size: 22px;
-        }
-      }
-
-      a.navbar-brand {
-        // title
-        display: block;
-        float: none;
-        margin: 0 auto;
-        padding: 0;
-        height: auto;
-        font-family: @pxl-text-font-black;
-        font-size: 13vw;
-        text-align: center;
-        text-transform: uppercase;
-        color: @text-color;
-        letter-spacing: -2px;
-        line-height: 1;
-        outline: none;
-
-        @media @header-media {
-          font-size: 84px;
-        }
       }
 
       .navbar-toggle {
         // navbar toggle with burger
-        padding: 5px 10px;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: none;
+
+        &:hover, &:focus {
+          color: @link-hover-color;
+        }
+
+        .glyphicon {
+          font-size: 22px;
+        }
       }
     }
 
     // collapse part
     .navbar-collapse {
-      margin: 0 auto 10px;
-      max-width: @pxl-navbar-header-width - @grid-gutter-width;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      max-height: none;
+      background-color: rgba(0,0,0,0.9);
 
       nav {
         ul.navbar-nav {
           float: none;
-          margin: 0;
+          margin: 100px 0 0;
           padding: 0;
           width: 100%;
-          text-align: justify;
+          text-align: center;
           line-height: 0;
 
-          &:after {
-            // used for justification:
-            // last line is never justified, so we have to insert a dummy one
-            content: '';
-            position: relative;
-            display: inline-block;
-            width: 100%;
-            height: 0;
-            line-height: 0;
-          }
-
           li {
-            display: inline-block;
+            display: block;
             float: none;
-            margin: 0 -2px;
+            margin: 0;
             padding: 0;
 
             a {
-              margin-bottom: 0.15em;
-              padding: 0;
               font-family: @pxl-text-font-bold;
-              font-size: 5.8vw;
+              line-height: 10vw;
               text-transform: uppercase;
               text-align: center;
-              color: @text-color;
-              line-height: 1;
+              color: #fff;
+              #pxl-mixins.font-size-responsive(54px, 32px);
               outline: none;
 
-              @media @header-media {
-                font-size: 36px;
-              }
-
-              &#menu-about {
-                text-align: left;
-              }
-
-              &#menu-submit {
-                text-align: right;
-              }
-
-              &:hover {
+              &:hover, &:focus, &.active {
                 margin-bottom: 0;
                 text-decoration: none;
                 outline: none;
-                border-bottom: 0.15em solid @text-color;
+                color: @pxl-kf-yellow;
+                background: none;
               }
             }
           }
+
+          @media @tablet {
+            margin: 200px 0 0;
+
+            li {
+              a {
+                line-height: 78px;
+              }
+            }
+          }
+
         }
       }
 
