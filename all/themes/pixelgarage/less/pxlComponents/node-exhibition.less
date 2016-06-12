@@ -5,7 +5,6 @@
 // Variables
 // -------------------------
 
-
 // Mixins
 // -------------------------
 
@@ -13,11 +12,10 @@
 
 // General settings
 // -------------------------
-.node.node-exhibition {
+.node.node-exhibition.view-mode-full {
   .row {
     div.col-sm-12 {
-      width: 100%;
-
+      #pxl-mixins.node-background();
 
       .field-name-field-images {
         .field-item {
@@ -28,12 +26,11 @@
       }
 
       div.group-inner-node {
-        margin: 50px auto;
-        max-width: 635px;
+        #pxl-mixins.inner-node();
 
         .field-name-title {
           h2 {
-            margin: 20px 0 30px;
+            margin: 0 0 30px;
             #pxl-mixins.kf-style3;
           }
         }
@@ -79,8 +76,48 @@
         }
 
         .field-name-body {
-          margin: 20px auto;
-          #pxl-mixins.wysiwyg-body;
+          margin: @panel-separator-height auto;
+          #pxl-mixins.wysiwyg-body();
+        }
+
+      }
+    }
+  }
+}
+
+.node.node-exhibition.view-mode-teaser {
+  .row {
+    div.col-sm-12 {
+      .field-name-field-images {
+        .field-item {
+        }
+      }
+
+      div.group-inner-node {
+        padding: 20px;
+        background: url(../images/KF_Dreieck.png) no-repeat top left;
+        background-size: 35% auto;
+
+        .field-name-title {
+          max-width: 60%;
+          h2 {
+            margin: 0 0 20px;
+            #pxl-mixins.kf-style3;
+          }
+        }
+
+        .field-name-field-location {
+          .field-item {
+            #pxl-mixins.kf-style2;
+          }
+        }
+
+        .field-name-field-period {
+          .field-item {
+            .date-display-range {
+              #pxl-mixins.kf-style2;
+            }
+          }
         }
 
       }

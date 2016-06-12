@@ -13,32 +13,56 @@
 
 // General settings
 // -------------------------
-.node.node-location {
+.node.node-location.view-mode-full {
   .row {
     div.col-sm-12 {
-      width: 100%;
+      #pxl-mixins.node-background();
 
-      .field-name-title {
-        h2 {
-          font-family: @pxl-text-font-bold;
-          font-size: @resp-font-size-large-min;
-          letter-spacing: 1.2px;
-          text-transform: uppercase;
-          color: @text-color;
-
-          @media @narrow {
-            font-size: @resp-font-size-large;
-          }
-          @media @tablet {
-            font-size: @resp-font-size-large-max;
+      .field-name-field-images {
+        .field-item {
+          .carousel {
+            #pxl-mixins.carousel();
           }
         }
       }
 
-      .field-name-body {
-        #pxl-mixins.wysiwyg-body;
-      }
+      div.group-inner-node {
+        #pxl-mixins.inner-node();
 
+        .field-name-title {
+          h2 {
+            margin: 0 0 30px;
+            #pxl-mixins.kf-style3;
+          }
+        }
+
+        .field-name-field-address,
+        .field-name-field-current-exhibition {
+          .field-item {
+            a, span {
+              #pxl-mixins.kf-style2;
+
+              &:hover, &:focus {
+                color: @link-hover-color;
+                text-decoration: none;
+                background: none;
+              }
+            }
+
+            a:before {
+              content: "\f178";
+              font-family: @pxl-icon-font;
+              padding-right: 10px;
+            }
+          }
+        }
+
+        .field-name-body {
+          margin: @panel-separator-height auto;
+          #pxl-mixins.wysiwyg-body();
+        }
+
+      }
     }
   }
 }

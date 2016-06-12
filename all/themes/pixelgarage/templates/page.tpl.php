@@ -107,6 +107,10 @@
 
     <?php if (!empty($primary_nav) || !empty($secondary_nav)): ?>
       <div class="navbar-collapse collapse">
+        <button type="button" class="navbar-toggle-2" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="glyphicon menu-close" aria-hidden="true">+</span>
+        </button>
         <nav role="navigation">
           <?php if (!empty($primary_nav)): ?>
             <?php print render($primary_nav); ?>

@@ -21,7 +21,6 @@
     padding: 0 @grid-gutter-width-tablet/2;
   }
 
-
   // sharper fonts
   #pxl-mixins.sharp-fonts;
 
@@ -51,9 +50,7 @@ body {
       .region-header {
         // block title
         h2.block-title {
-          margin: 20px 0 10px;
-          font-family: @pxl-text-font;
-          font-size: @font-size-larger;
+          #pxl-mixins.kf-style2();
         }
 
       }
@@ -65,9 +62,10 @@ body {
       section { // column(s)
 
         h1.page-header {
-          margin: 20px 0 10px;
-          font-family: @pxl-text-font-bold;
-          font-size: @font-size-h1;
+          margin: 44px 0 0;
+          padding: 0;
+          #pxl-mixins.kf-style2();
+          border: none;
         }
 
         .messages {

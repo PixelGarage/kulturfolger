@@ -3,14 +3,14 @@
  * --------------------------------------------------*/
 .kf-normal {
   font-family: 'BrandonText-Regular', sans-serif;
-  line-height: 18px;
+  line-height: 1.15em;
   text-align: left;
   color: #222222;
-  font-size: 14px;
+  font-size: 15px;
 }
 @media screen and (min-width: 480px) {
   .kf-normal {
-    font-size: 2.91666667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -20,15 +20,15 @@
 }
 .kf-style1 {
   font-family: 'BrandonText-Bold', sans-serif;
-  line-height: 29px;
+  line-height: 1.2em;
   text-transform: uppercase;
   text-align: left;
   color: #222222;
-  font-size: 17px;
+  font-size: 19px;
 }
 @media screen and (min-width: 480px) {
   .kf-style1 {
-    font-size: 3.54166667vw;
+    font-size: 3.95833333vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -38,15 +38,15 @@
 }
 .kf-style2 {
   font-family: 'BrandonText-Bold', sans-serif;
-  line-height: 26px;
+  line-height: 1.23em;
   text-transform: uppercase;
   text-align: left;
   color: #222222;
-  font-size: 16px;
+  font-size: 17px;
 }
 @media screen and (min-width: 480px) {
   .kf-style2 {
-    font-size: 3.33333333vw;
+    font-size: 3.54166667vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -56,7 +56,7 @@
 }
 .kf-style3 {
   font-family: 'BrandonText-Bold', sans-serif;
-  line-height: 53px;
+  line-height: 1.15em;
   text-transform: uppercase;
   text-align: left;
   color: #222222;
@@ -74,14 +74,14 @@
 }
 .kf-style4 {
   font-family: 'BrandonText-Bold', sans-serif;
-  line-height: 18px;
+  line-height: 1.15em;
   text-align: left;
   color: #222222;
-  font-size: 14px;
+  font-size: 15px;
 }
 @media screen and (min-width: 480px) {
   .kf-style4 {
-    font-size: 2.91666667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -91,7 +91,7 @@
 }
 .kf-style5 {
   font-family: 'BrandonText-Bold', sans-serif;
-  line-height: 26px;
+  line-height: 1.23em;
   text-align: center;
   color: #222222;
   font-size: 17px;

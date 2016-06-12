@@ -16,24 +16,17 @@
 // Main settings
 // -------------------------
 body.navbar-is-fixed-top {
-  padding-top: 180px !important;
+  padding-top: 70px !important;
 
   &.admin-menu {
-    padding-top: 180px !important;
+    padding-top: 70px !important;
   }
 
-  @media @narrow {
-    padding-top: 223px !important;
+  @media @tablet {
+    padding-top: 90px !important;
 
     &.admin-menu {
-      padding-top: 223px !important;
-    }
-  }
-  @media @header-media {
-    padding-top: 270px !important;
-
-    &.admin-menu {
-      padding-top: 270px !important;
+      padding-top: 90px !important;
     }
   }
 }
@@ -141,13 +134,35 @@ header#navbar {
       max-height: none;
       background-color: rgba(0,0,0,0.9);
 
+      .navbar-toggle-2 {
+        // navbar toggle with arrow
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: @grid-gutter-width-tablet/2;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: none;
+
+        .menu-close {
+          .rotate(45deg);
+          font-family: @pxl-text-font-bold;
+          color: #fff;
+          #pxl-mixins.font-size-responsive(54px, 32px);
+
+          &:hover, &:focus {
+            color: @pxl-kf-yellow;
+          }
+        }
+      }
+
       nav {
         ul.navbar-nav {
           float: none;
-          margin: 100px 0 0;
+          margin: 100px auto 0;
           padding: 0;
-          width: 100%;
-          text-align: center;
+          width: 90%;
           line-height: 0;
 
           li {
@@ -160,7 +175,7 @@ header#navbar {
               font-family: @pxl-text-font-bold;
               line-height: 10vw;
               text-transform: uppercase;
-              text-align: center;
+              text-align: left;
               color: #fff;
               #pxl-mixins.font-size-responsive(54px, 32px);
               outline: none;
@@ -176,7 +191,8 @@ header#navbar {
           }
 
           @media @tablet {
-            margin: 200px 0 0;
+            width: 50%;
+            margin: 200px auto 0;
 
             li {
               a {

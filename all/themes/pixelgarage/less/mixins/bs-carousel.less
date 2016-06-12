@@ -20,6 +20,7 @@
     position: relative;
     margin: 0;
     padding: 0;
+    width: 100%;
     height: auto;
 
     > .carousel-inner {
@@ -27,19 +28,19 @@
 
       .item {
         div {
-          height: 200px !important;
+          height: @img-height-mobile !important;
 
           @media @narrow {
-            height: 300px !important;
+            height: @img-height-narrow !important;
           }
           @media @tablet {
-            height: 365px !important;
+            height: @img-height-tablet !important;
           }
           @media @normal {
-            height: 512px !important;
+            height: @img-height-normal !important;
           }
-          @media @normal {
-            height: 655px !important;
+          @media @wide {
+            height: @img-height-wide !important;
           }
         }
 
@@ -72,10 +73,18 @@
       bottom: 0;
       padding: 0;
       width: @carousel-control-width;
+      height: 100%;
       font-size: 30px;
       text-shadow: none;
-      color: @text-color;
+      color: #fff;
       background: none;
+
+      .fa {
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+        width: 100%;
+      }
 
       &.left {
         left: @carousel-control-shift-small;

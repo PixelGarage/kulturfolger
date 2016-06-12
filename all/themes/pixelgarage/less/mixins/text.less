@@ -71,18 +71,18 @@
   }
 
 
-  .wysiwyg-body(@text-size: @font-size-base; @title-size: @resp-font-size-large-max; @subtitle-size: @resp-font-size-max) {
+  .wysiwyg-body(@text-size: @resp-font-size-max; @title-size: @resp-title-size-max; @subtitle-size: @resp-subtitle-size-max) {
     h1, h2, h3, h4, h5, h6 {
       font-family: @pxl-title-font;
-      .font-size-responsive(@subtitle-size);
+      .font-size-responsive(@subtitle-size, @resp-subtitle-size-min);
     }
     h1, h2, h3 {
-      .font-size-responsive(@title-size);
+      .font-size-responsive(@title-size, @resp-title-size-min);
     }
 
     p, tbody td {
       font-family: @pxl-text-font;
-      .font-size-responsive(@text-size);
+      .font-size-responsive(@text-size, @resp-font-size-min);
       .hyphenate;
     }
 
@@ -93,6 +93,24 @@
 
     strong {
       font-family: @pxl-text-font-bold;
+      .font-size-responsive(@text-size + 2, 16px);
+    }
+
+    a {
+      font-family: @pxl-text-font;
+      .font-size-responsive(@text-size, @resp-font-size-min);
+
+      &:before {
+        content: "\f178";
+        font-family: @pxl-icon-font;
+        padding-right: 10px;
+      }
+
+      &:hover, &:focus {
+        color: @link-hover-color;
+        text-decoration: none;
+        background: none;
+      }
     }
 
     hr {

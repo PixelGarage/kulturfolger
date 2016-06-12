@@ -1,0 +1,111 @@
+/*
+ *  Text styles mixins
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+@img-height-mobile: 180px;
+@img-height-narrow: 290px;
+@img-height-tablet: 410px;
+@img-height-normal: 520px;
+@img-height-wide:   655px;
+
+
+
+// Mixins
+// -------------------------
+#pxl-mixins {
+  //
+  // Node mixins
+  .node-background() {
+    width: 100%;
+    background: url(../images/KF_Dreieck.png) no-repeat @grid-gutter-width/2 @img-height-mobile;
+    background-size: 18% auto;
+
+    @media @narrow {
+      background: url(../images/KF_Dreieck.png) no-repeat @grid-gutter-width/2 @img-height-narrow;
+      background-size: 18% auto;
+    }
+    @media @tablet {
+      background: url(../images/KF_Dreieck.png) no-repeat @grid-gutter-width/2 @img-height-tablet;
+      background-size: 18% auto;
+    }
+    @media @normal {
+      background: url(../images/KF_Dreieck.png) no-repeat @grid-gutter-width/2 @img-height-normal;
+      background-size: 18% auto;
+    }
+    @media @wide {
+      background: url(../images/KF_Dreieck.png) no-repeat @grid-gutter-width/2 @img-height-wide;
+      background-size: 18% auto;
+    }
+  }
+
+  .inner-node() {
+    margin: 4% auto 0;
+    max-width: 420px;
+
+    @media @tablet {
+      margin: 8% auto 0;
+    }
+    @media @normal {
+      max-width: 570px;
+    }
+    @media @wide {
+      max-width: 655px;
+    }
+  }
+
+  //
+  // Text styles
+  .kf-normal() {
+    font-family: @pxl-text-font;
+    line-height: 1.15em;
+    text-align: left;
+    color: @text-color;
+    #pxl-mixins.font-size-responsive(16px, 15px);
+  }
+
+  .kf-style1() {
+    font-family: @pxl-text-font-bold;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: left;
+    color: @text-color;
+    #pxl-mixins.font-size-responsive(24px, 19px);
+  }
+
+  .kf-style2() {
+    font-family: @pxl-text-font-bold;
+    line-height: 1.23em;
+    text-transform: uppercase;
+    text-align: left;
+    color: @text-color;
+    #pxl-mixins.font-size-responsive(21px, 17px);
+  }
+
+  .kf-style3() {
+    font-family: @pxl-text-font-bold;
+    line-height: 1.15em;
+    text-transform: uppercase;
+    text-align: left;
+    color: @text-color;
+    #pxl-mixins.font-size-responsive(46px, 29px);
+  }
+
+  .kf-style4() {
+    font-family: @pxl-text-font-bold;
+    line-height: 1.15em;
+    text-align: left;
+    color: @text-color;
+    #pxl-mixins.font-size-responsive(16px, 15px);
+  }
+
+  .kf-style5() {
+    font-family: @pxl-text-font-bold;
+    line-height: 1.23em;
+    text-align: center;
+    color: @text-color;
+    #pxl-mixins.font-size-responsive(21px, 17px);
+  }
+
+}

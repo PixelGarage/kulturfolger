@@ -13,32 +13,141 @@
 
 // General settings
 // -------------------------
-.node.node-artist {
+.node.node-artist.view-mode-full {
   .row {
     div.col-sm-12 {
-      width: 100%;
+      #pxl-mixins.node-background();
 
-      .field-name-title {
-        h2 {
-          font-family: @pxl-text-font-bold;
-          font-size: @resp-font-size-large-min;
-          letter-spacing: 1.2px;
-          text-transform: uppercase;
-          color: @text-color;
-
-          @media @narrow {
-            font-size: @resp-font-size-large;
-          }
-          @media @tablet {
-            font-size: @resp-font-size-large-max;
+      .field-name-field-images {
+        .field-item {
+          .carousel {
+            #pxl-mixins.carousel();
           }
         }
       }
 
-      .field-name-body {
-        #pxl-mixins.wysiwyg-body;
+      div.group-inner-node {
+        #pxl-mixins.inner-node();
+
+        .field-name-title {
+          h2 {
+            margin: 0 0 30px;
+            #pxl-mixins.kf-style3;
+          }
+        }
+
+        .field-name-field-ort {
+          position: relative;
+          margin-bottom: 60px;
+
+          .field-item {
+            margin-bottom: 30px;
+            #pxl-mixins.kf-style2;
+          }
+
+          &:after {
+            content: '';
+            position: absolute;
+            width: 25%;
+            left: 0;
+            bottom: -30px;
+            border-bottom: 1.5px solid @pxl-color-border;
+          }
+        }
+
+        .field-name-field-homepage,
+        .field-name-field-interview-audio {
+          .field-item {
+            >a, >span {
+              font-family: @pxl-text-font-bold;
+              line-height: 1.15em;
+              text-align: left;
+              color: @text-color;
+              #pxl-mixins.font-size-responsive(18px, 16px);
+
+              &:hover, &:focus {
+                color: @link-hover-color;
+                text-decoration: none;
+                background: none;
+              }
+            }
+
+            >a:before, >span:before {
+              content: "\f178";
+              font-family: @pxl-icon-font;
+              padding-right: 10px;
+            }
+          }
+        }
+
+        .field-name-body {
+          position: relative;
+          margin: 30px auto 60px;
+
+          .field-item {
+            #pxl-mixins.wysiwyg-body();
+          }
+
+          &:after {
+            content: '';
+            position: absolute;
+            width: 25%;
+            left: 0;
+            bottom: -30px;
+            border-bottom: 1.5px solid @pxl-color-border;
+          }
+        }
+
+        .field-name-field-interview-text {
+          margin: 0 auto 30px;
+
+          .field-label {
+            margin-bottom: 10px;
+            font-family: @pxl-text-font-bold;
+            line-height: 1.15em;
+            text-align: left;
+            color: @text-color;
+            #pxl-mixins.font-size-responsive(18px, 16px);
+          }
+          #pxl-mixins.wysiwyg-body();
+        }
+
+      }
+    }
+  }
+}
+
+.node.node-artist.view-mode-teaser {
+  .row {
+    div.col-sm-12 {
+      .field-name-field-images {
+        .field-item {
+        }
       }
 
+      div.group-inner-node {
+        padding: 20px;
+        background: url(../images/KF_Dreieck.png) no-repeat top left;
+        background-size: 45% auto;
+
+        .field-name-title {
+          max-width: 60%;
+          .field-item {
+            a {
+              #pxl-mixins.kf-style3;
+            }
+          }
+        }
+
+        .field-name-body {
+          position: relative;
+          margin: 10px auto;
+
+          .field-item {
+            #pxl-mixins.wysiwyg-body();
+          }
+        }
+      }
     }
   }
 }
