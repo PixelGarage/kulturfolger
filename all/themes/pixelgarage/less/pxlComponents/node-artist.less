@@ -14,8 +14,8 @@
 // General settings
 // -------------------------
 .node.node-artist.view-mode-full {
-  .row {
-    div.col-sm-12 {
+  >.row {
+    >div.col-sm-12 {
       #pxl-mixins.node-background();
 
       .field-name-field-images {
@@ -26,7 +26,7 @@
         }
       }
 
-      div.group-inner-node {
+      >div.group-inner-node {
         #pxl-mixins.inner-node();
 
         .field-name-title {
@@ -118,20 +118,21 @@
 }
 
 .node.node-artist.view-mode-teaser {
-  .row {
-    div.col-sm-12 {
+  >.row {
+    >div.col-sm-12 {
       .field-name-field-images {
         .field-item {
         }
       }
 
-      div.group-inner-node {
+      >div.group-inner-node {
         padding: 20px;
         background: url(../images/KF_Dreieck.png) no-repeat top left;
-        background-size: 45% auto;
+        background-size: 55% auto;
 
         .field-name-title {
-          max-width: 60%;
+          max-width: 70%;
+
           .field-item {
             a {
               #pxl-mixins.kf-style3;
@@ -145,6 +146,9 @@
 
           .field-item {
             #pxl-mixins.wysiwyg-body();
+            p {
+              #pxl-mixins.kf-style4;
+            }
           }
         }
       }

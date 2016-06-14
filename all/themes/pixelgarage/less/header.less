@@ -22,6 +22,14 @@ body.navbar-is-fixed-top {
     padding-top: 70px !important;
   }
 
+  &.front {
+    padding-top: 50px !important;
+
+    &.front.admin-menu {
+      padding-top: 50px !important;
+    }
+  }
+
   @media @tablet {
     padding-top: 90px !important;
 
@@ -37,8 +45,16 @@ header#navbar {
   border-bottom: none;
   background: transparent none;
 
+  .front & {
+    background-color: @pxl-kf-green;
+  }
+
   .container {
     padding: 10px @grid-gutter-width/2;
+
+    .front & {
+      background-color: @pxl-kf-green;
+    }
 
     @media @tablet {
       padding: 10px @grid-gutter-width-tablet/2;

@@ -13,22 +13,56 @@
 
 // General settings
 // -------------------------
-.node.node-article {
-  .row {
-    div.col-sm-12 {
+.node.node-article.view-mode-full {
+  >.row {
+    >div.col-sm-12 {
+      width: 100%;
+
+      .field-name-field-image {
+        .field-item {
+          img {
+            margin: 0 auto;
+          }
+        }
+      }
+
+      >div.group-inner-node {
+        #pxl-mixins.inner-node();
+
+        .field-name-title {
+          h2 {
+            margin: 0 0 30px;
+            #pxl-mixins.kf-style3;
+          }
+        }
+
+        .field-name-body {
+          margin: @panel-separator-height auto;
+          #pxl-mixins.wysiwyg-body();
+        }
+      }
+    }
+  }
+}
+
+.node.node-article.view-mode-teaser {
+  >.row {
+    >div.col-sm-12 {
       width: 100%;
 
       .field-name-title {
         h2 {
-          margin: 0 0 30px;
           #pxl-mixins.kf-style3;
         }
       }
 
       .field-name-body {
-        #pxl-mixins.wysiwyg-body;
+        margin: 20px auto;
+        #pxl-mixins.wysiwyg-body();
+        p {
+          #pxl-mixins.kf-style4;
+        }
       }
-
     }
   }
 }

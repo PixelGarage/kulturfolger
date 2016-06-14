@@ -14,10 +14,13 @@
 // General settings
 // -------------------------
 .view-view-artists.view-display-id-page,
-.view-exhibitions.view-display-id-page_1 {
-  margin-bottom: 30px;
-
+.view-view-artists.view-display-id-block_1,
+.view-view-artists.view-display-id-block_3,
+.view-exhibitions.view-display-id-page_1,
+.view-exhibitions.view-display-id-block_1 {
   .view-filters {
+    margin-bottom: 30px;
+
     .views-exposed-form {
       .views-exposed-widgets {
         .views-exposed-widget {
@@ -27,7 +30,7 @@
             .chosen-container {
               padding: 0;
               height: auto;
-              width: 140px !important;
+              width: auto !important;
               border: none;
               box-shadow: none;
 
@@ -67,6 +70,12 @@
                   margin: 0;
                   padding: 2px 1em 0 0;
                 }
+
+                &.highlight {
+                  label {
+                    color: @pxl-kf-blue;
+                  }
+                }
               }
             }
           }
@@ -76,6 +85,8 @@
   }
 
   .view-content {
+    margin-top: 30px;
+
     .views-row {
       display: inline-block;
       margin: 0 0 20px;
@@ -84,7 +95,7 @@
       vertical-align: top;
 
       @media @special-break {
-        margin: 0 -4px 0 0;
+        margin: 0 -4px 20px 0;
         width: 50%;
 
         &.views-row-odd {
@@ -93,6 +104,29 @@
         &.views-row-even {
           padding: 0 0 0 10px;
         }
+      }
+    }
+  }
+}
+
+//
+// front page blog panel
+.view-field-notes.view-display-id-block_1 {
+  .view-content {
+    margin-top: 30px;
+
+    .views-row {
+      display: inline-block;
+      margin: 0 -4px 20px 0;
+      padding: 0 5px;
+      width: 100%;
+      vertical-align: top;
+
+      @media @special-break {
+        width: 50%;
+      }
+      @media @tablet {
+        width: 33.333333%;
       }
     }
   }

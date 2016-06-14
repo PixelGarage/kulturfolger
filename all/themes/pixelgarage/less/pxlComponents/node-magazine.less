@@ -14,8 +14,8 @@
 // General settings
 // -------------------------
 .node.node-magazine.view-mode-full {
-  .row {
-    div.col-sm-12 {
+  >.row {
+    >div.col-sm-12 {
       #pxl-mixins.node-background();
 
       .field-name-field-images {
@@ -26,7 +26,7 @@
         }
       }
 
-      div.group-inner-node {
+      >div.group-inner-node {
         #pxl-mixins.inner-node();
 
         .field-name-title {
@@ -36,9 +36,20 @@
           }
         }
 
-        .field-name-artists-in-exhibition {
+        .field-name-field-headlines {
+          margin-bottom: 20px;
+
           .field-item {
-            a, span {
+            #pxl-mixins.kf-style2;
+          }
+        }
+
+        .field-name-field-homepage {
+          position: relative;
+          margin-bottom: 60px;
+
+          .field-item {
+            >a, >span {
               #pxl-mixins.kf-style2;
 
               &:hover, &:focus {
@@ -48,39 +59,114 @@
               }
             }
 
-            a:before {
+            >a:before, >span:before {
               content: "\f178";
               font-family: @pxl-icon-font;
               padding-right: 10px;
             }
           }
-        }
 
-        .field-name-field-location {
-          .field-item {
-            #pxl-mixins.kf-style2;
-          }
-        }
-
-        .field-name-field-period {
-          .field-item {
-            .date-display-range {
-              #pxl-mixins.kf-style2;
-            }
-          }
-        }
-
-        .field-name-field-opening-hours {
-          .field-item {
-            #pxl-mixins.kf-style2;
+          &:after {
+            content: '';
+            position: absolute;
+            width: 25%;
+            left: 0;
+            bottom: -30px;
+            border-bottom: 1.5px solid @pxl-color-border;
           }
         }
 
         .field-name-body {
+          position: relative;
+          margin-bottom: 60px;
+          #pxl-mixins.wysiwyg-body();
+
+          &:after {
+            content: '';
+            position: absolute;
+            width: 25%;
+            left: 0;
+            bottom: -30px;
+            border-bottom: 1.5px solid @pxl-color-border;
+          }
+        }
+
+        .field-name-field-text {
           margin: @panel-separator-height auto;
           #pxl-mixins.wysiwyg-body();
         }
+      }
 
+      >.field-name-featured-artists {
+
+      }
+    }
+  }
+}
+
+.node.node-magazine.view-mode-teaser {
+  >.row {
+    >div.col-sm-12 {
+      .field-name-field-images {
+        .field-item {
+        }
+      }
+
+      >div.group-inner-node {
+        padding: 20px;
+        background: url(../images/KF_Dreieck.png) no-repeat top left;
+        background-size: 55% auto;
+
+        .field-name-title {
+          max-width: 70%;
+
+          .field-item {
+            a {
+              #pxl-mixins.kf-style3;
+            }
+          }
+        }
+
+        .field-name-field-headlines {
+          margin-bottom: 20px;
+
+          .field-item {
+            #pxl-mixins.kf-style1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.node.node-magazine.view-mode-front {
+  padding: 0 @grid-gutter-width;
+
+  @media @tablet {
+    padding: 0 @grid-gutter-width-tablet;
+  }
+
+  >.row {
+    >div.col-sm-12 {
+      .field-name-field-images {
+        .field-item {
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .field-name-field-headlines {
+        margin-top: 20px;
+        padding: 0 @grid-gutter-width/2;
+
+        @media @tablet {
+          padding: 0 @grid-gutter-width-tablet/2;
+        }
+
+        .field-item {
+          #pxl-mixins.kf-style1;
+        }
       }
     }
   }

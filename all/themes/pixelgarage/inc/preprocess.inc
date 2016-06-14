@@ -22,8 +22,13 @@ function pixelgarage_preprocess_html(&$vars) {
 function pixelgarage_preprocess_page(&$vars) {
   // hide titles on login forms
   pg_login_preprocess_page($vars);
+}
 
-
+/**
+ * Override or insert variables for the page templates.
+ */
+function pixelgarage_preprocess_panels_pane(&$vars) {
+  $vars['more'] = str_replace('more', '+', $vars['more']);
 }
 
 /**
