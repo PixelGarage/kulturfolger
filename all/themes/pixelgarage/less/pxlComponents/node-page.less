@@ -13,7 +13,7 @@
 
 // General settings
 // -------------------------
-.node.node-page {
+.node.node-page.view-mode-full {
   .row {
     div.col-sm-12 {
       float: none;
@@ -28,6 +28,38 @@
 
       .field-name-body {
         #pxl-mixins.wysiwyg-body();
+      }
+
+    }
+  }
+}
+
+.node.node-page.view-mode-front {
+  .row {
+    div.col-sm-12 {
+      float: none;
+      margin: 0 auto;
+      max-width: 420px;
+
+      @media @normal {
+        max-width: 570px;
+      }
+      @media @wide {
+        max-width: 635px;
+      }
+
+      .field-name-title {
+        h2 {
+          margin: 0 0 30px;
+          #pxl-mixins.kf-style3;
+        }
+      }
+
+      .field-name-body {
+        #pxl-mixins.wysiwyg-body();
+        p.kf-style2 {
+          text-transform: none;
+        }
       }
 
     }

@@ -46,6 +46,33 @@ body {
   overflow-x: hidden;
 
   .main-container {
+    position: relative;
+    //
+    // logo front page
+    a.logo {
+      position: absolute;
+      top: @grid-gutter-width/2;
+      left: @grid-gutter-width;
+      margin: 0;
+      padding: 0;
+      z-index: 10;
+
+      img {
+        display: inline-block;
+        max-height: 50px;
+        width: auto;
+      }
+
+      @media @tablet {
+        top: @grid-gutter-width-tablet/2;
+        left: @grid-gutter-width-tablet;
+
+        img {
+          max-height: 70px;
+        }
+      }
+    }
+
     //
     // Page header
     #page-header {
@@ -109,4 +136,12 @@ body {
     }
 
   } // main-container
+
+  &.not-front {
+    .main-container {
+      a.logo {
+        display: none;
+      }
+    }
+  }
 }

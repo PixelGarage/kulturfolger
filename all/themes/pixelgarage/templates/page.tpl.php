@@ -126,6 +126,10 @@
 
 <div class="main-container container">
 
+  <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+    <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+  </a>
+
   <header role="banner" id="page-header">
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->

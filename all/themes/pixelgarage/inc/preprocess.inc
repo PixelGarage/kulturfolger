@@ -22,6 +22,10 @@ function pixelgarage_preprocess_html(&$vars) {
 function pixelgarage_preprocess_page(&$vars) {
   // hide titles on login forms
   pg_login_preprocess_page($vars);
+
+  if ($vars['is_front']) {
+    $vars['logo'] = str_replace('black', 'white', $vars['logo']);
+  }
 }
 
 /**
