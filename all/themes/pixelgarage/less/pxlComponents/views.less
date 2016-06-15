@@ -30,7 +30,7 @@
             .chosen-container {
               padding: 0;
               height: auto;
-              width: auto !important;
+              width: 110px !important;
               border: none;
               box-shadow: none;
 
@@ -42,6 +42,7 @@
               }
 
               .chosen-drop {
+                border: none;
                 ul.chosen-results {
                   li {
                     &.highlighted, &.result-selected {
@@ -122,10 +123,10 @@
       width: 100%;
       vertical-align: top;
 
-      @media @special-break {
+      @media @tablet {
         width: 50%;
       }
-      @media @tablet {
+      @media @normal {
         width: 33.333333%;
       }
     }

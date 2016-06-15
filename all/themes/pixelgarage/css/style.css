@@ -9174,7 +9174,7 @@ form#user-login {
 .view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container {
   padding: 0;
   height: auto;
-  width: auto !important;
+  width: 110px !important;
   border: none;
   box-shadow: none;
 }
@@ -9187,6 +9187,13 @@ form#user-login {
   border: none;
   background: none;
   box-shadow: none;
+}
+.view-view-artists.view-display-id-page .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop,
+.view-view-artists.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop,
+.view-view-artists.view-display-id-block_3 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop,
+.view-exhibitions.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop,
+.view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop {
+  border: none;
 }
 .view-view-artists.view-display-id-page .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop ul.chosen-results li.highlighted,
 .view-view-artists.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop ul.chosen-results li.highlighted,
@@ -9292,12 +9299,12 @@ form#user-login {
   width: 100%;
   vertical-align: top;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .view-field-notes.view-display-id-block_1 .view-content .views-row {
     width: 50%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .view-field-notes.view-display-id-block_1 .view-content .views-row {
     width: 33.333333%;
   }
@@ -10770,6 +10777,13 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   text-align: left;
   color: #000000;
   font-size: 29px;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
 }
 @media screen and (min-width: 480px) {
   .node.node-article.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-title h2,
@@ -11145,6 +11159,13 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   text-align: left;
   color: #000000;
   font-size: 29px;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
 }
 @media screen and (min-width: 480px) {
   .node.node-article.view-mode-teaser > .row > div.col-sm-12 .field-name-title h2 {
@@ -12217,7 +12238,8 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-artist.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node {
   padding: 20px;
   background: url(../images/KF_Dreieck.png) no-repeat top left;
-  background-size: 35% auto;
+  background-size: 33% auto;
+  min-height: 250px;
 }
 .node.node-artist.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-title {
   max-width: 70%;
@@ -13024,7 +13046,8 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-exhibition.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node {
   padding: 20px;
   background: url(../images/KF_Dreieck.png) no-repeat top left;
-  background-size: 35% auto;
+  background-size: 33% auto;
+  min-height: 250px;
 }
 .node.node-exhibition.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-title {
   max-width: 70%;
@@ -13187,7 +13210,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   position: relative;
   margin: -15px 0 0 30px;
   background: url(../images/KF_Dreieck.png) no-repeat left top;
-  background-size: 25% auto;
+  background-size: 23% auto;
   z-index: 10;
 }
 @media screen and (min-width: 768px) {
