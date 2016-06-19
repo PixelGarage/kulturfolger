@@ -9126,6 +9126,7 @@ form#user-login {
 }
 .panel-display .panel-panel #front-blog .pane-title {
   margin: 0;
+  padding: 22px 9999px 11px;
 }
 .panel-display .panel-panel #front-blog .pane-content {
   padding: 0 15px;
