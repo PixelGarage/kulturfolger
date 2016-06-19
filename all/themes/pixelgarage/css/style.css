@@ -9061,12 +9061,14 @@ form#user-login {
 .panel-display .panel-panel .panel-pane.pane-node:not(#front-about) {
   border-top: 1.5px solid #222222;
 }
+.panel-display .panel-panel #front-banner,
 .panel-display .panel-panel #front-exhibition,
 .panel-display .panel-panel #front-magazine,
 .panel-display .panel-panel #front-about,
 .panel-display .panel-panel #front-blog {
   margin: 0 -9999px;
 }
+.panel-display .panel-panel #front-banner .pane-content,
 .panel-display .panel-panel #front-exhibition .pane-content,
 .panel-display .panel-panel #front-magazine .pane-content,
 .panel-display .panel-panel #front-about .pane-content,
@@ -9075,6 +9077,7 @@ form#user-login {
   width: 320px;
 }
 @media (min-width: 480px) {
+  .panel-display .panel-panel #front-banner .pane-content,
   .panel-display .panel-panel #front-exhibition .pane-content,
   .panel-display .panel-panel #front-magazine .pane-content,
   .panel-display .panel-panel #front-about .pane-content,
@@ -9083,6 +9086,7 @@ form#user-login {
   }
 }
 @media (min-width: 768px) {
+  .panel-display .panel-panel #front-banner .pane-content,
   .panel-display .panel-panel #front-exhibition .pane-content,
   .panel-display .panel-panel #front-magazine .pane-content,
   .panel-display .panel-panel #front-about .pane-content,
@@ -9091,6 +9095,7 @@ form#user-login {
   }
 }
 @media (min-width: 1024px) {
+  .panel-display .panel-panel #front-banner .pane-content,
   .panel-display .panel-panel #front-exhibition .pane-content,
   .panel-display .panel-panel #front-magazine .pane-content,
   .panel-display .panel-panel #front-about .pane-content,
@@ -9099,6 +9104,7 @@ form#user-login {
   }
 }
 @media (min-width: 1280px) {
+  .panel-display .panel-panel #front-banner .pane-content,
   .panel-display .panel-panel #front-exhibition .pane-content,
   .panel-display .panel-panel #front-magazine .pane-content,
   .panel-display .panel-panel #front-about .pane-content,
@@ -9106,6 +9112,7 @@ form#user-login {
     width: 1280px;
   }
 }
+.panel-display .panel-panel #front-banner,
 .panel-display .panel-panel #front-about,
 .panel-display .panel-panel #front-magazine {
   padding-bottom: 50px;
