@@ -9113,13 +9113,16 @@ form#user-login {
   }
 }
 .panel-display .panel-panel #front-banner,
-.panel-display .panel-panel #front-about,
-.panel-display .panel-panel #front-magazine {
+.panel-display .panel-panel #front-about {
   padding-bottom: 50px;
-  background-color: #f0ff00;
+  background-color: #d9e9e1;
 }
 .panel-display .panel-panel #front-exhibition {
   background-color: #d9e9e1;
+}
+.panel-display .panel-panel #front-magazine {
+  padding-bottom: 50px;
+  background-color: #ffffff;
 }
 .panel-display .panel-panel #front-blog {
   background-color: #f0ff00;
@@ -14854,7 +14857,7 @@ header#navbar {
   background: rgba(0, 0, 0, 0) none;
 }
 .front header#navbar {
-  background-color: #f0ff00;
+  background-color: #d9e9e1;
 }
 header#navbar .container {
   padding: 10px 15px;
