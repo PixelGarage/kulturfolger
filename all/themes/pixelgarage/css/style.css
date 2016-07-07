@@ -14559,7 +14559,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   }
 }
 /*
- *  Social-masonry view component
+ *  Field notes view component
  * --------------------------------------------------*/
 body.page-field-notes {
   background-color: #f0ff00;
@@ -14824,6 +14824,90 @@ body.page-field-notes .container {
 .view.view-field-notes .pager.pager--infinite-scroll .pager__item a:hover,
 .view.view-field-notes .pager.pager--infinite-scroll .pager__item a.active {
   opacity: 0.7;
+}
+/*
+ *  Main-banner view component
+ * --------------------------------------------------*/
+.view.view-main-banner .view-content .carousel {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+.view.view-main-banner .view-content .carousel > .carousel-inner {
+  margin-top: 0;
+}
+.view.view-main-banner .view-content .carousel > .carousel-inner .item div {
+  height: 180px !important;
+}
+@media screen and (min-width: 480px) {
+  .view.view-main-banner .view-content .carousel > .carousel-inner .item div {
+    height: 290px !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .view.view-main-banner .view-content .carousel > .carousel-inner .item div {
+    height: 410px !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .view.view-main-banner .view-content .carousel > .carousel-inner .item div {
+    height: 520px !important;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .view.view-main-banner .view-content .carousel > .carousel-inner .item div {
+    height: 655px !important;
+  }
+}
+.view.view-main-banner .view-content .carousel > .carousel-indicators {
+  display: none;
+}
+.view.view-main-banner .view-content .carousel > .carousel-indicators li {
+  margin: 0 5px;
+  width: 14px;
+  height: 14px;
+  border-color: #aaa;
+}
+.view.view-main-banner .view-content .carousel > .carousel-indicators li.active {
+  width: 17px;
+  height: 17px;
+}
+.view.view-main-banner .view-content .carousel > a.carousel-control {
+  display: block;
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  padding: 0;
+  width: 55px;
+  height: 100%;
+  font-size: 30px;
+  text-shadow: none;
+  color: #fff;
+  background: none;
+}
+.view.view-main-banner .view-content .carousel > a.carousel-control .fa {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+}
+.view.view-main-banner .view-content .carousel > a.carousel-control.left {
+  left: 0;
+}
+@media screen and (min-width: 768px) {
+  .view.view-main-banner .view-content .carousel > a.carousel-control.left {
+    left: 0;
+  }
+}
+.view.view-main-banner .view-content .carousel > a.carousel-control.right {
+  right: 0;
+}
+@media screen and (min-width: 768px) {
+  .view.view-main-banner .view-content .carousel > a.carousel-control.right {
+    right: 0;
+  }
 }
 /*
  *  Header section (navigation)
