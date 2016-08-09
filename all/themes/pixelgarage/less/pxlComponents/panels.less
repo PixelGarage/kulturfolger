@@ -17,7 +17,14 @@
   .panel-panel {
     .panel-pane {
       .pane-title {
-        #pxl-mixins.kf-style2;
+        margin: 30px 0 10px;
+        a {
+          #pxl-mixins.kf-style2;
+
+          &:hover {
+            color: @text-color;
+          }
+        }
       }
 
       .more-link {
@@ -31,7 +38,7 @@
         }
       }
 
-      &.pane-node:not(#front-about) {
+      .page-about &.pane-node:not(#about-about) {
         // about page node separator
         border-top: 1.5px solid @pxl-color-border;
 
@@ -39,8 +46,6 @@
     }
 
     #front-banner,
-    #front-exhibition,
-    #front-magazine,
     #front-about,
     #front-blog {
       margin: 0 -9999px;
@@ -66,9 +71,6 @@
     #front-banner,
     #front-about {
       padding-bottom: @panel-separator-height;
-      background-color: @pxl-kf-green;
-    }
-    #front-exhibition {
       background-color: @pxl-kf-green;
     }
     #front-magazine {

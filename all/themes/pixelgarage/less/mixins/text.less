@@ -43,6 +43,11 @@
     }
   }
 
+  .text-overflow(@mode: ellipsis) {
+    -ms-text-overflow: @mode;
+    text-overflow: @mode;
+  }
+
 
   //
   // placeholder in input fields
@@ -60,10 +65,11 @@
   //
   // responsive font size with minimum and maximum size
   .font-size-responsive(@max-size: @resp-font-size-max; @min-size: @resp-font-size-min) {
-    font-size: max(@min-size, @max-size*5/8);   // min = 480 / 768 * max
+    @min-size-resp: max(@min-size, @max-size*5/8);
+    font-size: @min-size-resp;   // min = 480 / 768 * max
 
     @media @narrow {
-      font-size: max(unit(@max-size/7.68, vw), unit(@min-size/4.8, vw));
+      font-size: max(unit(@max-size/7.68, vw), unit(@min-size-resp/4.8, vw));
     }
     @media @tablet {
       font-size: @max-size;
@@ -83,7 +89,6 @@
     p, tbody td {
       font-family: @pxl-text-font;
       .font-size-responsive(@text-size, @resp-font-size-min);
-      .hyphenate;
 
       &.kf-style1 {
         #pxl-mixins.kf-style1;

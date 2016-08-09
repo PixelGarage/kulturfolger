@@ -1,5 +1,5 @@
-@import "../css/ckeditor.css";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+@import "../css/ckeditor.css";
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -1064,8 +1064,8 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.42857143;
-  color: #000000;
-  background-color: #ffffff;
+  color: #000;
+  background-color: #fff;
 }
 input,
 button,
@@ -1081,7 +1081,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #268ec9;
+  color: #268EC9;
   text-decoration: underline;
 }
 a:focus {
@@ -1110,8 +1110,8 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857143;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
+  background-color: #fff;
+  border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -1510,8 +1510,8 @@ code {
 kbd {
   padding: 2px 4px;
   font-size: 90%;
-  color: #ffffff;
-  background-color: #333333;
+  color: #fff;
+  background-color: #333;
   border-radius: 3px;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -1531,7 +1531,7 @@ pre {
   word-wrap: break-word;
   color: #333333;
   background-color: #f5f5f5;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border-radius: 4px;
 }
 pre code {
@@ -1554,7 +1554,7 @@ pre code {
 }
 @media (min-width: 768px) {
   .container {
-    width: 767px;
+    width: 768px;
   }
 }
 @media (min-width: 1024px) {
@@ -2239,11 +2239,11 @@ th {
   padding: 8px;
   line-height: 1.42857143;
   vertical-align: top;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #ddd;
 }
 .table > thead > tr > th {
   vertical-align: bottom;
-  border-bottom: 2px solid #dddddd;
+  border-bottom: 2px solid #ddd;
 }
 .table > caption + thead > tr:first-child > th,
 .table > colgroup + thead > tr:first-child > th,
@@ -2254,10 +2254,10 @@ th {
   border-top: 0;
 }
 .table > tbody + tbody {
-  border-top: 2px solid #dddddd;
+  border-top: 2px solid #ddd;
 }
 .table .table {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
@@ -2268,7 +2268,7 @@ th {
   padding: 5px;
 }
 .table-bordered {
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > tbody > tr > th,
@@ -2276,7 +2276,7 @@ th {
 .table-bordered > thead > tr > td,
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td {
@@ -2414,7 +2414,7 @@ table th[class*="col-"] {
     margin-bottom: 16.5px;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #dddddd;
+    border: 1px solid #ddd;
   }
   .table-responsive > .table {
     margin-bottom: 0;
@@ -2520,9 +2520,9 @@ output {
   font-size: 16px;
   line-height: 1.42857143;
   color: #555555;
-  background-color: #ffffff;
+  background-color: #fff;
   background-image: none;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -2539,14 +2539,14 @@ output {
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 .form-control::-moz-placeholder {
-  color: #999999;
+  color: #999;
   opacity: 1;
 }
 .form-control:-ms-input-placeholder {
-  color: #999999;
+  color: #999;
 }
 .form-control::-webkit-input-placeholder {
-  color: #999999;
+  color: #999;
 }
 .form-control[disabled],
 .form-control[readonly],
@@ -2990,7 +2990,7 @@ select[multiple].form-group-lg .form-control {
 .btn:hover,
 .btn:focus,
 .btn.focus {
-  color: #333333;
+  color: #333;
   text-decoration: none;
 }
 .btn:active,
@@ -3013,9 +3013,9 @@ fieldset[disabled] .btn {
   box-shadow: none;
 }
 .btn-default {
-  color: #333333;
-  background-color: #ffffff;
-  border-color: #cccccc;
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
 }
 .btn-default:hover,
 .btn-default:focus,
@@ -3023,7 +3023,7 @@ fieldset[disabled] .btn {
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #333333;
+  color: #333;
   background-color: #e6e6e6;
   border-color: #adadad;
 }
@@ -3050,15 +3050,15 @@ fieldset[disabled] .btn-default:active,
 .btn-default.disabled.active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
-  background-color: #ffffff;
-  border-color: #cccccc;
+  background-color: #fff;
+  border-color: #ccc;
 }
 .btn-default .badge {
-  color: #ffffff;
-  background-color: #333333;
+  color: #fff;
+  background-color: #333;
 }
 .btn-primary {
-  color: #ffffff;
+  color: #fff;
   background-color: #337ab7;
   border-color: #2e6da4;
 }
@@ -3068,7 +3068,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  color: #ffffff;
+  color: #fff;
   background-color: #286090;
   border-color: #204d74;
 }
@@ -3100,10 +3100,10 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-primary .badge {
   color: #337ab7;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .btn-success {
-  color: #ffffff;
+  color: #fff;
   background-color: #5cb85c;
   border-color: #4cae4c;
 }
@@ -3113,7 +3113,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-success:active,
 .btn-success.active,
 .open > .dropdown-toggle.btn-success {
-  color: #ffffff;
+  color: #fff;
   background-color: #449d44;
   border-color: #398439;
 }
@@ -3145,10 +3145,10 @@ fieldset[disabled] .btn-success.active {
 }
 .btn-success .badge {
   color: #5cb85c;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .btn-info {
-  color: #ffffff;
+  color: #fff;
   background-color: #5bc0de;
   border-color: #46b8da;
 }
@@ -3158,7 +3158,7 @@ fieldset[disabled] .btn-success.active {
 .btn-info:active,
 .btn-info.active,
 .open > .dropdown-toggle.btn-info {
-  color: #ffffff;
+  color: #fff;
   background-color: #31b0d5;
   border-color: #269abc;
 }
@@ -3190,10 +3190,10 @@ fieldset[disabled] .btn-info.active {
 }
 .btn-info .badge {
   color: #5bc0de;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .btn-warning {
-  color: #ffffff;
+  color: #fff;
   background-color: #f0ad4e;
   border-color: #eea236;
 }
@@ -3203,7 +3203,7 @@ fieldset[disabled] .btn-info.active {
 .btn-warning:active,
 .btn-warning.active,
 .open > .dropdown-toggle.btn-warning {
-  color: #ffffff;
+  color: #fff;
   background-color: #ec971f;
   border-color: #d58512;
 }
@@ -3235,10 +3235,10 @@ fieldset[disabled] .btn-warning.active {
 }
 .btn-warning .badge {
   color: #f0ad4e;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .btn-danger {
-  color: #ffffff;
+  color: #fff;
   background-color: #d9534f;
   border-color: #d43f3a;
 }
@@ -3248,7 +3248,7 @@ fieldset[disabled] .btn-warning.active {
 .btn-danger:active,
 .btn-danger.active,
 .open > .dropdown-toggle.btn-danger {
-  color: #ffffff;
+  color: #fff;
   background-color: #c9302c;
   border-color: #ac2925;
 }
@@ -3280,7 +3280,7 @@ fieldset[disabled] .btn-danger.active {
 }
 .btn-danger .badge {
   color: #d9534f;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .btn-link {
   color: #000000;
@@ -3305,7 +3305,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #268ec9;
+  color: #268EC9;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3417,8 +3417,8 @@ tbody.collapse.in {
   list-style: none;
   font-size: 16px;
   text-align: left;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
+  background-color: #fff;
+  border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
@@ -3454,7 +3454,7 @@ tbody.collapse.in {
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   outline: 0;
   background-color: #337ab7;
@@ -3785,7 +3785,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #555555;
   text-align: center;
   background-color: #eeeeee;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border-radius: 4px;
 }
 .input-group-addon.input-sm {
@@ -3897,7 +3897,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   max-width: none;
 }
 .nav-tabs {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #ddd;
 }
 .nav-tabs > li {
   float: left;
@@ -3910,14 +3910,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-radius: 4px 4px 0 0;
 }
 .nav-tabs > li > a:hover {
-  border-color: #eeeeee #eeeeee #dddddd;
+  border-color: #eeeeee #eeeeee #ddd;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #555555;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
+  background-color: #fff;
+  border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
 }
@@ -3952,17 +3952,17 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs.nav-justified > .active > a,
 .nav-tabs.nav-justified > .active > a:hover,
 .nav-tabs.nav-justified > .active > a:focus {
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
 }
 @media (min-width: 768px) {
   .nav-tabs.nav-justified > li > a {
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #ddd;
     border-radius: 4px 4px 0 0;
   }
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #ffffff;
+    border-bottom-color: #fff;
   }
 }
 .nav-pills > li {
@@ -3977,7 +3977,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  color: #ffffff;
+  color: #fff;
   background-color: #337ab7;
 }
 .nav-stacked > li {
@@ -4020,17 +4020,17 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs-justified > .active > a,
 .nav-tabs-justified > .active > a:hover,
 .nav-tabs-justified > .active > a:focus {
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
 }
 @media (min-width: 768px) {
   .nav-tabs-justified > li > a {
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #ddd;
     border-radius: 4px 4px 0 0;
   }
   .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus {
-    border-bottom-color: #ffffff;
+    border-bottom-color: #fff;
   }
 }
 .tab-content > .tab-pane {
@@ -4382,7 +4382,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
-  color: #777777;
+  color: #777;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -4390,37 +4390,37 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 .navbar-default .navbar-text {
-  color: #777777;
+  color: #777;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777777;
+  color: #777;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #333333;
+  color: #333;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #555555;
+  color: #555;
   background-color: #e7e7e7;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
 .navbar-default .navbar-nav > .disabled > a:focus {
-  color: #cccccc;
+  color: #ccc;
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
-  border-color: #dddddd;
+  border-color: #ddd;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #dddddd;
+  background-color: #ddd;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #888888;
+  background-color: #888;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
@@ -4430,51 +4430,51 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   background-color: #e7e7e7;
-  color: #555555;
+  color: #555;
 }
 @media (max-width: 2999px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #777777;
+    color: #777;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #333333;
+    color: #333;
     background-color: transparent;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #555555;
+    color: #555;
     background-color: #e7e7e7;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-    color: #cccccc;
+    color: #ccc;
     background-color: transparent;
   }
 }
 .navbar-default .navbar-link {
-  color: #777777;
+  color: #777;
 }
 .navbar-default .navbar-link:hover {
-  color: #333333;
+  color: #333;
 }
 .navbar-default .btn-link {
-  color: #777777;
+  color: #777;
 }
 .navbar-default .btn-link:hover,
 .navbar-default .btn-link:focus {
-  color: #333333;
+  color: #333;
 }
 .navbar-default .btn-link[disabled]:hover,
 fieldset[disabled] .navbar-default .btn-link:hover,
 .navbar-default .btn-link[disabled]:focus,
 fieldset[disabled] .navbar-default .btn-link:focus {
-  color: #cccccc;
+  color: #ccc;
 }
 .navbar-inverse {
-  background-color: #222222;
+  background-color: #222;
   border-color: #080808;
 }
 .navbar-inverse .navbar-brand {
@@ -4482,7 +4482,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-  color: #ffffff;
+  color: #fff;
   background-color: transparent;
 }
 .navbar-inverse .navbar-text {
@@ -4493,30 +4493,30 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #ffffff;
+  color: #fff;
   background-color: transparent;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-  color: #ffffff;
+  color: #fff;
   background-color: #080808;
 }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
 .navbar-inverse .navbar-nav > .disabled > a:focus {
-  color: #444444;
+  color: #444;
   background-color: transparent;
 }
 .navbar-inverse .navbar-toggle {
-  border-color: #333333;
+  border-color: #333;
 }
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-  background-color: #333333;
+  background-color: #333;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
@@ -4526,7 +4526,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
   background-color: #080808;
-  color: #ffffff;
+  color: #fff;
 }
 @media (max-width: 2999px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
@@ -4540,19 +4540,19 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #ffffff;
+    color: #fff;
     background-color: transparent;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #ffffff;
+    color: #fff;
     background-color: #080808;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-    color: #444444;
+    color: #444;
     background-color: transparent;
   }
 }
@@ -4560,20 +4560,20 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #9d9d9d;
 }
 .navbar-inverse .navbar-link:hover {
-  color: #ffffff;
+  color: #fff;
 }
 .navbar-inverse .btn-link {
   color: #9d9d9d;
 }
 .navbar-inverse .btn-link:hover,
 .navbar-inverse .btn-link:focus {
-  color: #ffffff;
+  color: #fff;
 }
 .navbar-inverse .btn-link[disabled]:hover,
 fieldset[disabled] .navbar-inverse .btn-link:hover,
 .navbar-inverse .btn-link[disabled]:focus,
 fieldset[disabled] .navbar-inverse .btn-link:focus {
-  color: #444444;
+  color: #444;
 }
 .breadcrumb {
   padding: 8px 15px;
@@ -4588,7 +4588,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .breadcrumb > li + li:before {
   content: "/\00a0";
   padding: 0 5px;
-  color: #cccccc;
+  color: #ccc;
 }
 .breadcrumb > .active {
   color: #777777;
@@ -4610,8 +4610,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   line-height: 1.42857143;
   text-decoration: none;
   color: #000000;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
+  background-color: #fff;
+  border: 1px solid #ddd;
   margin-left: -1px;
 }
 .pagination > li:first-child > a,
@@ -4629,9 +4629,9 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  color: #268ec9;
+  color: #268EC9;
   background-color: #eeeeee;
-  border-color: #dddddd;
+  border-color: #ddd;
 }
 .pagination > .active > a,
 .pagination > .active > span,
@@ -4640,7 +4640,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
   z-index: 2;
-  color: #ffffff;
+  color: #fff;
   background-color: #337ab7;
   border-color: #337ab7;
   cursor: default;
@@ -4652,8 +4652,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > .disabled > a:hover,
 .pagination > .disabled > a:focus {
   color: #777777;
-  background-color: #ffffff;
-  border-color: #dddddd;
+  background-color: #fff;
+  border-color: #ddd;
   cursor: not-allowed;
 }
 .pagination-lg > li > a,
@@ -4699,8 +4699,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pager li > span {
   display: inline-block;
   padding: 5px 14px;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
+  background-color: #fff;
+  border: 1px solid #ddd;
   border-radius: 15px;
 }
 .pager li > a:hover,
@@ -4721,7 +4721,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pager .disabled > a:focus,
 .pager .disabled > span {
   color: #777777;
-  background-color: #ffffff;
+  background-color: #fff;
   cursor: not-allowed;
 }
 .label {
@@ -4730,7 +4730,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   font-size: 75%;
   font-weight: bold;
   line-height: 1;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
@@ -4738,7 +4738,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 a.label:hover,
 a.label:focus {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
 }
@@ -4797,7 +4797,7 @@ a.label:focus {
   padding: 3px 7px;
   font-size: 14px;
   font-weight: bold;
-  color: #ffffff;
+  color: #fff;
   line-height: 1;
   vertical-align: baseline;
   white-space: nowrap;
@@ -4818,14 +4818,14 @@ a.label:focus {
 }
 a.badge:hover,
 a.badge:focus {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
   color: #000000;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .list-group-item > .badge {
   float: right;
@@ -4880,8 +4880,8 @@ a.badge:focus {
   padding: 4px;
   margin-bottom: 22px;
   line-height: 1.42857143;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
+  background-color: #fff;
+  border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
   -o-transition: border 0.2s ease-in-out;
@@ -4899,7 +4899,7 @@ a.thumbnail.active {
 }
 .thumbnail .caption {
   padding: 9px;
-  color: #000000;
+  color: #000;
 }
 .alert {
   padding: 15px;
@@ -5008,7 +5008,7 @@ a.thumbnail.active {
   height: 100%;
   font-size: 14px;
   line-height: 22px;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   background-color: #337ab7;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
@@ -5117,8 +5117,8 @@ a.thumbnail.active {
   display: block;
   padding: 10px 15px;
   margin-bottom: -1px;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
+  background-color: #fff;
+  border: 1px solid #ddd;
 }
 .list-group-item:first-child {
   border-top-right-radius: 4px;
@@ -5130,15 +5130,15 @@ a.thumbnail.active {
   border-bottom-left-radius: 4px;
 }
 a.list-group-item {
-  color: #555555;
+  color: #555;
 }
 a.list-group-item .list-group-item-heading {
-  color: #333333;
+  color: #333;
 }
 a.list-group-item:hover,
 a.list-group-item:focus {
   text-decoration: none;
-  color: #555555;
+  color: #555;
   background-color: #f5f5f5;
 }
 .list-group-item.disabled,
@@ -5162,7 +5162,7 @@ a.list-group-item:focus {
 .list-group-item.active:hover,
 .list-group-item.active:focus {
   z-index: 2;
-  color: #ffffff;
+  color: #fff;
   background-color: #337ab7;
   border-color: #337ab7;
 }
@@ -5280,7 +5280,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel {
   margin-bottom: 22px;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid transparent;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -5315,7 +5315,7 @@ a.list-group-item-danger.active:focus {
 .panel-footer {
   padding: 10px 15px;
   background-color: #f5f5f5;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #ddd;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
@@ -5425,7 +5425,7 @@ a.list-group-item-danger.active:focus {
 .panel > .panel-body + .table-responsive,
 .panel > .table + .panel-body,
 .panel > .table-responsive + .panel-body {
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #ddd;
 }
 .panel > .table > tbody:first-child > tr:first-child th,
 .panel > .table > tbody:first-child > tr:first-child td {
@@ -5502,37 +5502,37 @@ a.list-group-item-danger.active:focus {
 }
 .panel-group .panel-heading + .panel-collapse > .panel-body,
 .panel-group .panel-heading + .panel-collapse > .list-group {
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #ddd;
 }
 .panel-group .panel-footer {
   border-top: 0;
 }
 .panel-group .panel-footer + .panel-collapse .panel-body {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #ddd;
 }
 .panel-default {
-  border-color: #dddddd;
+  border-color: #ddd;
 }
 .panel-default > .panel-heading {
   color: #333333;
   background-color: #f5f5f5;
-  border-color: #dddddd;
+  border-color: #ddd;
 }
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #dddddd;
+  border-top-color: #ddd;
 }
 .panel-default > .panel-heading .badge {
   color: #f5f5f5;
   background-color: #333333;
 }
 .panel-default > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #dddddd;
+  border-bottom-color: #ddd;
 }
 .panel-primary {
   border-color: #337ab7;
 }
 .panel-primary > .panel-heading {
-  color: #ffffff;
+  color: #fff;
   background-color: #337ab7;
   border-color: #337ab7;
 }
@@ -5541,7 +5541,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel-primary > .panel-heading .badge {
   color: #337ab7;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .panel-primary > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #337ab7;
@@ -5672,14 +5672,14 @@ a.list-group-item-danger.active:focus {
   font-size: 24px;
   font-weight: bold;
   line-height: 1;
-  color: #000000;
-  text-shadow: 0 1px 0 #ffffff;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
   opacity: 0.2;
   filter: alpha(opacity=20);
 }
 .close:hover,
 .close:focus {
-  color: #000000;
+  color: #000;
   text-decoration: none;
   cursor: pointer;
   opacity: 0.5;
@@ -5734,8 +5734,8 @@ button.close {
 }
 .modal-content {
   position: relative;
-  background-color: #ffffff;
-  border: 1px solid #999999;
+  background-color: #fff;
+  border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
@@ -5749,7 +5749,7 @@ button.close {
   top: 0;
   right: 0;
   left: 0;
-  background-color: #000000;
+  background-color: #000;
 }
 .modal-backdrop.fade {
   opacity: 0;
@@ -5851,10 +5851,10 @@ button.close {
 .tooltip-inner {
   max-width: 200px;
   padding: 3px 8px;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   text-decoration: none;
-  background-color: #000000;
+  background-color: #000;
   border-radius: 4px;
 }
 .tooltip-arrow {
@@ -5869,56 +5869,56 @@ button.close {
   left: 50%;
   margin-left: -5px;
   border-width: 5px 5px 0;
-  border-top-color: #000000;
+  border-top-color: #000;
 }
 .tooltip.top-left .tooltip-arrow {
   bottom: 0;
   right: 5px;
   margin-bottom: -5px;
   border-width: 5px 5px 0;
-  border-top-color: #000000;
+  border-top-color: #000;
 }
 .tooltip.top-right .tooltip-arrow {
   bottom: 0;
   left: 5px;
   margin-bottom: -5px;
   border-width: 5px 5px 0;
-  border-top-color: #000000;
+  border-top-color: #000;
 }
 .tooltip.right .tooltip-arrow {
   top: 50%;
   left: 0;
   margin-top: -5px;
   border-width: 5px 5px 5px 0;
-  border-right-color: #000000;
+  border-right-color: #000;
 }
 .tooltip.left .tooltip-arrow {
   top: 50%;
   right: 0;
   margin-top: -5px;
   border-width: 5px 0 5px 5px;
-  border-left-color: #000000;
+  border-left-color: #000;
 }
 .tooltip.bottom .tooltip-arrow {
   top: 0;
   left: 50%;
   margin-left: -5px;
   border-width: 0 5px 5px;
-  border-bottom-color: #000000;
+  border-bottom-color: #000;
 }
 .tooltip.bottom-left .tooltip-arrow {
   top: 0;
   right: 5px;
   margin-top: -5px;
   border-width: 0 5px 5px;
-  border-bottom-color: #000000;
+  border-bottom-color: #000;
 }
 .tooltip.bottom-right .tooltip-arrow {
   top: 0;
   left: 5px;
   margin-top: -5px;
   border-width: 0 5px 5px;
-  border-bottom-color: #000000;
+  border-bottom-color: #000;
 }
 .popover {
   position: absolute;
@@ -5933,9 +5933,9 @@ button.close {
   font-weight: normal;
   line-height: 1.42857143;
   text-align: left;
-  background-color: #ffffff;
+  background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -5995,7 +5995,7 @@ button.close {
   bottom: 1px;
   margin-left: -10px;
   border-bottom-width: 0;
-  border-top-color: #ffffff;
+  border-top-color: #fff;
 }
 .popover.right > .arrow {
   top: 50%;
@@ -6010,7 +6010,7 @@ button.close {
   left: 1px;
   bottom: -10px;
   border-left-width: 0;
-  border-right-color: #ffffff;
+  border-right-color: #fff;
 }
 .popover.bottom > .arrow {
   left: 50%;
@@ -6025,7 +6025,7 @@ button.close {
   top: 1px;
   margin-left: -10px;
   border-top-width: 0;
-  border-bottom-color: #ffffff;
+  border-bottom-color: #fff;
 }
 .popover.left > .arrow {
   top: 50%;
@@ -6039,7 +6039,7 @@ button.close {
   content: " ";
   right: 1px;
   border-right-width: 0;
-  border-left-color: #ffffff;
+  border-left-color: #fff;
   bottom: -10px;
 }
 .carousel {
@@ -6133,7 +6133,7 @@ button.close {
   opacity: 0.5;
   filter: alpha(opacity=50);
   font-size: 20px;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
@@ -6156,7 +6156,7 @@ button.close {
 .carousel-control:hover,
 .carousel-control:focus {
   outline: 0;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   opacity: 0.9;
   filter: alpha(opacity=90);
@@ -6211,7 +6211,7 @@ button.close {
   height: 10px;
   margin: 1px;
   text-indent: -999px;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   border-radius: 10px;
   cursor: pointer;
   background-color: #000 \9;
@@ -6221,7 +6221,7 @@ button.close {
   margin: 0;
   width: 12px;
   height: 12px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .carousel-caption {
   position: absolute;
@@ -6231,7 +6231,7 @@ button.close {
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
@@ -6651,7 +6651,7 @@ body #admin-menu .dropdown li {
 }
 @media screen and (min-width: 768px) {
   .navbar.container {
-    max-width: 737px;
+    max-width: 738px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -6895,7 +6895,7 @@ ul li.leaf {
   float: right;
 }
 .form-type-password-confirm .help-block {
-  border-left: 1px solid #dddddd;
+  border-left: 1px solid #ddd;
   display: inline-block;
   margin-left: 2em;
   padding-left: 2em;
@@ -7015,7 +7015,7 @@ a .glyphicon-spin {
   display: block;
 }
 .tabs-below > .nav-tabs {
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #ddd;
 }
 .tabs-below > .nav-tabs > li {
   margin-top: -1px;
@@ -7026,13 +7026,13 @@ a .glyphicon-spin {
 }
 .tabs-below > .nav-tabs > li > a:hover,
 .tabs-below > .nav-tabs > li > a:focus {
-  border-top-color: #dddddd;
+  border-top-color: #ddd;
   border-bottom-color: transparent;
 }
 .tabs-below > .nav-tabs > .active > a,
 .tabs-below > .nav-tabs > .active > a:hover,
 .tabs-below > .nav-tabs > .active > a:focus {
-  border-color: transparent #dddddd #dddddd #dddddd;
+  border-color: transparent #ddd #ddd #ddd;
 }
 .tabs-left > .nav-tabs,
 .tabs-right > .nav-tabs {
@@ -7062,7 +7062,7 @@ a .glyphicon-spin {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
   overflow: hidden;
   padding: 10px 15px;
 }
@@ -7075,12 +7075,12 @@ a .glyphicon-spin {
 }
 .tabs-left > .nav-tabs > li > a:hover,
 .tabs-left > .nav-tabs > li > a:focus {
-  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+  border-color: #eeeeee #ddd #eeeeee #eeeeee;
 }
 .tabs-left > .nav-tabs > .active > a,
 .tabs-left > .nav-tabs > .active > a:hover,
 .tabs-left > .nav-tabs > .active > a:focus {
-  border-color: #dddddd transparent #dddddd #dddddd;
+  border-color: #ddd transparent #ddd #ddd;
   -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.05);
@@ -7094,7 +7094,7 @@ a .glyphicon-spin {
 }
 .tabs-right > .nav-tabs > li > a:hover,
 .tabs-right > .nav-tabs > li > a:focus {
-  border-color: #eeeeee #eeeeee #eeeeee #dddddd;
+  border-color: #eeeeee #eeeeee #eeeeee #ddd;
   -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
@@ -7102,7 +7102,7 @@ a .glyphicon-spin {
 .tabs-right > .nav-tabs > .active > a,
 .tabs-right > .nav-tabs > .active > a:hover,
 .tabs-right > .nav-tabs > .active > a:focus {
-  border-color: #dddddd #dddddd #dddddd transparent;
+  border-color: #ddd #ddd #ddd transparent;
 }
 th.checkbox,
 td.checkbox,
@@ -7167,7 +7167,7 @@ div.image-style-new div.input-group {
 td.module,
 .table-striped > tbody > tr:nth-child(odd) > td.module,
 .table > tbody > tr > td.module {
-  background: #dddddd;
+  background: #ddd;
   font-weight: 700;
 }
 .book-toc > .dropdown-menu {
@@ -7302,7 +7302,7 @@ div.features-export-list .form-type-checkbox input[type=checkbox] {
 }
 .fa-border {
   padding: .2em .25em .15em;
-  border: solid 0.08em #eeeeee;
+  border: solid 0.08em #eee;
   border-radius: .1em;
 }
 .pull-right {
@@ -7425,7 +7425,7 @@ div.features-export-list .form-type-checkbox input[type=checkbox] {
   font-size: 2em;
 }
 .fa-inverse {
-  color: #ffffff;
+  color: #fff;
 }
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
@@ -8690,7 +8690,7 @@ form#user-login {
 }
 #user-create-account .login-register {
   border: none;
-  color: #ffffff;
+  color: #fff;
   -moz-border-radius: 0.25em;
   -webkit-border-radius: 0.25em;
   border-radius: 0.25em;
@@ -8706,7 +8706,7 @@ form#user-login {
   margin: 0;
 }
 #user-create-account .login-register:hover {
-  color: #ffffff;
+  color: #fff;
   background-image: -webkit-linear-gradient(top, #410008 0%, #a70014 100%);
   background-image: -o-linear-gradient(top, #410008 0%, #a70014 100%);
   background-image: linear-gradient(to bottom, #410008 0%, #a70014 100%);
@@ -8744,7 +8744,7 @@ form#user-login {
 }
 #user_login_form .form-actions-wrapper .form-actions .btn {
   border: none;
-  color: #ffffff;
+  color: #fff;
   -moz-border-radius: 0.25em;
   -webkit-border-radius: 0.25em;
   border-radius: 0.25em;
@@ -8759,7 +8759,7 @@ form#user-login {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2698f2', endColorstr='#ff0a62a8', GradientType=0);
 }
 #user_login_form .form-actions-wrapper .form-actions .btn:hover {
-  color: #ffffff;
+  color: #fff;
   background-image: -webkit-linear-gradient(top, #410008 0%, #a70014 100%);
   background-image: -o-linear-gradient(top, #410008 0%, #a70014 100%);
   background-image: linear-gradient(to bottom, #410008 0%, #a70014 100%);
@@ -8823,7 +8823,7 @@ form#user-login {
 #user-register-form .form-actions .btn,
 #user-pass .form-actions .btn {
   border: none;
-  color: #ffffff;
+  color: #fff;
   -moz-border-radius: 0.25em;
   -webkit-border-radius: 0.25em;
   border-radius: 0.25em;
@@ -8836,7 +8836,7 @@ form#user-login {
 }
 #user-register-form .form-actions .btn:hover,
 #user-pass .form-actions .btn:hover {
-  color: #ffffff;
+  color: #fff;
   background-image: -webkit-linear-gradient(top, #410008 0%, #a70014 100%);
   background-image: -o-linear-gradient(top, #410008 0%, #a70014 100%);
   background-image: linear-gradient(to bottom, #410008 0%, #a70014 100%);
@@ -8886,7 +8886,7 @@ form#user-login {
   font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
   font-size: 2em;
-  color: #ffffff;
+  color: #fff;
   height: 1.2em;
   background-image: none !important;
 }
@@ -8990,7 +8990,7 @@ form#user-login {
   margin: 0 -0.25em 0 0;
   padding: 0 10px;
   line-height: 1;
-  border-right: 1px solid #000000;
+  border-right: 1px solid #000;
 }
 #block-locale-language ul.language-switcher-locale-url > li.first {
   margin-left: 0;
@@ -9017,22 +9017,28 @@ form#user-login {
  *  Panels structure component
  * --------------------------------------------------*/
 .panel-display .panel-panel .panel-pane .pane-title {
+  margin: 30px 0 10px;
+}
+.panel-display .panel-panel .panel-pane .pane-title a {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.23em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
-  .panel-display .panel-panel .panel-pane .pane-title {
+  .panel-display .panel-panel .panel-pane .pane-title a {
     font-size: 3.54166667vw;
   }
 }
 @media screen and (min-width: 768px) {
-  .panel-display .panel-panel .panel-pane .pane-title {
+  .panel-display .panel-panel .panel-pane .pane-title a {
     font-size: 21px;
   }
+}
+.panel-display .panel-panel .panel-pane .pane-title a:hover {
+  color: #000;
 }
 .panel-display .panel-panel .panel-pane .more-link {
   padding: 20px 0;
@@ -9044,7 +9050,7 @@ form#user-login {
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 19px;
   text-align: center;
 }
@@ -9058,19 +9064,15 @@ form#user-login {
     font-size: 24px;
   }
 }
-.panel-display .panel-panel .panel-pane.pane-node:not(#front-about) {
-  border-top: 1.5px solid #222222;
+.page-about .panel-display .panel-panel .panel-pane.pane-node:not(#about-about) {
+  border-top: 1.5px solid #222;
 }
 .panel-display .panel-panel #front-banner,
-.panel-display .panel-panel #front-exhibition,
-.panel-display .panel-panel #front-magazine,
 .panel-display .panel-panel #front-about,
 .panel-display .panel-panel #front-blog {
   margin: 0 -9999px;
 }
 .panel-display .panel-panel #front-banner .pane-content,
-.panel-display .panel-panel #front-exhibition .pane-content,
-.panel-display .panel-panel #front-magazine .pane-content,
 .panel-display .panel-panel #front-about .pane-content,
 .panel-display .panel-panel #front-blog .pane-content {
   margin: 0 auto;
@@ -9078,8 +9080,6 @@ form#user-login {
 }
 @media (min-width: 480px) {
   .panel-display .panel-panel #front-banner .pane-content,
-  .panel-display .panel-panel #front-exhibition .pane-content,
-  .panel-display .panel-panel #front-magazine .pane-content,
   .panel-display .panel-panel #front-about .pane-content,
   .panel-display .panel-panel #front-blog .pane-content {
     width: 480px;
@@ -9087,17 +9087,13 @@ form#user-login {
 }
 @media (min-width: 768px) {
   .panel-display .panel-panel #front-banner .pane-content,
-  .panel-display .panel-panel #front-exhibition .pane-content,
-  .panel-display .panel-panel #front-magazine .pane-content,
   .panel-display .panel-panel #front-about .pane-content,
   .panel-display .panel-panel #front-blog .pane-content {
-    width: 767px;
+    width: 768px;
   }
 }
 @media (min-width: 1024px) {
   .panel-display .panel-panel #front-banner .pane-content,
-  .panel-display .panel-panel #front-exhibition .pane-content,
-  .panel-display .panel-panel #front-magazine .pane-content,
   .panel-display .panel-panel #front-about .pane-content,
   .panel-display .panel-panel #front-blog .pane-content {
     width: 1024px;
@@ -9105,8 +9101,6 @@ form#user-login {
 }
 @media (min-width: 1280px) {
   .panel-display .panel-panel #front-banner .pane-content,
-  .panel-display .panel-panel #front-exhibition .pane-content,
-  .panel-display .panel-panel #front-magazine .pane-content,
   .panel-display .panel-panel #front-about .pane-content,
   .panel-display .panel-panel #front-blog .pane-content {
     width: 1280px;
@@ -9115,17 +9109,14 @@ form#user-login {
 .panel-display .panel-panel #front-banner,
 .panel-display .panel-panel #front-about {
   padding-bottom: 50px;
-  background-color: #d9e9e1;
-}
-.panel-display .panel-panel #front-exhibition {
-  background-color: #d9e9e1;
+  background-color: #D9E9E1;
 }
 .panel-display .panel-panel #front-magazine {
   padding-bottom: 50px;
   background-color: #ffffff;
 }
 .panel-display .panel-panel #front-blog {
-  background-color: #f0ff00;
+  background-color: #F0FF00;
 }
 .panel-display .panel-panel #front-blog .pane-title {
   margin: 0;
@@ -9157,7 +9148,7 @@ form#user-login {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 15px;
 }
 @media screen and (min-width: 480px) {
@@ -9216,7 +9207,7 @@ form#user-login {
 .view-view-artists.view-display-id-block_3 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop ul.chosen-results li.result-selected,
 .view-exhibitions.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop ul.chosen-results li.result-selected,
 .view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop ul.chosen-results li.result-selected {
-  color: #268ec9;
+  color: #268EC9;
   background: none;
 }
 .view-view-artists.view-display-id-page .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes,
@@ -9256,14 +9247,14 @@ form#user-login {
 .view-view-artists.view-display-id-block_3 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox.highlight label,
 .view-exhibitions.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox.highlight label,
 .view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox.highlight label {
-  color: #268ec9;
+  color: #268EC9;
 }
 .view-view-artists.view-display-id-page .view-content,
 .view-view-artists.view-display-id-block_1 .view-content,
 .view-view-artists.view-display-id-block_3 .view-content,
 .view-exhibitions.view-display-id-page_1 .view-content,
 .view-exhibitions.view-display-id-block_1 .view-content {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .view-view-artists.view-display-id-page .view-content .views-row,
 .view-view-artists.view-display-id-block_1 .view-content .views-row,
@@ -9301,7 +9292,7 @@ form#user-login {
   }
 }
 .view-field-notes.view-display-id-block_1 .view-content {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .view-field-notes.view-display-id-block_1 .view-content .views-row {
   display: inline-block;
@@ -9319,428 +9310,6 @@ form#user-login {
   .view-field-notes.view-display-id-block_1 .view-content .views-row {
     width: 33.333333%;
   }
-}
-/*
- *  KFArtwork content type
- * --------------------------------------------------*/
-.node-kfartwork .row {
-  margin-bottom: 30px;
-}
-@media screen and (min-width: 768px) {
-  .node-kfartwork .row {
-    margin-bottom: 50px;
-  }
-}
-.node-kfartwork .row .col-sm-12 {
-  text-align: center;
-}
-.node-kfartwork .row .col-sm-12 .field-name-field-images {
-  margin-bottom: 10px;
-}
-.node-kfartwork .row .col-sm-12 .field-name-field-images .carousel .carousel-inner .item img {
-  width: 100%;
-}
-.node-kfartwork .row .col-sm-12 .field-name-field-images .carousel .carousel-control {
-  background: none;
-}
-.node-kfartwork .row .col-sm-12 .field-name-field-images .carousel .carousel-control.left {
-  top: 42.5%;
-  margin: 0 0 0 5%;
-  height: 15%;
-  background: transparent url(../images/slider_left.png) top left / contain no-repeat;
-}
-.node-kfartwork .row .col-sm-12 .field-name-field-images .carousel .carousel-control.right {
-  top: 42.5%;
-  margin: 0 5% 0 0;
-  height: 15%;
-  background: transparent url(../images/slider_right.png) top right / contain no-repeat;
-}
-.node-kfartwork .row .col-sm-12 .field-name-field-images .carousel .carousel-control span.glyphicon {
-  display: none;
-}
-.node-kfartwork .row .col-sm-12 .field-name-title {
-  display: inline-block;
-  font-family: BrandonGrotesque-Bold, "Arial", sans-serif;
-  font-size: 11px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #000000;
-  letter-spacing: 1.2px;
-}
-@media screen and (min-width: 768px) {
-  .node-kfartwork .row .col-sm-12 .field-name-title {
-    font-size: 18px;
-  }
-}
-.node-kfartwork .row .col-sm-12 .field-name-field-artist-name {
-  display: inline-block;
-  margin-left: 5px;
-  font-family: 'Droid Serif', serif;
-  font-size: 11px;
-  color: #000000;
-}
-@media screen and (min-width: 768px) {
-  .node-kfartwork .row .col-sm-12 .field-name-field-artist-name {
-    font-size: 18px;
-  }
-}
-.view .views-row-3 .node-kfartwork .row .col-sm-12 .field-name-field-artist-name {
-  font-size: 8px;
-}
-@media screen and (min-width: 768px) {
-  .view .views-row-3 .node-kfartwork .row .col-sm-12 .field-name-field-artist-name {
-    font-size: 12px;
-  }
-}
-/*
- *  KFPage content type
- * --------------------------------------------------*/
-.node-kfpage .row .col-sm-12.bg-image-topleft {
-  background: no-repeat left top / 25% auto;
-}
-.node-kfpage .row .col-sm-12.bg-image-topcenter {
-  background: no-repeat center top / 25% auto;
-}
-.node-kfpage .row .col-sm-12.bg-image-topright {
-  background: no-repeat right top / 25% auto;
-}
-.node-kfpage .row .col-sm-12.bg-image-centerleft {
-  background: no-repeat left center / 25% auto;
-}
-.node-kfpage .row .col-sm-12.bg-image-center {
-  background: no-repeat center center / 25% auto;
-}
-.node-kfpage .row .col-sm-12.bg-image-centerright {
-  background: no-repeat right center / 25% auto;
-}
-.node-kfpage .row .col-sm-12.bg-image-bottomleft {
-  background: no-repeat left bottom / 25% auto;
-}
-.node-kfpage .row .col-sm-12.bg-image-bottomcenter {
-  background: no-repeat center bottom / 25% auto;
-}
-.node-kfpage .row .col-sm-12.bg-image-bottomright {
-  background: no-repeat right bottom / 25% auto;
-}
-.node-kfpage .row .col-sm-12.bg-image-full {
-  background: no-repeat left top / cover;
-}
-.node-kfpage .row .col-sm-12 div.bg-image-webform {
-  background: no-repeat left top / cover;
-}
-.node-kfpage .row .col-sm-12 .field-name-body .field-item h1,
-.node-kfpage .row .col-sm-12 .field-name-field-text .field-item h1,
-.node-kfpage .row .col-sm-12 .field-name-body .field-item h2,
-.node-kfpage .row .col-sm-12 .field-name-field-text .field-item h2,
-.node-kfpage .row .col-sm-12 .field-name-body .field-item h3,
-.node-kfpage .row .col-sm-12 .field-name-field-text .field-item h3,
-.node-kfpage .row .col-sm-12 .field-name-body .field-item h4,
-.node-kfpage .row .col-sm-12 .field-name-field-text .field-item h4,
-.node-kfpage .row .col-sm-12 .field-name-body .field-item h5,
-.node-kfpage .row .col-sm-12 .field-name-field-text .field-item h5,
-.node-kfpage .row .col-sm-12 .field-name-body .field-item h6,
-.node-kfpage .row .col-sm-12 .field-name-field-text .field-item h6 {
-  margin-bottom: 10px;
-  font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
-  font-size: 3vw;
-  letter-spacing: 1.2px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-}
-@media screen and (min-width: 768px) {
-  .node-kfpage .row .col-sm-12 .field-name-body .field-item h1,
-  .node-kfpage .row .col-sm-12 .field-name-field-text .field-item h1,
-  .node-kfpage .row .col-sm-12 .field-name-body .field-item h2,
-  .node-kfpage .row .col-sm-12 .field-name-field-text .field-item h2,
-  .node-kfpage .row .col-sm-12 .field-name-body .field-item h3,
-  .node-kfpage .row .col-sm-12 .field-name-field-text .field-item h3,
-  .node-kfpage .row .col-sm-12 .field-name-body .field-item h4,
-  .node-kfpage .row .col-sm-12 .field-name-field-text .field-item h4,
-  .node-kfpage .row .col-sm-12 .field-name-body .field-item h5,
-  .node-kfpage .row .col-sm-12 .field-name-field-text .field-item h5,
-  .node-kfpage .row .col-sm-12 .field-name-body .field-item h6,
-  .node-kfpage .row .col-sm-12 .field-name-field-text .field-item h6 {
-    font-size: 21px;
-  }
-}
-.node-kfpage .row .col-sm-12 .field-name-body .field-item p,
-.node-kfpage .row .col-sm-12 .field-name-field-text .field-item p {
-  margin-bottom: 40px;
-}
-.node-kfpage .row .col-sm-12 .field-name-body .field-item p:last-child,
-.node-kfpage .row .col-sm-12 .field-name-field-text .field-item p:last-child {
-  margin-bottom: 23px;
-}
-@media screen and (min-width: 768px) {
-  .node-kfpage .row .col-sm-12 .field-name-body .field-item p,
-  .node-kfpage .row .col-sm-12 .field-name-field-text .field-item p {
-    margin-bottom: 70px;
-  }
-  .node-kfpage .row .col-sm-12 .field-name-body .field-item p:last-child,
-  .node-kfpage .row .col-sm-12 .field-name-field-text .field-item p:last-child {
-    margin-bottom: 40px;
-  }
-}
-.node-kfpage .row .col-sm-12 .field-name-body .field-item a,
-.node-kfpage .row .col-sm-12 .field-name-field-text .field-item a {
-  border-bottom: 1px solid #000000;
-}
-.node-kfpage .row .col-sm-12 .field-name-body .field-item a:hover,
-.node-kfpage .row .col-sm-12 .field-name-field-text .field-item a:hover,
-.node-kfpage .row .col-sm-12 .field-name-body .field-item a.active,
-.node-kfpage .row .col-sm-12 .field-name-field-text .field-item a.active {
-  text-decoration: none;
-  border-bottom: none;
-}
-.node-kfpage .row .col-sm-12 .field-name-body .field-item tbody td,
-.node-kfpage .row .col-sm-12 .field-name-field-text .field-item tbody td {
-  font-family: 'BrandonText-Regular', sans-serif;
-  font-size: 16px;
-}
-.node-kfpage .row .col-sm-12 .field-name-body .field-item pre,
-.node-kfpage .row .col-sm-12 .field-name-field-text .field-item pre,
-.node-kfpage .row .col-sm-12 .field-name-body .field-item address,
-.node-kfpage .row .col-sm-12 .field-name-field-text .field-item address {
-  font-family: 'BrandonText-RegularItalic', sans-serif;
-  font-size: 16px;
-}
-.node-kfpage .row .col-sm-12 .field-name-body .field-item hr,
-.node-kfpage .row .col-sm-12 .field-name-field-text .field-item hr {
-  border: 0;
-  border-bottom: 2px solid #000000;
-  background: none;
-}
-.node-kfpage .row .col-sm-12 .field-name-body .field-item img,
-.node-kfpage .row .col-sm-12 .field-name-field-text .field-item img,
-.node-kfpage .row .col-sm-12 .field-name-body .field-item embed,
-.node-kfpage .row .col-sm-12 .field-name-field-text .field-item embed,
-.node-kfpage .row .col-sm-12 .field-name-body .field-item video,
-.node-kfpage .row .col-sm-12 .field-name-field-text .field-item video,
-.node-kfpage .row .col-sm-12 .field-name-body .field-item audio,
-.node-kfpage .row .col-sm-12 .field-name-field-text .field-item audio,
-.node-kfpage .row .col-sm-12 .field-name-body .field-item iframe,
-.node-kfpage .row .col-sm-12 .field-name-field-text .field-item iframe {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-.node-kfpage .row .col-sm-12 .webform-client-form {
-  margin-bottom: 20px;
-  padding: 90px 0 30px;
-  width: 100%;
-}
-.node-kfpage .row .col-sm-12 .webform-client-form .webform-component {
-  /* webform component */
-  overflow: hidden;
-  margin: 0 auto 30px;
-  padding: 15px 25px;
-  max-width: 100%;
-  background-color: #fff;
-}
-.node-kfpage .row .col-sm-12 .webform-client-form .webform-component.webform-container-inline {
-  position: relative;
-}
-.node-kfpage .row .col-sm-12 .webform-client-form .webform-component.webform-container-inline label,
-.node-kfpage .row .col-sm-12 .webform-client-form .webform-component.webform-container-inline input {
-  display: inline-block;
-}
-.node-kfpage .row .col-sm-12 .webform-client-form .webform-component.webform-container-inline input.form-text {
-  position: absolute;
-  right: 20px;
-  width: 40%;
-}
-@media screen and (min-width: 480px) {
-  .node-kfpage .row .col-sm-12 .webform-client-form .webform-component.webform-container-inline input.form-text {
-    width: 50%;
-  }
-}
-.node-kfpage .row .col-sm-12 .webform-client-form .webform-component div.description {
-  display: inline-block;
-}
-.node-kfpage .row .col-sm-12 .webform-client-form .webform-component label {
-  font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
-  font-size: 2.6vw;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  color: #000000;
-  margin: 5px 10px 10px 0;
-  padding: 0;
-  width: auto;
-  font-family: 'BrandonText-Bold', sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 1.5em;
-  text-align: left;
-  color: #ffffff;
-}
-@media screen and (min-width: 768px) {
-  .node-kfpage .row .col-sm-12 .webform-client-form .webform-component label {
-    font-size: 21px;
-  }
-}
-.node-kfpage .row .col-sm-12 .webform-client-form .webform-component label span.form-required {
-  color: #000000;
-}
-.node-kfpage .row .col-sm-12 .webform-client-form .webform-component input,
-.node-kfpage .row .col-sm-12 .webform-client-form .webform-component textarea {
-  overflow: hidden;
-  font-family: 'Droid Serif', serif;
-  font-size: 2.3vw;
-  letter-spacing: 1.1px;
-  text-align: left;
-  color: #000000;
-  border-radius: 0;
-  box-shadow: none;
-  border: none;
-  border-bottom: 1px solid #000000;
-}
-@media screen and (min-width: 768px) {
-  .node-kfpage .row .col-sm-12 .webform-client-form .webform-component input,
-  .node-kfpage .row .col-sm-12 .webform-client-form .webform-component textarea {
-    font-size: 18px;
-  }
-}
-.node-kfpage .row .col-sm-12 .webform-client-form .webform-component .form-textarea-wrapper div.grippie {
-  display: none;
-}
-.node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] {
-  /* multi-file upload container */
-  overflow: auto;
-  margin: 0 auto 30px;
-  max-width: 100%;
-  background-color: #fff;
-}
-.node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] fieldset {
-  min-width: 350px;
-  padding: 15px 25px;
-  border: none;
-}
-.node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] fieldset .panel-heading {
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-.node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] fieldset .panel-heading .panel-title {
-  font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
-  font-size: 2.6vw;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  color: #000000;
-  margin: 5px 10px 10px 0;
-  padding: 0;
-  width: auto;
-  font-family: 'BrandonText-Bold', sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 1.5em;
-  text-align: left;
-  color: #ffffff;
-}
-@media screen and (min-width: 768px) {
-  .node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] fieldset .panel-heading .panel-title {
-    font-size: 21px;
-  }
-}
-.node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] fieldset .panel-heading .panel-title span.form-required {
-  color: #000000;
-}
-.node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] fieldset .panel-body {
-  padding: 0;
-}
-.node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] fieldset .panel-body .table-responsive table tbody button {
-  padding: 1.3em 1em;
-  font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
-  font-size: 2vw;
-  letter-spacing: 1.2px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-  border: none;
-  border-radius: 0;
-  background-color: #000000;
-  padding: 0.8em 1em;
-}
-@media screen and (min-width: 768px) {
-  .node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] fieldset .panel-body .table-responsive table tbody button {
-    font-size: 14px;
-  }
-}
-.node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] fieldset .panel-body .table-responsive table tbody button:hover {
-  background-color: #262626;
-}
-.node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] fieldset .panel-body .webform-component-multiple-file {
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-}
-.node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] fieldset .panel-body .webform-component-multiple-file label {
-  font-size: 2vw;
-}
-@media screen and (min-width: 768px) {
-  .node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] fieldset .panel-body .webform-component-multiple-file label {
-    font-size: 16px;
-  }
-}
-.node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] fieldset .panel-body .webform-component-multiple-file .form-managed-file input {
-  position: relative;
-  float: none;
-  text-align: left;
-  width: 70%;
-}
-@media screen and (min-width: 768px) {
-  .node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] fieldset .panel-body .webform-component-multiple-file .form-managed-file input {
-    width: 74%;
-  }
-}
-.node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] fieldset .panel-body .webform-component-multiple-file .form-managed-file span.input-group-btn {
-  display: inline-block;
-  margin-left: 1%;
-}
-.node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] fieldset .panel-body .webform-component-multiple-file .form-managed-file span.input-group-btn button {
-  padding: 1.3em 1em;
-  font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
-  font-size: 3vw;
-  letter-spacing: 1.2px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-  border: none;
-  border-radius: 0;
-  background-color: #000000;
-}
-@media screen and (min-width: 768px) {
-  .node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] fieldset .panel-body .webform-component-multiple-file .form-managed-file span.input-group-btn button {
-    font-size: 21px;
-  }
-}
-.node-kfpage .row .col-sm-12 .webform-client-form [id$=ajax-wrapper] fieldset .panel-body .webform-component-multiple-file .form-managed-file span.input-group-btn button:hover {
-  background-color: #262626;
-}
-.node-kfpage .row .col-sm-12 .webform-client-form div.form-actions {
-  /* form buttons */
-  margin: 0 auto 30px;
-  max-width: 100%;
-}
-.node-kfpage .row .col-sm-12 .webform-client-form div.form-actions button {
-  padding: 1.3em 1em;
-  font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
-  font-size: 3vw;
-  letter-spacing: 1.2px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-  border: none;
-  border-radius: 0;
-  background-color: #000000;
-}
-@media screen and (min-width: 768px) {
-  .node-kfpage .row .col-sm-12 .webform-client-form div.form-actions button {
-    font-size: 21px;
-  }
-}
-.node-kfpage .row .col-sm-12 .webform-client-form div.form-actions button:hover {
-  background-color: #262626;
 }
 /*
  *  Node page component
@@ -9767,13 +9336,17 @@ form#user-login {
   }
 }
 .node.node-page.view-mode-full .row div.col-sm-12 .field-name-title h2 {
+  display: block;
+  overflow: hidden;
   margin: 0 0 30px;
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 29px;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 @media screen and (min-width: 480px) {
   .node.node-page.view-mode-full .row div.col-sm-12 .field-name-title h2 {
@@ -9837,13 +9410,6 @@ form#user-login {
 .node.node-page.view-mode-full .row div.col-sm-12 .field-name-body tbody td {
   font-family: 'BrandonText-Regular', sans-serif;
   font-size: 15px;
-  -ms-word-break: break-all;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
 }
 @media screen and (min-width: 480px) {
   .node.node-page.view-mode-full .row div.col-sm-12 .field-name-body p,
@@ -9863,7 +9429,7 @@ form#user-login {
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 19px;
 }
 @media screen and (min-width: 480px) {
@@ -9884,7 +9450,7 @@ form#user-login {
   line-height: 1.23em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -9905,7 +9471,7 @@ form#user-login {
   line-height: 1.15em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 29px;
 }
 @media screen and (min-width: 480px) {
@@ -9925,7 +9491,7 @@ form#user-login {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 15px;
 }
 @media screen and (min-width: 480px) {
@@ -9945,7 +9511,7 @@ form#user-login {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.23em;
   text-align: center;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -10012,13 +9578,13 @@ form#user-login {
 }
 .node.node-page.view-mode-full .row div.col-sm-12 .field-name-body a:hover,
 .node.node-page.view-mode-full .row div.col-sm-12 .field-name-body a:focus {
-  color: #268ec9;
+  color: #268EC9;
   text-decoration: none;
   background: none;
 }
 .node.node-page.view-mode-full .row div.col-sm-12 .field-name-body hr {
   border: 0;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #000;
   background: none;
 }
 .node.node-page.view-mode-full .row div.col-sm-12 .field-name-body img,
@@ -10057,25 +9623,6 @@ form#user-login {
 @media screen and (min-width: 1280px) {
   .node.node-page.view-mode-front .row div.col-sm-12 {
     max-width: 635px;
-  }
-}
-.node.node-page.view-mode-front .row div.col-sm-12 .field-name-title h2 {
-  margin: 0 0 30px;
-  font-family: 'BrandonText-Bold', sans-serif;
-  line-height: 1.15em;
-  text-transform: uppercase;
-  text-align: left;
-  color: #000000;
-  font-size: 29px;
-}
-@media screen and (min-width: 480px) {
-  .node.node-page.view-mode-front .row div.col-sm-12 .field-name-title h2 {
-    font-size: 6.04166667vw;
-  }
-}
-@media screen and (min-width: 768px) {
-  .node.node-page.view-mode-front .row div.col-sm-12 .field-name-title h2 {
-    font-size: 46px;
   }
 }
 .node.node-page.view-mode-front .row div.col-sm-12 .field-name-body h1,
@@ -10130,13 +9677,6 @@ form#user-login {
 .node.node-page.view-mode-front .row div.col-sm-12 .field-name-body tbody td {
   font-family: 'BrandonText-Regular', sans-serif;
   font-size: 15px;
-  -ms-word-break: break-all;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
 }
 @media screen and (min-width: 480px) {
   .node.node-page.view-mode-front .row div.col-sm-12 .field-name-body p,
@@ -10156,7 +9696,7 @@ form#user-login {
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 19px;
 }
 @media screen and (min-width: 480px) {
@@ -10177,7 +9717,7 @@ form#user-login {
   line-height: 1.23em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -10198,7 +9738,7 @@ form#user-login {
   line-height: 1.15em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 29px;
 }
 @media screen and (min-width: 480px) {
@@ -10218,7 +9758,7 @@ form#user-login {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 15px;
 }
 @media screen and (min-width: 480px) {
@@ -10238,7 +9778,7 @@ form#user-login {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.23em;
   text-align: center;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -10305,13 +9845,13 @@ form#user-login {
 }
 .node.node-page.view-mode-front .row div.col-sm-12 .field-name-body a:hover,
 .node.node-page.view-mode-front .row div.col-sm-12 .field-name-body a:focus {
-  color: #268ec9;
+  color: #268EC9;
   text-decoration: none;
   background: none;
 }
 .node.node-page.view-mode-front .row div.col-sm-12 .field-name-body hr {
   border: 0;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #000;
   background: none;
 }
 .node.node-page.view-mode-front .row div.col-sm-12 .field-name-body img,
@@ -10339,6 +9879,10 @@ form#user-login {
 }
 .node.node-page.view-mode-front .row div.col-sm-12 .field-name-body p.kf-style2 {
   text-transform: none;
+}
+.node.node-page.view-mode-front .row div.col-sm-12 .field-name-body p.kf-style3,
+.node.node-page.view-mode-front .row div.col-sm-12 .field-name-body p.kf-style4 {
+  text-align: center;
 }
 /*
  *  Node / block webform component
@@ -10375,17 +9919,17 @@ ul.webform-submission-actions li a {
   padding: 5px 10px;
   font-family: 'BrandonText-Regular', sans-serif;
   font-size: 16px;
-  color: #000000;
+  color: #000;
   text-decoration: none;
   border-radius: 3px;
-  border: 2px solid #000000;
+  border: 2px solid #000;
   background: none;
   outline: none;
 }
 ul.webform-submission-actions li a:hover,
 ul.webform-submission-actions li a:active {
   color: #fff;
-  background: #000000 none;
+  background: #000 none;
   outline: none;
 }
 .webform-submission {
@@ -10432,7 +9976,7 @@ form.webform-client-form fieldset.panel .panel-heading {
 form.webform-client-form fieldset.panel .panel-heading .panel-title {
   display: block;
   font-family: 'BrandonText-Bold', sans-serif;
-  color: #000000;
+  color: #000;
   text-align: center;
   font-size: 26px;
 }
@@ -10479,12 +10023,12 @@ form.webform-client-form [id$=ajax-wrapper] .table-responsive table tbody tr.dra
   line-height: 1;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
   outline: none;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
   background-color: #777777;
   font-size: 14px;
 }
@@ -10492,7 +10036,7 @@ form.webform-client-form [id$=ajax-wrapper] .table-responsive table tbody tr.dra
 form.webform-client-form [id$=ajax-wrapper] .table-responsive table tbody tr.draggable td button:focus {
   color: #777777;
   border: 2px solid #777777;
-  background: #ffffff;
+  background: #fff;
 }
 form.webform-client-form [id$=ajax-wrapper] .webform-component-multiple-file {
   margin: 0;
@@ -10517,12 +10061,12 @@ form.webform-client-form [id$=ajax-wrapper] .webform-component-multiple-file .fo
   line-height: 1;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
   outline: none;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
   background-color: #777777;
   font-size: 16px;
   z-index: 10;
@@ -10531,7 +10075,7 @@ form.webform-client-form [id$=ajax-wrapper] .webform-component-multiple-file .fo
 form.webform-client-form [id$=ajax-wrapper] .webform-component-multiple-file .form-managed-file .input-group-btn button:focus {
   color: #777777;
   border: 2px solid #777777;
-  background: #ffffff;
+  background: #fff;
 }
 form.webform-client-form .webform-component {
   margin: 0 auto 15px;
@@ -10540,11 +10084,6 @@ form.webform-client-form .webform-component {
   background-color: #fff;
 }
 form.webform-client-form .webform-component .control-label {
-  font-family: BrandonGrotesque-Black, "Arial Black", sans-serif;
-  font-size: 2.6vw;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  color: #000000;
   margin: 5px 10px 10px 0;
   padding: 0;
   width: auto;
@@ -10553,15 +10092,10 @@ form.webform-client-form .webform-component .control-label {
   font-weight: normal;
   line-height: 1.5em;
   text-align: left;
-  color: #ffffff;
-}
-@media screen and (min-width: 768px) {
-  form.webform-client-form .webform-component .control-label {
-    font-size: 21px;
-  }
+  color: #fff;
 }
 form.webform-client-form .webform-component .control-label span.form-required {
-  color: #000000;
+  color: #000;
 }
 form.webform-client-form .webform-component div.description {
   display: block;
@@ -10578,13 +10112,13 @@ form.webform-client-form .webform-component textarea {
   font-size: 18px;
   line-height: 1.5em;
   text-align: left;
-  color: #000000;
+  color: #000;
   box-shadow: none;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   border: 1px solid #777777;
-  background-color: #eeeeee;
+  background-color: #eee;
 }
 form.webform-client-form .webform-component input:focus,
 form.webform-client-form .webform-component textarea:focus {
@@ -10603,12 +10137,12 @@ form.webform-client-form .webform-component select {
   font-size: 18px;
   line-height: 1.2em;
   text-align: left;
-  color: #000000;
+  color: #000;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   border: 1px solid #777777;
-  background-color: #eeeeee;
+  background-color: #eee;
   outline: none;
 }
 form.webform-client-form .webform-component select:focus,
@@ -10643,12 +10177,12 @@ form.webform-client-form .webform-component .form-managed-file button.btn {
   line-height: 1;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
   outline: none;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
   background-color: #777777;
   z-index: 10;
 }
@@ -10656,7 +10190,7 @@ form.webform-client-form .webform-component .form-managed-file button.btn:hover,
 form.webform-client-form .webform-component .form-managed-file button.btn:focus {
   color: #777777;
   border: 2px solid #777777;
-  background: #ffffff;
+  background: #fff;
 }
 form.webform-client-form .webform-component.webform-component-markup {
   margin-bottom: 25px;
@@ -10674,7 +10208,7 @@ form.webform-client-form .webform-component.webform-component-markup p {
   font-size: 15px;
   line-height: 22px;
   text-align: left;
-  color: #000000;
+  color: #000;
 }
 @media screen and (min-width: 480px) {
   form.webform-client-form .webform-component.webform-component-markup p {
@@ -10731,12 +10265,12 @@ form.webform-client-form div.form-actions button.webform-submit {
   line-height: 1;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
   outline: none;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
   background-color: #777777;
   padding: 15px 20px;
 }
@@ -10744,7 +10278,7 @@ form.webform-client-form div.form-actions button.webform-submit:hover,
 form.webform-client-form div.form-actions button.webform-submit:focus {
   color: #777777;
   border: 2px solid #777777;
-  background: #ffffff;
+  background: #fff;
 }
 /*
  *  Node article component
@@ -10782,20 +10316,17 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-article.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-title h2,
 .node.node-article.view-mode-default > .row > div.col-sm-12 > div.group-inner-node .field-name-title h2 {
+  display: block;
+  overflow: hidden;
   margin: 0 0 30px;
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 29px;
-  -ms-word-break: break-all;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 @media screen and (min-width: 480px) {
   .node.node-article.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-title h2,
@@ -10894,13 +10425,6 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-default > .row > div.col-sm-12 > div.group-inner-node .field-name-body tbody td {
   font-family: 'BrandonText-Regular', sans-serif;
   font-size: 15px;
-  -ms-word-break: break-all;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
 }
 @media screen and (min-width: 480px) {
   .node.node-article.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body p,
@@ -10926,7 +10450,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 19px;
 }
 @media screen and (min-width: 480px) {
@@ -10953,7 +10477,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.23em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -10980,7 +10504,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.15em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 29px;
 }
 @media screen and (min-width: 480px) {
@@ -11006,7 +10530,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 15px;
 }
 @media screen and (min-width: 480px) {
@@ -11032,7 +10556,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.23em;
   text-align: center;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -11118,14 +10642,14 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-default > .row > div.col-sm-12 > div.group-inner-node .field-name-body a:hover,
 .node.node-article.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body a:focus,
 .node.node-article.view-mode-default > .row > div.col-sm-12 > div.group-inner-node .field-name-body a:focus {
-  color: #268ec9;
+  color: #268EC9;
   text-decoration: none;
   background: none;
 }
 .node.node-article.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body hr,
 .node.node-article.view-mode-default > .row > div.col-sm-12 > div.group-inner-node .field-name-body hr {
   border: 0;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #000;
   background: none;
 }
 .node.node-article.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body img,
@@ -11164,30 +10688,30 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-teaser > .row > div.col-sm-12 {
   width: 100%;
 }
-.node.node-article.view-mode-teaser > .row > div.col-sm-12 .field-name-title h2 {
+.node.node-article.view-mode-teaser > .row > div.col-sm-12 .field-name-title .field-item a {
+  display: block;
+  overflow: hidden;
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 29px;
-  -ms-word-break: break-all;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 @media screen and (min-width: 480px) {
-  .node.node-article.view-mode-teaser > .row > div.col-sm-12 .field-name-title h2 {
+  .node.node-article.view-mode-teaser > .row > div.col-sm-12 .field-name-title .field-item a {
     font-size: 6.04166667vw;
   }
 }
 @media screen and (min-width: 768px) {
-  .node.node-article.view-mode-teaser > .row > div.col-sm-12 .field-name-title h2 {
+  .node.node-article.view-mode-teaser > .row > div.col-sm-12 .field-name-title .field-item a {
     font-size: 46px;
   }
+}
+.node.node-article.view-mode-teaser > .row > div.col-sm-12 .field-name-title .field-item a:hover {
+  text-decoration: none;
 }
 .node.node-article.view-mode-teaser > .row > div.col-sm-12 .field-name-body {
   margin: 20px auto;
@@ -11244,13 +10768,6 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-teaser > .row > div.col-sm-12 .field-name-body tbody td {
   font-family: 'BrandonText-Regular', sans-serif;
   font-size: 15px;
-  -ms-word-break: break-all;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
 }
 @media screen and (min-width: 480px) {
   .node.node-article.view-mode-teaser > .row > div.col-sm-12 .field-name-body p,
@@ -11270,7 +10787,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 19px;
 }
 @media screen and (min-width: 480px) {
@@ -11291,7 +10808,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.23em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -11312,7 +10829,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.15em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 29px;
 }
 @media screen and (min-width: 480px) {
@@ -11332,7 +10849,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 15px;
 }
 @media screen and (min-width: 480px) {
@@ -11352,7 +10869,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.23em;
   text-align: center;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -11419,13 +10936,13 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-article.view-mode-teaser > .row > div.col-sm-12 .field-name-body a:hover,
 .node.node-article.view-mode-teaser > .row > div.col-sm-12 .field-name-body a:focus {
-  color: #268ec9;
+  color: #268EC9;
   text-decoration: none;
   background: none;
 }
 .node.node-article.view-mode-teaser > .row > div.col-sm-12 .field-name-body hr {
   border: 0;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #000;
   background: none;
 }
 .node.node-article.view-mode-teaser > .row > div.col-sm-12 .field-name-body img,
@@ -11455,7 +10972,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 15px;
 }
 @media screen and (min-width: 480px) {
@@ -11473,24 +10990,24 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
  * --------------------------------------------------*/
 .node.node-artist.view-mode-full > .row > div.col-sm-12 {
   width: 100%;
-  background: url(../images/KF_Dreieck.png) no-repeat 15px 180px;
+  background: url(../images/KF_Dreieck.png) no-repeat 15px 170px;
   background-size: 18% auto;
 }
 @media screen and (min-width: 480px) {
   .node.node-artist.view-mode-full > .row > div.col-sm-12 {
-    background: url(../images/KF_Dreieck.png) no-repeat 15px 290px;
+    background: url(../images/KF_Dreieck.png) no-repeat 15px 246px;
     background-size: 18% auto;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-artist.view-mode-full > .row > div.col-sm-12 {
-    background: url(../images/KF_Dreieck.png) no-repeat 15px 410px;
+    background: url(../images/KF_Dreieck.png) no-repeat 15px 393px;
     background-size: 18% auto;
   }
 }
 @media screen and (min-width: 1024px) {
   .node.node-artist.view-mode-full > .row > div.col-sm-12 {
-    background: url(../images/KF_Dreieck.png) no-repeat 15px 520px;
+    background: url(../images/KF_Dreieck.png) no-repeat 15px 524px;
     background-size: 18% auto;
   }
 }
@@ -11511,21 +11028,21 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   margin-top: 0;
 }
 .node.node-artist.view-mode-full > .row > div.col-sm-12 .field-name-field-images .field-item .carousel > .carousel-inner .item div {
-  height: 180px !important;
+  height: 170px !important;
 }
 @media screen and (min-width: 480px) {
   .node.node-artist.view-mode-full > .row > div.col-sm-12 .field-name-field-images .field-item .carousel > .carousel-inner .item div {
-    height: 290px !important;
+    height: 246px !important;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-artist.view-mode-full > .row > div.col-sm-12 .field-name-field-images .field-item .carousel > .carousel-inner .item div {
-    height: 410px !important;
+    height: 393px !important;
   }
 }
 @media screen and (min-width: 1024px) {
   .node.node-artist.view-mode-full > .row > div.col-sm-12 .field-name-field-images .field-item .carousel > .carousel-inner .item div {
-    height: 520px !important;
+    height: 524px !important;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -11601,13 +11118,17 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   }
 }
 .node.node-artist.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-title h2 {
+  display: block;
+  overflow: hidden;
   margin: 0 0 30px;
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 29px;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 @media screen and (min-width: 480px) {
   .node.node-artist.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-title h2 {
@@ -11629,7 +11150,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.23em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -11648,7 +11169,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   width: 25%;
   left: 0;
   bottom: -30px;
-  border-bottom: 1.5px solid #222222;
+  border-bottom: 1.5px solid #222;
 }
 .node.node-artist.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-field-homepage .field-item > a,
 .node.node-artist.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-field-interview-audio .field-item > a,
@@ -11657,7 +11178,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 16px;
 }
 @media screen and (min-width: 480px) {
@@ -11684,7 +11205,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-artist.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-field-interview-audio .field-item > a:focus,
 .node.node-artist.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-field-homepage .field-item > span:focus,
 .node.node-artist.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-field-interview-audio .field-item > span:focus {
-  color: #268ec9;
+  color: #268EC9;
   text-decoration: none;
   background: none;
 }
@@ -11752,13 +11273,6 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-artist.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body .field-item tbody td {
   font-family: 'BrandonText-Regular', sans-serif;
   font-size: 15px;
-  -ms-word-break: break-all;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
 }
 @media screen and (min-width: 480px) {
   .node.node-artist.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body .field-item p,
@@ -11778,7 +11292,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 19px;
 }
 @media screen and (min-width: 480px) {
@@ -11799,7 +11313,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.23em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -11820,7 +11334,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.15em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 29px;
 }
 @media screen and (min-width: 480px) {
@@ -11840,7 +11354,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 15px;
 }
 @media screen and (min-width: 480px) {
@@ -11860,7 +11374,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.23em;
   text-align: center;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -11927,13 +11441,13 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-artist.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body .field-item a:hover,
 .node.node-artist.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body .field-item a:focus {
-  color: #268ec9;
+  color: #268EC9;
   text-decoration: none;
   background: none;
 }
 .node.node-artist.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body .field-item hr {
   border: 0;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #000;
   background: none;
 }
 .node.node-artist.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body .field-item img,
@@ -11965,7 +11479,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   width: 25%;
   left: 0;
   bottom: -30px;
-  border-bottom: 1.5px solid #222222;
+  border-bottom: 1.5px solid #222;
 }
 .node.node-artist.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-field-interview-text {
   margin: 0 auto 30px;
@@ -11975,7 +11489,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 16px;
 }
 @media screen and (min-width: 480px) {
@@ -12040,13 +11554,6 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-artist.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-field-interview-text tbody td {
   font-family: 'BrandonText-Regular', sans-serif;
   font-size: 15px;
-  -ms-word-break: break-all;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
 }
 @media screen and (min-width: 480px) {
   .node.node-artist.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-field-interview-text p,
@@ -12066,7 +11573,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 19px;
 }
 @media screen and (min-width: 480px) {
@@ -12087,7 +11594,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.23em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -12108,7 +11615,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.15em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 29px;
 }
 @media screen and (min-width: 480px) {
@@ -12128,7 +11635,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 15px;
 }
 @media screen and (min-width: 480px) {
@@ -12148,7 +11655,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.23em;
   text-align: center;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -12215,13 +11722,13 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-artist.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-field-interview-text a:hover,
 .node.node-artist.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-field-interview-text a:focus {
-  color: #268ec9;
+  color: #268EC9;
   text-decoration: none;
   background: none;
 }
 .node.node-artist.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-field-interview-text hr {
   border: 0;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #000;
   background: none;
 }
 .node.node-artist.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-field-interview-text img,
@@ -12257,12 +11764,16 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   max-width: 70%;
 }
 .node.node-artist.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-title .field-item a {
+  display: block;
+  overflow: hidden;
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 29px;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 @media screen and (min-width: 480px) {
   .node.node-artist.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-title .field-item a {
@@ -12273,6 +11784,9 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-artist.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-title .field-item a {
     font-size: 46px;
   }
+}
+.node.node-artist.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-title .field-item a:hover {
+  text-decoration: none;
 }
 .node.node-artist.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-body {
   position: relative;
@@ -12330,13 +11844,6 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-artist.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-body .field-item tbody td {
   font-family: 'BrandonText-Regular', sans-serif;
   font-size: 15px;
-  -ms-word-break: break-all;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
 }
 @media screen and (min-width: 480px) {
   .node.node-artist.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-body .field-item p,
@@ -12356,7 +11863,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 19px;
 }
 @media screen and (min-width: 480px) {
@@ -12377,7 +11884,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.23em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -12398,7 +11905,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.15em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 29px;
 }
 @media screen and (min-width: 480px) {
@@ -12418,7 +11925,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 15px;
 }
 @media screen and (min-width: 480px) {
@@ -12438,7 +11945,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.23em;
   text-align: center;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -12505,13 +12012,13 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-artist.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-body .field-item a:hover,
 .node.node-artist.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-body .field-item a:focus {
-  color: #268ec9;
+  color: #268EC9;
   text-decoration: none;
   background: none;
 }
 .node.node-artist.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-body .field-item hr {
   border: 0;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #000;
   background: none;
 }
 .node.node-artist.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-body .field-item img,
@@ -12541,7 +12048,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 15px;
 }
 @media screen and (min-width: 480px) {
@@ -12559,24 +12066,24 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
  * --------------------------------------------------*/
 .node.node-exhibition.view-mode-full > .row > div.col-sm-12 {
   width: 100%;
-  background: url(../images/KF_Dreieck.png) no-repeat 15px 180px;
+  background: url(../images/KF_Dreieck.png) no-repeat 15px 170px;
   background-size: 18% auto;
 }
 @media screen and (min-width: 480px) {
   .node.node-exhibition.view-mode-full > .row > div.col-sm-12 {
-    background: url(../images/KF_Dreieck.png) no-repeat 15px 290px;
+    background: url(../images/KF_Dreieck.png) no-repeat 15px 246px;
     background-size: 18% auto;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-exhibition.view-mode-full > .row > div.col-sm-12 {
-    background: url(../images/KF_Dreieck.png) no-repeat 15px 410px;
+    background: url(../images/KF_Dreieck.png) no-repeat 15px 393px;
     background-size: 18% auto;
   }
 }
 @media screen and (min-width: 1024px) {
   .node.node-exhibition.view-mode-full > .row > div.col-sm-12 {
-    background: url(../images/KF_Dreieck.png) no-repeat 15px 520px;
+    background: url(../images/KF_Dreieck.png) no-repeat 15px 524px;
     background-size: 18% auto;
   }
 }
@@ -12597,21 +12104,21 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   margin-top: 0;
 }
 .node.node-exhibition.view-mode-full > .row > div.col-sm-12 .field-name-field-images .field-item .carousel > .carousel-inner .item div {
-  height: 180px !important;
+  height: 170px !important;
 }
 @media screen and (min-width: 480px) {
   .node.node-exhibition.view-mode-full > .row > div.col-sm-12 .field-name-field-images .field-item .carousel > .carousel-inner .item div {
-    height: 290px !important;
+    height: 246px !important;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-exhibition.view-mode-full > .row > div.col-sm-12 .field-name-field-images .field-item .carousel > .carousel-inner .item div {
-    height: 410px !important;
+    height: 393px !important;
   }
 }
 @media screen and (min-width: 1024px) {
   .node.node-exhibition.view-mode-full > .row > div.col-sm-12 .field-name-field-images .field-item .carousel > .carousel-inner .item div {
-    height: 520px !important;
+    height: 524px !important;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -12687,13 +12194,17 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   }
 }
 .node.node-exhibition.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-title h2 {
+  display: block;
+  overflow: hidden;
   margin: 0 0 30px;
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 29px;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 @media screen and (min-width: 480px) {
   .node.node-exhibition.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-title h2 {
@@ -12711,7 +12222,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.23em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -12730,7 +12241,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-exhibition.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-artists-in-exhibition .field-item span:hover,
 .node.node-exhibition.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-artists-in-exhibition .field-item a:focus,
 .node.node-exhibition.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-artists-in-exhibition .field-item span:focus {
-  color: #268ec9;
+  color: #268EC9;
   text-decoration: none;
   background: none;
 }
@@ -12744,7 +12255,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.23em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -12762,7 +12273,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.23em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -12780,7 +12291,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.23em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -12848,13 +12359,6 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-exhibition.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body tbody td {
   font-family: 'BrandonText-Regular', sans-serif;
   font-size: 15px;
-  -ms-word-break: break-all;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
 }
 @media screen and (min-width: 480px) {
   .node.node-exhibition.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body p,
@@ -12874,7 +12378,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 19px;
 }
 @media screen and (min-width: 480px) {
@@ -12895,7 +12399,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.23em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -12916,7 +12420,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.15em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 29px;
 }
 @media screen and (min-width: 480px) {
@@ -12936,7 +12440,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 15px;
 }
 @media screen and (min-width: 480px) {
@@ -12956,7 +12460,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.23em;
   text-align: center;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -13023,13 +12527,13 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-exhibition.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body a:hover,
 .node.node-exhibition.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body a:focus {
-  color: #268ec9;
+  color: #268EC9;
   text-decoration: none;
   background: none;
 }
 .node.node-exhibition.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body hr {
   border: 0;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #000;
   background: none;
 }
 .node.node-exhibition.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body img,
@@ -13064,31 +12568,37 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-exhibition.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-title {
   max-width: 70%;
 }
-.node.node-exhibition.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-title h2 {
-  margin: 0 0 20px;
+.node.node-exhibition.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-title .field-item a {
+  display: block;
+  overflow: hidden;
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 29px;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 @media screen and (min-width: 480px) {
-  .node.node-exhibition.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-title h2 {
+  .node.node-exhibition.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-title .field-item a {
     font-size: 6.04166667vw;
   }
 }
 @media screen and (min-width: 768px) {
-  .node.node-exhibition.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-title h2 {
+  .node.node-exhibition.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-title .field-item a {
     font-size: 46px;
   }
+}
+.node.node-exhibition.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-title .field-item a:hover {
+  text-decoration: none;
 }
 .node.node-exhibition.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-field-slogan .field-item {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 19px;
 }
 @media screen and (min-width: 480px) {
@@ -13106,7 +12616,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 19px;
 }
 @media screen and (min-width: 480px) {
@@ -13124,7 +12634,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 19px;
 }
 @media screen and (min-width: 480px) {
@@ -13148,21 +12658,21 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   margin-top: 0;
 }
 .node.node-exhibition.view-mode-front > .row > div.col-sm-12 .field-name-field-images .field-item .carousel > .carousel-inner .item div {
-  height: 180px !important;
+  height: 170px !important;
 }
 @media screen and (min-width: 480px) {
   .node.node-exhibition.view-mode-front > .row > div.col-sm-12 .field-name-field-images .field-item .carousel > .carousel-inner .item div {
-    height: 290px !important;
+    height: 246px !important;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-exhibition.view-mode-front > .row > div.col-sm-12 .field-name-field-images .field-item .carousel > .carousel-inner .item div {
-    height: 410px !important;
+    height: 393px !important;
   }
 }
 @media screen and (min-width: 1024px) {
   .node.node-exhibition.view-mode-front > .row > div.col-sm-12 .field-name-field-images .field-item .carousel > .carousel-inner .item div {
-    height: 520px !important;
+    height: 524px !important;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -13248,7 +12758,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 19px;
 }
 @media screen and (min-width: 480px) {
@@ -13271,24 +12781,24 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
  * --------------------------------------------------*/
 .node.node-magazine.view-mode-full > .row > div.col-sm-12 {
   width: 100%;
-  background: url(../images/KF_Dreieck.png) no-repeat 15px 180px;
+  background: url(../images/KF_Dreieck.png) no-repeat 15px 170px;
   background-size: 18% auto;
 }
 @media screen and (min-width: 480px) {
   .node.node-magazine.view-mode-full > .row > div.col-sm-12 {
-    background: url(../images/KF_Dreieck.png) no-repeat 15px 290px;
+    background: url(../images/KF_Dreieck.png) no-repeat 15px 246px;
     background-size: 18% auto;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-magazine.view-mode-full > .row > div.col-sm-12 {
-    background: url(../images/KF_Dreieck.png) no-repeat 15px 410px;
+    background: url(../images/KF_Dreieck.png) no-repeat 15px 393px;
     background-size: 18% auto;
   }
 }
 @media screen and (min-width: 1024px) {
   .node.node-magazine.view-mode-full > .row > div.col-sm-12 {
-    background: url(../images/KF_Dreieck.png) no-repeat 15px 520px;
+    background: url(../images/KF_Dreieck.png) no-repeat 15px 524px;
     background-size: 18% auto;
   }
 }
@@ -13309,21 +12819,21 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   margin-top: 0;
 }
 .node.node-magazine.view-mode-full > .row > div.col-sm-12 .field-name-field-images .field-item .carousel > .carousel-inner .item div {
-  height: 180px !important;
+  height: 170px !important;
 }
 @media screen and (min-width: 480px) {
   .node.node-magazine.view-mode-full > .row > div.col-sm-12 .field-name-field-images .field-item .carousel > .carousel-inner .item div {
-    height: 290px !important;
+    height: 246px !important;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-magazine.view-mode-full > .row > div.col-sm-12 .field-name-field-images .field-item .carousel > .carousel-inner .item div {
-    height: 410px !important;
+    height: 393px !important;
   }
 }
 @media screen and (min-width: 1024px) {
   .node.node-magazine.view-mode-full > .row > div.col-sm-12 .field-name-field-images .field-item .carousel > .carousel-inner .item div {
-    height: 520px !important;
+    height: 524px !important;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -13399,13 +12909,17 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   }
 }
 .node.node-magazine.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-title h2 {
+  display: block;
+  overflow: hidden;
   margin: 0 0 30px;
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 29px;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 @media screen and (min-width: 480px) {
   .node.node-magazine.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-title h2 {
@@ -13425,7 +12939,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.23em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -13448,7 +12962,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.23em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -13467,7 +12981,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-magazine.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-field-homepage .field-item > span:hover,
 .node.node-magazine.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-field-homepage .field-item > a:focus,
 .node.node-magazine.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-field-homepage .field-item > span:focus {
-  color: #268ec9;
+  color: #268EC9;
   text-decoration: none;
   background: none;
 }
@@ -13483,7 +12997,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   width: 25%;
   left: 0;
   bottom: -30px;
-  border-bottom: 1.5px solid #222222;
+  border-bottom: 1.5px solid #222;
 }
 .node.node-magazine.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body {
   position: relative;
@@ -13541,13 +13055,6 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-magazine.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body tbody td {
   font-family: 'BrandonText-Regular', sans-serif;
   font-size: 15px;
-  -ms-word-break: break-all;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
 }
 @media screen and (min-width: 480px) {
   .node.node-magazine.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body p,
@@ -13567,7 +13074,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 19px;
 }
 @media screen and (min-width: 480px) {
@@ -13588,7 +13095,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.23em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -13609,7 +13116,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.15em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 29px;
 }
 @media screen and (min-width: 480px) {
@@ -13629,7 +13136,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 15px;
 }
 @media screen and (min-width: 480px) {
@@ -13649,7 +13156,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.23em;
   text-align: center;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -13716,13 +13223,13 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-magazine.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body a:hover,
 .node.node-magazine.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body a:focus {
-  color: #268ec9;
+  color: #268EC9;
   text-decoration: none;
   background: none;
 }
 .node.node-magazine.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body hr {
   border: 0;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #000;
   background: none;
 }
 .node.node-magazine.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body img,
@@ -13754,7 +13261,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   width: 25%;
   left: 0;
   bottom: -30px;
-  border-bottom: 1.5px solid #222222;
+  border-bottom: 1.5px solid #222;
 }
 .node.node-magazine.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-field-text {
   margin: 50px auto;
@@ -13811,13 +13318,6 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-magazine.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-field-text tbody td {
   font-family: 'BrandonText-Regular', sans-serif;
   font-size: 15px;
-  -ms-word-break: break-all;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
 }
 @media screen and (min-width: 480px) {
   .node.node-magazine.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-field-text p,
@@ -13837,7 +13337,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 19px;
 }
 @media screen and (min-width: 480px) {
@@ -13858,7 +13358,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.23em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -13879,7 +13379,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.15em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 29px;
 }
 @media screen and (min-width: 480px) {
@@ -13899,7 +13399,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 15px;
 }
 @media screen and (min-width: 480px) {
@@ -13919,7 +13419,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.23em;
   text-align: center;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -13986,13 +13486,13 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-magazine.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-field-text a:hover,
 .node.node-magazine.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-field-text a:focus {
-  color: #268ec9;
+  color: #268EC9;
   text-decoration: none;
   background: none;
 }
 .node.node-magazine.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-field-text hr {
   border: 0;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #000;
   background: none;
 }
 .node.node-magazine.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-field-text img,
@@ -14018,6 +13518,25 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
     padding: 55px;
   }
 }
+.node.node-magazine.view-mode-full > .row > div.col-sm-12 > .field-name-featured-artists .field-item h2.block-title {
+  margin: 30px 0 10px;
+  font-family: 'BrandonText-Bold', sans-serif;
+  line-height: 1.23em;
+  text-transform: uppercase;
+  text-align: left;
+  color: #000;
+  font-size: 17px;
+}
+@media screen and (min-width: 480px) {
+  .node.node-magazine.view-mode-full > .row > div.col-sm-12 > .field-name-featured-artists .field-item h2.block-title {
+    font-size: 3.54166667vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node.node-magazine.view-mode-full > .row > div.col-sm-12 > .field-name-featured-artists .field-item h2.block-title {
+    font-size: 21px;
+  }
+}
 .node.node-magazine.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node {
   padding: 20px;
   background: url(../images/KF_Dreieck.png) no-repeat top left;
@@ -14027,12 +13546,16 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   max-width: 70%;
 }
 .node.node-magazine.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-title .field-item a {
+  display: block;
+  overflow: hidden;
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 29px;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 @media screen and (min-width: 480px) {
   .node.node-magazine.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-title .field-item a {
@@ -14044,6 +13567,9 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
     font-size: 46px;
   }
 }
+.node.node-magazine.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-title .field-item a:hover {
+  text-decoration: none;
+}
 .node.node-magazine.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-field-headlines {
   margin-bottom: 20px;
 }
@@ -14052,7 +13578,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 19px;
 }
 @media screen and (min-width: 480px) {
@@ -14066,12 +13592,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   }
 }
 .node.node-magazine.view-mode-front {
-  padding: 0 30px;
-}
-@media screen and (min-width: 768px) {
-  .node.node-magazine.view-mode-front {
-    padding: 0 110px;
-  }
+  padding: 0;
 }
 .node.node-magazine.view-mode-front > .row > div.col-sm-12 .field-name-field-images .field-item img {
   width: 100%;
@@ -14090,7 +13611,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 19px;
 }
 @media screen and (min-width: 480px) {
@@ -14108,24 +13629,24 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
  * --------------------------------------------------*/
 .node.node-location.view-mode-full > .row > div.col-sm-12 {
   width: 100%;
-  background: url(../images/KF_Dreieck.png) no-repeat 15px 180px;
+  background: url(../images/KF_Dreieck.png) no-repeat 15px 170px;
   background-size: 18% auto;
 }
 @media screen and (min-width: 480px) {
   .node.node-location.view-mode-full > .row > div.col-sm-12 {
-    background: url(../images/KF_Dreieck.png) no-repeat 15px 290px;
+    background: url(../images/KF_Dreieck.png) no-repeat 15px 246px;
     background-size: 18% auto;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-location.view-mode-full > .row > div.col-sm-12 {
-    background: url(../images/KF_Dreieck.png) no-repeat 15px 410px;
+    background: url(../images/KF_Dreieck.png) no-repeat 15px 393px;
     background-size: 18% auto;
   }
 }
 @media screen and (min-width: 1024px) {
   .node.node-location.view-mode-full > .row > div.col-sm-12 {
-    background: url(../images/KF_Dreieck.png) no-repeat 15px 520px;
+    background: url(../images/KF_Dreieck.png) no-repeat 15px 524px;
     background-size: 18% auto;
   }
 }
@@ -14146,21 +13667,21 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   margin-top: 0;
 }
 .node.node-location.view-mode-full > .row > div.col-sm-12 .field-name-field-images .field-item .carousel > .carousel-inner .item div {
-  height: 180px !important;
+  height: 170px !important;
 }
 @media screen and (min-width: 480px) {
   .node.node-location.view-mode-full > .row > div.col-sm-12 .field-name-field-images .field-item .carousel > .carousel-inner .item div {
-    height: 290px !important;
+    height: 246px !important;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-location.view-mode-full > .row > div.col-sm-12 .field-name-field-images .field-item .carousel > .carousel-inner .item div {
-    height: 410px !important;
+    height: 393px !important;
   }
 }
 @media screen and (min-width: 1024px) {
   .node.node-location.view-mode-full > .row > div.col-sm-12 .field-name-field-images .field-item .carousel > .carousel-inner .item div {
-    height: 520px !important;
+    height: 524px !important;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -14236,13 +13757,17 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   }
 }
 .node.node-location.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-title h2 {
+  display: block;
+  overflow: hidden;
   margin: 0 0 30px;
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 29px;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 @media screen and (min-width: 480px) {
   .node.node-location.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-title h2 {
@@ -14262,7 +13787,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.23em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -14289,7 +13814,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-location.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-field-current-exhibition .field-item a:focus,
 .node.node-location.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-field-address .field-item span:focus,
 .node.node-location.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-field-current-exhibition .field-item span:focus {
-  color: #268ec9;
+  color: #268EC9;
   text-decoration: none;
   background: none;
 }
@@ -14354,13 +13879,6 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-location.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body tbody td {
   font-family: 'BrandonText-Regular', sans-serif;
   font-size: 15px;
-  -ms-word-break: break-all;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
 }
 @media screen and (min-width: 480px) {
   .node.node-location.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body p,
@@ -14380,7 +13898,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 19px;
 }
 @media screen and (min-width: 480px) {
@@ -14401,7 +13919,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.23em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -14422,7 +13940,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   line-height: 1.15em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 29px;
 }
 @media screen and (min-width: 480px) {
@@ -14442,7 +13960,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 15px;
 }
 @media screen and (min-width: 480px) {
@@ -14462,7 +13980,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.23em;
   text-align: center;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -14529,13 +14047,13 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-location.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body a:hover,
 .node.node-location.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body a:focus {
-  color: #268ec9;
+  color: #268EC9;
   text-decoration: none;
   background: none;
 }
 .node.node-location.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body hr {
   border: 0;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #000;
   background: none;
 }
 .node.node-location.view-mode-full > .row > div.col-sm-12 > div.group-inner-node .field-name-body img,
@@ -14565,10 +14083,10 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
  *  Field notes view component
  * --------------------------------------------------*/
 body.page-field-notes {
-  background-color: #f0ff00;
+  background-color: #F0FF00;
 }
 body.page-field-notes .container {
-  background-color: #f0ff00;
+  background-color: #F0FF00;
 }
 .view.view-field-notes .view-filters {
   margin-bottom: 52px;
@@ -14602,7 +14120,7 @@ body.page-field-notes .container {
   -webkit-border-radius: 0;
   border-radius: 0;
   border: none;
-  background-color: #222222;
+  background-color: #222;
   opacity: 1.0;
 }
 .view.view-field-notes .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-radios .radio .control-label > input {
@@ -14692,18 +14210,18 @@ body.page-field-notes .container {
 .view.view-field-notes .view-content > .pe-container .modal.modal-fixed-height .modal-dialog .modal-content .modal-header .body-fading.body-fading-top,
 .view.view-field-notes .view-content > .pe-container .modal.modal-fixed-height .modal-dialog .modal-content .modal-footer .body-fading.body-fading-top {
   bottom: -1px;
-  background-image: -webkit-linear-gradient(top, #aaaaaa 0%, rgba(0, 0, 0, 0) 100%);
-  background-image: -o-linear-gradient(top, #aaaaaa 0%, rgba(0, 0, 0, 0) 100%);
-  background-image: linear-gradient(to bottom, #aaaaaa 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -webkit-linear-gradient(top, #aaa 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -o-linear-gradient(top, #aaa 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(to bottom, #aaa 0%, rgba(0, 0, 0, 0) 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffaaaaaa', endColorstr='#00000000', GradientType=0);
 }
 .view.view-field-notes .view-content > .pe-container .modal.modal-fixed-height .modal-dialog .modal-content .modal-header .body-fading.body-fading-bottom,
 .view.view-field-notes .view-content > .pe-container .modal.modal-fixed-height .modal-dialog .modal-content .modal-footer .body-fading.body-fading-bottom {
   top: -1px;
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #aaaaaa 100%);
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #aaaaaa 100%);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #aaaaaa 100%);
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #aaa 100%);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #aaa 100%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #aaa 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#ffaaaaaa', GradientType=0);
 }
@@ -14771,7 +14289,7 @@ body.page-field-notes .container {
   font-family: 'BrandonText-Regular', sans-serif;
   font-size: 60px;
   font-weight: normal;
-  color: #000000;
+  color: #000;
 }
 .view.view-field-notes .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header .body-fading {
   display: none;
@@ -14793,11 +14311,11 @@ body.page-field-notes .container {
 .view.view-field-notes .view-content > .pe-container .modal .modal-dialog .modal-content .modal-footer .btn {
   display: inline-block;
   font-family: 'BrandonText-Bold', sans-serif;
-  color: #000000;
+  color: #000;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
-  border: 2px solid #000000;
+  border: 2px solid #000;
   background-color: #fff;
   -webkit-box-shadow: 0 0 12px rgba(192, 192, 192, 0.4);
   -moz-box-shadow: 0 0 12px rgba(192, 192, 192, 0.4);
@@ -14805,7 +14323,7 @@ body.page-field-notes .container {
 }
 .view.view-field-notes .view-content > .pe-container .modal .modal-dialog .modal-content .modal-footer .btn:hover {
   color: #fff;
-  background-color: #000000;
+  background-color: #000;
 }
 .view.view-field-notes .view-content > .pe-container .modal .modal-dialog .modal-content .modal-footer .body-fading {
   display: none;
@@ -14821,7 +14339,7 @@ body.page-field-notes .container {
   -webkit-border-radius: 3px;
   border-radius: 3px;
   border: none;
-  background-color: #222222;
+  background-color: #222;
   opacity: 1.0;
 }
 .view.view-field-notes .pager.pager--infinite-scroll .pager__item a:hover,
@@ -14842,21 +14360,21 @@ body.page-field-notes .container {
   margin-top: 0;
 }
 .view.view-main-banner .view-content .carousel > .carousel-inner .item div {
-  height: 180px !important;
+  height: 170px !important;
 }
 @media screen and (min-width: 480px) {
   .view.view-main-banner .view-content .carousel > .carousel-inner .item div {
-    height: 290px !important;
+    height: 246px !important;
   }
 }
 @media screen and (min-width: 768px) {
   .view.view-main-banner .view-content .carousel > .carousel-inner .item div {
-    height: 410px !important;
+    height: 393px !important;
   }
 }
 @media screen and (min-width: 1024px) {
   .view.view-main-banner .view-content .carousel > .carousel-inner .item div {
-    height: 520px !important;
+    height: 524px !important;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -14941,7 +14459,7 @@ header#navbar {
   background: rgba(0, 0, 0, 0) none;
 }
 .front header#navbar {
-  background-color: #d9e9e1;
+  background-color: #D9E9E1;
 }
 header#navbar .container {
   padding: 10px 15px;
@@ -15018,7 +14536,7 @@ header#navbar .container .navbar-header .navbar-toggle {
 }
 header#navbar .container .navbar-header .navbar-toggle:hover,
 header#navbar .container .navbar-header .navbar-toggle:focus {
-  color: #268ec9;
+  color: #268EC9;
 }
 header#navbar .container .navbar-header .navbar-toggle .glyphicon {
   font-size: 22px;
@@ -15063,7 +14581,7 @@ header#navbar .container .navbar-collapse .navbar-toggle-2 .menu-close {
 }
 header#navbar .container .navbar-collapse .navbar-toggle-2 .menu-close:hover,
 header#navbar .container .navbar-collapse .navbar-toggle-2 .menu-close:focus {
-  color: #f0ff00;
+  color: #F0FF00;
 }
 header#navbar .container .navbar-collapse nav ul.navbar-nav {
   float: none;
@@ -15103,7 +14621,7 @@ header#navbar .container .navbar-collapse nav ul.navbar-nav li a.active {
   margin-bottom: 0;
   text-decoration: none;
   outline: none;
-  color: #f0ff00;
+  color: #F0FF00;
   background: none;
 }
 @media screen and (min-width: 768px) {
@@ -15181,7 +14699,7 @@ body .main-container #page-header .region-header h2.block-title {
   line-height: 1.23em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 17px;
 }
 @media screen and (min-width: 480px) {
@@ -15201,7 +14719,7 @@ body .main-container .row section h1.page-header {
   line-height: 1.23em;
   text-transform: uppercase;
   text-align: left;
-  color: #000000;
+  color: #000;
   font-size: 17px;
   border: none;
 }
@@ -15253,7 +14771,7 @@ footer.footer {
 footer.footer .region-footer {
   padding-top: 10px;
   padding-bottom: 10px;
-  border-top: 1.5px solid #222222;
+  border-top: 1.5px solid #222;
 }
 footer.footer .region-footer .block-menu ul.menu {
   text-align: center;

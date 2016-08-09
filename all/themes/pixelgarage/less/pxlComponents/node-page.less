@@ -22,8 +22,11 @@
 
       .field-name-title {
         h2 {
+          display: block;
+          overflow: hidden;
           margin: 0 0 30px;
           #pxl-mixins.kf-style3;
+          #pxl-mixins.text-overflow();
         }
       }
 
@@ -49,17 +52,13 @@
         max-width: 635px;
       }
 
-      .field-name-title {
-        h2 {
-          margin: 0 0 30px;
-          #pxl-mixins.kf-style3;
-        }
-      }
-
       .field-name-body {
         #pxl-mixins.wysiwyg-body();
         p.kf-style2 {
           text-transform: none;
+        }
+        p.kf-style3, p.kf-style4 {
+          text-align: center;
         }
       }
 

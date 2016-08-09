@@ -30,8 +30,11 @@
 
         .field-name-title {
           h2 {
+            display: block;
+            overflow: hidden;
             margin: 0 0 30px;
             #pxl-mixins.kf-style3;
+            #pxl-mixins.text-overflow();
           }
         }
 
@@ -102,9 +105,17 @@
         .field-name-title {
           max-width: 70%;
 
-          h2 {
-            margin: 0 0 20px;
-            #pxl-mixins.kf-style3;
+          .field-item {
+            a {
+              display: block;
+              overflow: hidden;
+              #pxl-mixins.kf-style3;
+              #pxl-mixins.text-overflow();
+
+              &:hover {
+                text-decoration: none;
+              }
+            }
           }
         }
 

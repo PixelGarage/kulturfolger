@@ -32,9 +32,11 @@
 
         .field-name-title {
           h2 {
+            display: block;
+            overflow: hidden;
             margin: 0 0 30px;
             #pxl-mixins.kf-style3;
-            #pxl-mixins.hyphenate();
+            #pxl-mixins.text-overflow();
           }
         }
 
@@ -53,9 +55,17 @@
       width: 100%;
 
       .field-name-title {
-        h2 {
-          #pxl-mixins.kf-style3;
-          #pxl-mixins.hyphenate();
+        .field-item {
+          a {
+            display: block;
+            overflow: hidden;
+            #pxl-mixins.kf-style3;
+            #pxl-mixins.text-overflow();
+
+            &:hover {
+              text-decoration: none;
+            }
+          }
         }
       }
 
