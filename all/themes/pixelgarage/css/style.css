@@ -14630,23 +14630,60 @@ body.page-field-notes .container {
 .view.view-field-notes .view-content > .pe-container .modal .modal-dialog .modal-content .modal-footer .body-fading {
   display: none;
 }
-.view.view-field-notes .pager.pager--infinite-scroll .pager__item a {
-  display: inline-block;
-  padding: 8px 20px 10px;
-  font-family: 'BrandonText-Regular', sans-serif;
-  font-size: 16px;
-  line-height: 1;
-  color: #fff;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  border: none;
-  background-color: #222;
-  opacity: 1.0;
+.view.view-field-notes .pager .pager__item {
+  cursor: pointer;
+  padding: 20px 0 10px;
 }
-.view.view-field-notes .pager.pager--infinite-scroll .pager__item a:hover,
-.view.view-field-notes .pager.pager--infinite-scroll .pager__item a.active {
-  opacity: 0.7;
+.view.view-field-notes .pager .pager__item .pager-plus {
+  display: inline-block;
+  width: 100%;
+  font-family: 'BrandonText-Bold', sans-serif;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-align: left;
+  color: #000;
+  font-size: 19px;
+  text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .view.view-field-notes .pager .pager__item .pager-plus {
+    font-size: 3.95833333vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .view.view-field-notes .pager .pager__item .pager-plus {
+    font-size: 24px;
+  }
+}
+.view.view-field-notes .pager .pager__item .pager-more {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  opacity: 0.0;
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+.view.view-field-notes .pager .pager__item .pager-more a {
+  font-family: 'BrandonText-Bold', sans-serif;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-align: left;
+  color: #000;
+  font-size: 19px;
+}
+@media screen and (min-width: 480px) {
+  .view.view-field-notes .pager .pager__item .pager-more a {
+    font-size: 3.95833333vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .view.view-field-notes .pager .pager__item .pager-more a {
+    font-size: 24px;
+  }
+}
+.view.view-field-notes .pager:hover .pager-more {
+  opacity: 1.0;
 }
 /*
  *  Main-banner view component

@@ -11,9 +11,25 @@
    */
   Drupal.behaviors.fullSizeClickableItems = {
     attach: function () {
-      var $moreButtons = $('.panel-display .panel-panel .panel-pane .more-link');
+      var $moreButtons = $('.panel-display .panel-panel .panel-pane .more-link'),
+          $pager = $('.view-field-notes .pager');
 
+      // full size click on panel more buttons
       $moreButtons.once('click', function () {
+        $(this).on('click', function () {
+          window.location = $(this).find("a:first").attr("href");
+          return false;
+        });
+      });
+
+      //
+      // pager more button
+      // hide button if no link available
+      var $hRef = $pager.find("a:first").attr("href");
+      if ($hRef == null || $hRef == '') {
+        $pager.hide();
+      }
+      $pager.once('click', function () {
         $(this).on('click', function () {
           window.location = $(this).find("a:first").attr("href");
           return false;
