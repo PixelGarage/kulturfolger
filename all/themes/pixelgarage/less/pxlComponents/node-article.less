@@ -17,12 +17,41 @@
 .node.node-article.view-mode-default{
   >.row {
     >div.col-sm-12 {
-      width: 100%;
+      #pxl-mixins.node-background();
 
       .field-name-field-image {
         .field-item {
+          position: relative;
+          overflow: hidden;
+          height: @img-height-mobile !important;
+
+          @media @narrow {
+            height: @img-height-narrow !important;
+          }
+          @media @tablet {
+            height: @img-height-tablet !important;
+          }
+          @media @normal {
+            height: @img-height-normal !important;
+          }
+          @media @wide {
+            height: @img-height-wide !important;
+          }
+
           img {
-            margin: 0 auto;
+            position: relative;
+            width:100%;
+            min-width: 100%;
+            max-width: none;
+            height: auto;
+            min-height: 100%;
+            #pxl-mixins.center-horizontally();
+
+            @media @tablet {
+              width: auto;
+              height: 100%;
+            }
+
           }
         }
       }

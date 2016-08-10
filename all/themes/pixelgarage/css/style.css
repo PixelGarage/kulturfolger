@@ -10309,10 +10309,86 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-full > .row > div.col-sm-12,
 .node.node-article.view-mode-default > .row > div.col-sm-12 {
   width: 100%;
+  background: url(../images/KF_Dreieck.png) no-repeat 15px 170px;
+  background-size: 18% auto;
+}
+@media screen and (min-width: 480px) {
+  .node.node-article.view-mode-full > .row > div.col-sm-12,
+  .node.node-article.view-mode-default > .row > div.col-sm-12 {
+    background: url(../images/KF_Dreieck.png) no-repeat 15px 246px;
+    background-size: 18% auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node.node-article.view-mode-full > .row > div.col-sm-12,
+  .node.node-article.view-mode-default > .row > div.col-sm-12 {
+    background: url(../images/KF_Dreieck.png) no-repeat 15px 393px;
+    background-size: 18% auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .node.node-article.view-mode-full > .row > div.col-sm-12,
+  .node.node-article.view-mode-default > .row > div.col-sm-12 {
+    background: url(../images/KF_Dreieck.png) no-repeat 15px 524px;
+    background-size: 18% auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .node.node-article.view-mode-full > .row > div.col-sm-12,
+  .node.node-article.view-mode-default > .row > div.col-sm-12 {
+    background: url(../images/KF_Dreieck.png) no-repeat 15px 655px;
+    background-size: 18% auto;
+  }
+}
+.node.node-article.view-mode-full > .row > div.col-sm-12 .field-name-field-image .field-item,
+.node.node-article.view-mode-default > .row > div.col-sm-12 .field-name-field-image .field-item {
+  position: relative;
+  overflow: hidden;
+  height: 170px !important;
+}
+@media screen and (min-width: 480px) {
+  .node.node-article.view-mode-full > .row > div.col-sm-12 .field-name-field-image .field-item,
+  .node.node-article.view-mode-default > .row > div.col-sm-12 .field-name-field-image .field-item {
+    height: 246px !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node.node-article.view-mode-full > .row > div.col-sm-12 .field-name-field-image .field-item,
+  .node.node-article.view-mode-default > .row > div.col-sm-12 .field-name-field-image .field-item {
+    height: 393px !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .node.node-article.view-mode-full > .row > div.col-sm-12 .field-name-field-image .field-item,
+  .node.node-article.view-mode-default > .row > div.col-sm-12 .field-name-field-image .field-item {
+    height: 524px !important;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .node.node-article.view-mode-full > .row > div.col-sm-12 .field-name-field-image .field-item,
+  .node.node-article.view-mode-default > .row > div.col-sm-12 .field-name-field-image .field-item {
+    height: 655px !important;
+  }
 }
 .node.node-article.view-mode-full > .row > div.col-sm-12 .field-name-field-image .field-item img,
 .node.node-article.view-mode-default > .row > div.col-sm-12 .field-name-field-image .field-item img {
-  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  min-width: 100%;
+  max-width: none;
+  height: auto;
+  min-height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 768px) {
+  .node.node-article.view-mode-full > .row > div.col-sm-12 .field-name-field-image .field-item img,
+  .node.node-article.view-mode-default > .row > div.col-sm-12 .field-name-field-image .field-item img {
+    width: auto;
+    height: 100%;
+  }
 }
 .node.node-article.view-mode-full > .row > div.col-sm-12 > div.group-inner-node,
 .node.node-article.view-mode-default > .row > div.col-sm-12 > div.group-inner-node {
