@@ -30,13 +30,32 @@
       }
 
       .more-link {
-        padding: 20px 0;
+        cursor: pointer;
+        padding: 20px 0 10px;
 
-        a {
+        .link-plus {
           display: inline-block;
           width: 100%;
           #pxl-mixins.kf-style1;
           text-align: center;
+        }
+
+        .link-more {
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+          opacity: 0.0;
+          #pxl-mixins.transition(opacity 1s);
+
+          a {
+            #pxl-mixins.kf-style1;
+          }
+        }
+
+        &:hover {
+          .link-more {
+            opacity: 1.0;
+          }
         }
       }
 

@@ -29,13 +29,6 @@ function pixelgarage_preprocess_page(&$vars) {
 }
 
 /**
- * Override or insert variables for the page templates.
- */
-function pixelgarage_preprocess_panels_pane(&$vars) {
-  $vars['more'] = str_replace(array('more', 'mehr'), '+', $vars['more']);
-}
-
-/**
  * Override or insert variables for the node templates.
  */
 function pixelgarage_preprocess_node (&$vars) {

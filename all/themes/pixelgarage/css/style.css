@@ -9101,9 +9101,10 @@ form#user-login {
   color: #000;
 }
 .panel-display .panel-panel .panel-pane .more-link {
-  padding: 20px 0;
+  cursor: pointer;
+  padding: 20px 0 10px;
 }
-.panel-display .panel-panel .panel-pane .more-link a {
+.panel-display .panel-panel .panel-pane .more-link .link-plus {
   display: inline-block;
   width: 100%;
   font-family: 'BrandonText-Bold', sans-serif;
@@ -9115,14 +9116,44 @@ form#user-login {
   text-align: center;
 }
 @media screen and (min-width: 480px) {
-  .panel-display .panel-panel .panel-pane .more-link a {
+  .panel-display .panel-panel .panel-pane .more-link .link-plus {
     font-size: 3.95833333vw;
   }
 }
 @media screen and (min-width: 768px) {
-  .panel-display .panel-panel .panel-pane .more-link a {
+  .panel-display .panel-panel .panel-pane .more-link .link-plus {
     font-size: 24px;
   }
+}
+.panel-display .panel-panel .panel-pane .more-link .link-more {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  opacity: 0.0;
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+.panel-display .panel-panel .panel-pane .more-link .link-more a {
+  font-family: 'BrandonText-Bold', sans-serif;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-align: left;
+  color: #000;
+  font-size: 19px;
+}
+@media screen and (min-width: 480px) {
+  .panel-display .panel-panel .panel-pane .more-link .link-more a {
+    font-size: 3.95833333vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .panel-display .panel-panel .panel-pane .more-link .link-more a {
+    font-size: 24px;
+  }
+}
+.panel-display .panel-panel .panel-pane .more-link:hover .link-more {
+  opacity: 1.0;
 }
 .page-about .panel-display .panel-panel .panel-pane.pane-node:not(#about-about) {
   border-top: 1.5px solid #222;
@@ -9202,6 +9233,15 @@ form#user-login {
 .view-magazines.view-display-id-page_1 .view-filters {
   margin-bottom: 30px;
 }
+.view-view-artists.view-display-id-page .view-filters .views-exposed-form,
+.view-view-artists.view-display-id-block_1 .view-filters .views-exposed-form,
+.view-view-artists.view-display-id-block_3 .view-filters .views-exposed-form,
+.view-exhibitions.view-display-id-page_1 .view-filters .views-exposed-form,
+.view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form,
+.view-exhibitions.view-display-id-block_3 .view-filters .views-exposed-form,
+.view-magazines.view-display-id-page_1 .view-filters .views-exposed-form {
+  margin: 10px 0 10px;
+}
 .view-view-artists.view-display-id-page .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget,
 .view-view-artists.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget,
 .view-view-artists.view-display-id-block_3 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget,
@@ -9209,6 +9249,7 @@ form#user-login {
 .view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget,
 .view-exhibitions.view-display-id-block_3 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget,
 .view-magazines.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget {
+  padding: 0;
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-align: left;
@@ -9336,6 +9377,37 @@ form#user-login {
 .view-exhibitions.view-display-id-block_3 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox.highlight label,
 .view-magazines.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox.highlight label {
   color: #268EC9;
+}
+.view-view-artists.view-display-id-page .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button,
+.view-view-artists.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button,
+.view-view-artists.view-display-id-block_3 .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button,
+.view-exhibitions.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button,
+.view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button,
+.view-exhibitions.view-display-id-block_3 .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button,
+.view-magazines.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button {
+  margin: 0;
+  padding: 0;
+}
+.view-view-artists.view-display-id-page .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button button.btn,
+.view-view-artists.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button button.btn,
+.view-view-artists.view-display-id-block_3 .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button button.btn,
+.view-exhibitions.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button button.btn,
+.view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button button.btn,
+.view-exhibitions.view-display-id-block_3 .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button button.btn,
+.view-magazines.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button button.btn {
+  margin: 0;
+  padding: 2px 1em 0 0;
+  border: none;
+  background: none;
+}
+.view-view-artists.view-display-id-page .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button,
+.view-view-artists.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button,
+.view-view-artists.view-display-id-block_3 .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button,
+.view-exhibitions.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button,
+.view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button,
+.view-exhibitions.view-display-id-block_3 .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button,
+.view-magazines.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button {
+  display: none;
 }
 .view-view-artists.view-display-id-page .view-content,
 .view-view-artists.view-display-id-block_1 .view-content,

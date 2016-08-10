@@ -6,10 +6,26 @@
 
 (function ($) {
 
-    /**
-     * This behavior adds shadow to header on scroll.
-     *
-    Drupal.behaviors.addHeaderShadow = {
+  /**
+   * Allows full size clickable items.
+   */
+  Drupal.behaviors.fullSizeClickableItems = {
+    attach: function () {
+      var $moreButtons = $('.panel-display .panel-panel .panel-pane .more-link');
+
+      $moreButtons.once('click', function () {
+        $(this).on('click', function () {
+          window.location = $(this).find("a:first").attr("href");
+          return false;
+        });
+      });
+    }
+  };
+
+  /**
+   * This behavior adds shadow to header on scroll.
+   *
+   Drupal.behaviors.addHeaderShadow = {
         attach: function (context) {
             $(window).on("scroll", function() {
                 var $header = $("header.navbar"),
@@ -45,13 +61,12 @@
             });
         }
     };
-     */
+   */
 
-    /**
-     * Show / hide the carousel controls depending on the number of items.
-     *
-     */
-    Drupal.behaviors.manageCarouselControls = {
+  /**
+   * Show / hide the carousel controls depending on the number of items.
+   *
+   Drupal.behaviors.manageCarouselControls = {
         attach: function (context) {
             var $carousels = $('.node-kfartwork .field-name-field-images .carousel');
 
@@ -66,11 +81,11 @@
             });
         }
     };
+   */
 
-    /**
-     * Scrolls smoothly to the url anchor, when menu is clicked.
-     */
-    Drupal.behaviors.smoothScrollingToAnchor = {
+  /**
+   * Scrolls smoothly to the url anchor, when menu is clicked.
+   Drupal.behaviors.smoothScrollingToAnchor = {
         attach: function () {
             var $header = $("header.navbar .container"),
                 $anchorMenus = $('a#menu-contact, a#menu-about, a#menu-submit'),
@@ -109,6 +124,7 @@
             });
         }
     };
+   */
 
 
 })(jQuery);
