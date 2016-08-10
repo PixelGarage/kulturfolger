@@ -84,6 +84,15 @@
         }
 
       }
+
+      >.field-name-upcoming-exhibitions {
+        .field-item {
+          h2.block-title {
+            margin: 30px 0 10px;
+            #pxl-mixins.kf-style2;
+          }
+        }
+      }
     }
   }
 }
@@ -91,8 +100,24 @@
 .node.node-exhibition.view-mode-teaser {
   >.row {
     >div.col-sm-12 {
+      position: relative;
+
       .field-name-field-images {
         .field-item {
+        }
+      }
+
+      .field-name-field-featured {
+        position: absolute;
+        top: 0;
+        left: @grid-gutter-width/2;
+
+        .field-item {
+          padding: 8px 10px 5px;
+          #pxl-mixins.kf-style2;
+          line-height: 1;
+          color: white;
+          background-color: black;
         }
       }
 

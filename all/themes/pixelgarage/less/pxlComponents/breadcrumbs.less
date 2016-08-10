@@ -1,0 +1,43 @@
+/*
+ *  Breadcrumbs component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+
+
+
+// Main settings
+// -------------------------
+.breadcrumb {
+  margin: 30px 0 10px;
+  padding: 0;
+  border: none;
+  background: none;
+
+  span {
+    #pxl-mixins.kf-style2;
+
+    a {
+      #pxl-mixins.kf-style2;
+
+      &:hover {
+        color: @text-color;
+      }
+    }
+
+    &.first {
+      padding-left: 0;
+    }
+
+    &.delimiter:before {
+      content: "\f178";
+      font-family: @pxl-icon-font;
+      padding: 0 5px;
+    }
+  }
+}
