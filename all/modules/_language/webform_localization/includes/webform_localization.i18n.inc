@@ -140,7 +140,7 @@ function webform_localization_component_update_translation_strings(&$component) 
   // update / create translation source for them.
   $component['extra']['translated_strings'] = _webform_localization_component_translation_parse($element, $component);
   // Render the 'display' FAPI array for the component.
-  // $element = webform_component_invoke($component['type'], 'display', $component, NULL, 'html');
+  $element = webform_component_invoke($component['type'], 'display', $component, NULL, 'html');
   // Parse the renderable array to find the translatable properties and
   // update / create translation source for them.
   $component['extra']['translated_strings'] = array_merge($component['extra']['translated_strings'], array_diff(_webform_localization_component_translation_parse($element, $component), $component['extra']['translated_strings']));
@@ -242,7 +242,7 @@ function _webform_localization_component_translation_parse($element, $component)
  *   i18n string name grouped by nid or uuid if module is available.
  */
 function webform_localization_i18n_string_name($node_identifier) {
-  if (module_exists('uuid')) {
+  if (module_exists('uuid') and !uuid_is_valid($node_identifier)) {
     $node_identifier = current(entity_get_uuid_by_id('node', array($node_identifier)));
   }
   $name = array('webform', $node_identifier);
@@ -322,7 +322,10 @@ function webform_localization_update_translation_strings($properties) {
  *   A node object.
  */
 function webform_localization_translate_strings(&$node, $update = FALSE) {
-  $option = array('update' => $update, array('sanitize' => FALSE));
+  $option = array('update' => $update, array('sanitize' => FALSE, array('format' => I18N_STRING_FILTER_XSS_ADMIN)));
+  if (!array_key_exists('nid', $node->webform)) {
+    $node->webform['nid'] = $node->nid;
+  }
   $name = webform_localization_i18n_string_name($node->webform['nid'], 'confirmation');
   $node->webform['confirmation'] = i18n_string(
       $name, $node->webform['confirmation'], $option);
