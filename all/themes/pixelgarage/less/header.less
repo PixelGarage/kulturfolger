@@ -63,6 +63,7 @@ header#navbar {
 
     .navbar-header {
       display: block;
+      position: relative;
       float: none;
       margin: 0 auto;
 
@@ -99,33 +100,13 @@ header#navbar {
         .front & {
           display: inline-block;
         }
-
-        #block-locale-language {
-          display: inline-block;
-
-          ul {
-            #pxl-mixins.no-list-style;
-
-            li {
-              display: inline-block;
-              #pxl-mixins.no-list-style;
-
-              a {
-                padding: 5px;
-                outline: none;
-
-                &:hover, &.active {
-                  outline: none;
-                  background: none;
-                }
-              }
-            }
-          }
-        }
       }
 
       .navbar-toggle {
         // navbar toggle with burger
+        float: none;
+        #pxl-mixins.center-vertically(absolute);
+        right: -2px;
         margin: 0;
         padding: 0;
         border: none;

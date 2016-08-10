@@ -8613,19 +8613,6 @@ div.features-export-list .form-type-checkbox input[type=checkbox] {
 /*
  *  Box modificarion mixins
  * --------------------------------------------------*/
-#pxl-mixins .center-horizontally {
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-#pxl-mixins .center-vertically {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
 /*
  *  Transformation mixins
  * --------------------------------------------------*/
@@ -8978,6 +8965,7 @@ form#user-login {
   font-size: 16px;
 }
 #block-locale-language ul.language-switcher-locale-url {
+  display: inline-block;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -8987,7 +8975,7 @@ form#user-login {
   margin: 0;
   padding: 0;
   display: inline-block;
-  margin: 0 -0.25em 0 0;
+  margin: 0 -2px 0 0;
   padding: 0 10px;
   line-height: 1;
   border-right: 1px solid #000;
@@ -9018,6 +9006,22 @@ form#user-login {
  * --------------------------------------------------*/
 .panel-display .panel-panel .panel-pane .pane-title {
   margin: 30px 0 10px;
+  font-family: 'BrandonText-Bold', sans-serif;
+  line-height: 1.23em;
+  text-transform: uppercase;
+  text-align: left;
+  color: #000;
+  font-size: 17px;
+}
+@media screen and (min-width: 480px) {
+  .panel-display .panel-panel .panel-pane .pane-title {
+    font-size: 3.54166667vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .panel-display .panel-panel .panel-pane .pane-title {
+    font-size: 21px;
+  }
 }
 .panel-display .panel-panel .panel-pane .pane-title a {
   font-family: 'BrandonText-Bold', sans-serif;
@@ -9137,14 +9141,16 @@ form#user-login {
 .view-view-artists.view-display-id-block_1 .view-filters,
 .view-view-artists.view-display-id-block_3 .view-filters,
 .view-exhibitions.view-display-id-page_1 .view-filters,
-.view-exhibitions.view-display-id-block_1 .view-filters {
+.view-exhibitions.view-display-id-block_1 .view-filters,
+.view-magazines.view-display-id-page_1 .view-filters {
   margin-bottom: 30px;
 }
 .view-view-artists.view-display-id-page .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget,
 .view-view-artists.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget,
 .view-view-artists.view-display-id-block_3 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget,
 .view-exhibitions.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget,
-.view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget {
+.view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget,
+.view-magazines.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget {
   font-family: 'BrandonText-Bold', sans-serif;
   line-height: 1.15em;
   text-align: left;
@@ -9156,7 +9162,8 @@ form#user-login {
   .view-view-artists.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget,
   .view-view-artists.view-display-id-block_3 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget,
   .view-exhibitions.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget,
-  .view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget {
+  .view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget,
+  .view-magazines.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget {
     font-size: 3.125vw;
   }
 }
@@ -9165,7 +9172,8 @@ form#user-login {
   .view-view-artists.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget,
   .view-view-artists.view-display-id-block_3 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget,
   .view-exhibitions.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget,
-  .view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget {
+  .view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget,
+  .view-magazines.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget {
     font-size: 16px;
   }
 }
@@ -9173,7 +9181,8 @@ form#user-login {
 .view-view-artists.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container,
 .view-view-artists.view-display-id-block_3 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container,
 .view-exhibitions.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container,
-.view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container {
+.view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container,
+.view-magazines.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container {
   padding: 0;
   height: auto;
   width: 110px !important;
@@ -9184,7 +9193,8 @@ form#user-login {
 .view-view-artists.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-single,
 .view-view-artists.view-display-id-block_3 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-single,
 .view-exhibitions.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-single,
-.view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-single {
+.view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-single,
+.view-magazines.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-single {
   padding: 0;
   border: none;
   background: none;
@@ -9194,7 +9204,8 @@ form#user-login {
 .view-view-artists.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop,
 .view-view-artists.view-display-id-block_3 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop,
 .view-exhibitions.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop,
-.view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop {
+.view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop,
+.view-magazines.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop {
   border: none;
 }
 .view-view-artists.view-display-id-page .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop ul.chosen-results li.highlighted,
@@ -9202,11 +9213,13 @@ form#user-login {
 .view-view-artists.view-display-id-block_3 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop ul.chosen-results li.highlighted,
 .view-exhibitions.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop ul.chosen-results li.highlighted,
 .view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop ul.chosen-results li.highlighted,
+.view-magazines.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop ul.chosen-results li.highlighted,
 .view-view-artists.view-display-id-page .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop ul.chosen-results li.result-selected,
 .view-view-artists.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop ul.chosen-results li.result-selected,
 .view-view-artists.view-display-id-block_3 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop ul.chosen-results li.result-selected,
 .view-exhibitions.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop ul.chosen-results li.result-selected,
-.view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop ul.chosen-results li.result-selected {
+.view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop ul.chosen-results li.result-selected,
+.view-magazines.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .chosen-container .chosen-drop ul.chosen-results li.result-selected {
   color: #268EC9;
   background: none;
 }
@@ -9214,7 +9227,8 @@ form#user-login {
 .view-view-artists.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes,
 .view-view-artists.view-display-id-block_3 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes,
 .view-exhibitions.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes,
-.view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes {
+.view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes,
+.view-magazines.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes {
   padding: 0;
   height: auto;
   border: none;
@@ -9224,21 +9238,24 @@ form#user-login {
 .view-view-artists.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox,
 .view-view-artists.view-display-id-block_3 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox,
 .view-exhibitions.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox,
-.view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox {
+.view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox,
+.view-magazines.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox {
   display: inline-block;
 }
 .view-view-artists.view-display-id-page .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox input,
 .view-view-artists.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox input,
 .view-view-artists.view-display-id-block_3 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox input,
 .view-exhibitions.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox input,
-.view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox input {
+.view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox input,
+.view-magazines.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox input {
   display: none;
 }
 .view-view-artists.view-display-id-page .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox label,
 .view-view-artists.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox label,
 .view-view-artists.view-display-id-block_3 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox label,
 .view-exhibitions.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox label,
-.view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox label {
+.view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox label,
+.view-magazines.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox label {
   margin: 0;
   padding: 2px 1em 0 0;
 }
@@ -9246,21 +9263,24 @@ form#user-login {
 .view-view-artists.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox.highlight label,
 .view-view-artists.view-display-id-block_3 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox.highlight label,
 .view-exhibitions.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox.highlight label,
-.view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox.highlight label {
+.view-exhibitions.view-display-id-block_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox.highlight label,
+.view-magazines.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-select .bef-select-as-checkboxes .form-type-bef-checkbox.highlight label {
   color: #268EC9;
 }
 .view-view-artists.view-display-id-page .view-content,
 .view-view-artists.view-display-id-block_1 .view-content,
 .view-view-artists.view-display-id-block_3 .view-content,
 .view-exhibitions.view-display-id-page_1 .view-content,
-.view-exhibitions.view-display-id-block_1 .view-content {
+.view-exhibitions.view-display-id-block_1 .view-content,
+.view-magazines.view-display-id-page_1 .view-content {
   margin-top: 10px;
 }
 .view-view-artists.view-display-id-page .view-content .views-row,
 .view-view-artists.view-display-id-block_1 .view-content .views-row,
 .view-view-artists.view-display-id-block_3 .view-content .views-row,
 .view-exhibitions.view-display-id-page_1 .view-content .views-row,
-.view-exhibitions.view-display-id-block_1 .view-content .views-row {
+.view-exhibitions.view-display-id-block_1 .view-content .views-row,
+.view-magazines.view-display-id-page_1 .view-content .views-row {
   display: inline-block;
   margin: 0 0 20px;
   padding: 0;
@@ -9272,7 +9292,8 @@ form#user-login {
   .view-view-artists.view-display-id-block_1 .view-content .views-row,
   .view-view-artists.view-display-id-block_3 .view-content .views-row,
   .view-exhibitions.view-display-id-page_1 .view-content .views-row,
-  .view-exhibitions.view-display-id-block_1 .view-content .views-row {
+  .view-exhibitions.view-display-id-block_1 .view-content .views-row,
+  .view-magazines.view-display-id-page_1 .view-content .views-row {
     margin: 0 -4px 20px 0;
     width: 50%;
   }
@@ -9280,14 +9301,16 @@ form#user-login {
   .view-view-artists.view-display-id-block_1 .view-content .views-row.views-row-odd,
   .view-view-artists.view-display-id-block_3 .view-content .views-row.views-row-odd,
   .view-exhibitions.view-display-id-page_1 .view-content .views-row.views-row-odd,
-  .view-exhibitions.view-display-id-block_1 .view-content .views-row.views-row-odd {
+  .view-exhibitions.view-display-id-block_1 .view-content .views-row.views-row-odd,
+  .view-magazines.view-display-id-page_1 .view-content .views-row.views-row-odd {
     padding: 0 10px 0 0;
   }
   .view-view-artists.view-display-id-page .view-content .views-row.views-row-even,
   .view-view-artists.view-display-id-block_1 .view-content .views-row.views-row-even,
   .view-view-artists.view-display-id-block_3 .view-content .views-row.views-row-even,
   .view-exhibitions.view-display-id-page_1 .view-content .views-row.views-row-even,
-  .view-exhibitions.view-display-id-block_1 .view-content .views-row.views-row-even {
+  .view-exhibitions.view-display-id-block_1 .view-content .views-row.views-row-even,
+  .view-magazines.view-display-id-page_1 .view-content .views-row.views-row-even {
     padding: 0 0 0 10px;
   }
 }
@@ -13539,8 +13562,6 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-magazine.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node {
   padding: 20px;
-  background: url(../images/KF_Dreieck.png) no-repeat top left;
-  background-size: 35% auto;
 }
 .node.node-magazine.view-mode-teaser > .row > div.col-sm-12 > div.group-inner-node .field-name-title {
   max-width: 70%;
@@ -14474,6 +14495,7 @@ header#navbar .container {
 }
 header#navbar .container .navbar-header {
   display: block;
+  position: relative;
   float: none;
   margin: 0 auto;
 }
@@ -14505,30 +14527,14 @@ header#navbar .container .navbar-header .region-navigation {
 .front header#navbar .container .navbar-header .region-navigation {
   display: inline-block;
 }
-header#navbar .container .navbar-header .region-navigation #block-locale-language {
-  display: inline-block;
-}
-header#navbar .container .navbar-header .region-navigation #block-locale-language ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-header#navbar .container .navbar-header .region-navigation #block-locale-language ul li {
-  display: inline-block;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-header#navbar .container .navbar-header .region-navigation #block-locale-language ul li a {
-  padding: 5px;
-  outline: none;
-}
-header#navbar .container .navbar-header .region-navigation #block-locale-language ul li a:hover,
-header#navbar .container .navbar-header .region-navigation #block-locale-language ul li a.active {
-  outline: none;
-  background: none;
-}
 header#navbar .container .navbar-header .navbar-toggle {
+  float: none;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: -2px;
   margin: 0;
   padding: 0;
   border: none;
