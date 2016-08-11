@@ -72,6 +72,10 @@
  *
  * @ingroup themeable
  */
+
+// front page main container is full size
+$main_class = $is_front ? '' : 'container';
+
 ?>
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
   <div class="container">
@@ -124,7 +128,7 @@
   </div>
 </header>
 
-<div class="main-container container">
+<div class="main-container <?php print $main_class; ?>">
 
   <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
     <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />

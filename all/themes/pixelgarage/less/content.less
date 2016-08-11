@@ -36,14 +36,12 @@
 
 html {
   height: 100%;
-  overflow-x: hidden;
 }
 
 body {
   position: relative;
   height: 100%;
   min-height: 320px;
-  overflow-x: hidden;
 
   .main-container {
     position: relative;
@@ -137,6 +135,19 @@ body {
 
   } // main-container
 
+  // front main container full size
+  &.front {
+    .main-container {
+      >.row {
+        margin: 0;
+        >.col-sm-12 {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  // hide white logo when not on front page
   &.not-front {
     .main-container {
       a.logo {

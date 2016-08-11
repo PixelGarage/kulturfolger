@@ -16,7 +16,14 @@
 .view.view-main-banner {
   .view-content {
     .carousel {
+      margin: 0;
+      width: 100%;
       #pxl-mixins.carousel();
+
+      @media @tablet {
+        margin: 0 -55px;
+        width: auto;
+      }
     }
   }
 }

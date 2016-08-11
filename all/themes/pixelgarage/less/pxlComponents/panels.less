@@ -15,7 +15,15 @@
 // -------------------------
 .panel-display {
   .panel-panel {
+    .panel-separator {
+
+    }
+
     .panel-pane {
+      .container {
+        // only on front page
+        background: none;
+      }
       .pane-title {
         margin: 30px 0 10px;
         #pxl-mixins.kf-style2;
@@ -59,6 +67,7 @@
         }
       }
 
+      // add top line for all node panels in about page
       .page-about &.pane-node:not(#about-about) {
         // about page node separator
         border-top: 1.5px solid @pxl-color-border;
@@ -67,54 +76,17 @@
     }
 
     #front-banner,
-    #front-about,
-    #front-blog {
-      margin: 0 -9999px;
-
-      .pane-content {
-        margin: 0 auto;
-        width: 320px;
-
-        @media (min-width: @screen-xs-min) {
-          width: 480px;
-        }
-        @media (min-width: @screen-sm-min) {
-          width: @container-sm;
-        }
-        @media (min-width: @screen-md-min) {
-          width: @container-md;
-        }
-        @media (min-width: @screen-lg-min) {
-          width: @container-lg;
-        }
-      }
-    }
-    #front-banner,
     #front-about {
       padding-bottom: @panel-separator-height;
       background-color: @pxl-kf-green;
+    }
+    #front-blog {
+      background-color: @pxl-kf-yellow;
     }
     #front-magazine {
       padding-bottom: @panel-separator-height;
       background-color: @pxl-kf-white;
     }
-    #front-blog {
-      background-color: @pxl-kf-yellow;
-
-      .pane-title {
-        margin: 0;
-        padding: 22px 9999px 11px;
-      }
-
-      .pane-content {
-        padding: 0 @grid-gutter-width/2;
-
-        @media @tablet {
-          padding: 0 @grid-gutter-width-tablet/2;
-        }
-      }
-    }
-
 
   }
 }

@@ -9060,6 +9060,9 @@ form#user-login {
 /*
  *  Panels structure component
  * --------------------------------------------------*/
+.panel-display .panel-panel .panel-pane .container {
+  background: none;
+}
 .panel-display .panel-panel .panel-pane .pane-title {
   margin: 30px 0 10px;
   font-family: 'BrandonText-Bold', sans-serif;
@@ -9159,67 +9162,16 @@ form#user-login {
   border-top: 1.5px solid #222;
 }
 .panel-display .panel-panel #front-banner,
-.panel-display .panel-panel #front-about,
-.panel-display .panel-panel #front-blog {
-  margin: 0 -9999px;
-}
-.panel-display .panel-panel #front-banner .pane-content,
-.panel-display .panel-panel #front-about .pane-content,
-.panel-display .panel-panel #front-blog .pane-content {
-  margin: 0 auto;
-  width: 320px;
-}
-@media (min-width: 480px) {
-  .panel-display .panel-panel #front-banner .pane-content,
-  .panel-display .panel-panel #front-about .pane-content,
-  .panel-display .panel-panel #front-blog .pane-content {
-    width: 480px;
-  }
-}
-@media (min-width: 768px) {
-  .panel-display .panel-panel #front-banner .pane-content,
-  .panel-display .panel-panel #front-about .pane-content,
-  .panel-display .panel-panel #front-blog .pane-content {
-    width: 768px;
-  }
-}
-@media (min-width: 1024px) {
-  .panel-display .panel-panel #front-banner .pane-content,
-  .panel-display .panel-panel #front-about .pane-content,
-  .panel-display .panel-panel #front-blog .pane-content {
-    width: 1024px;
-  }
-}
-@media (min-width: 1280px) {
-  .panel-display .panel-panel #front-banner .pane-content,
-  .panel-display .panel-panel #front-about .pane-content,
-  .panel-display .panel-panel #front-blog .pane-content {
-    width: 1280px;
-  }
-}
-.panel-display .panel-panel #front-banner,
 .panel-display .panel-panel #front-about {
   padding-bottom: 50px;
   background-color: #D9E9E1;
 }
-.panel-display .panel-panel #front-magazine {
-  padding-bottom: 50px;
-  background-color: #ffffff;
-}
 .panel-display .panel-panel #front-blog {
   background-color: #F0FF00;
 }
-.panel-display .panel-panel #front-blog .pane-title {
-  margin: 0;
-  padding: 22px 9999px 11px;
-}
-.panel-display .panel-panel #front-blog .pane-content {
-  padding: 0 15px;
-}
-@media screen and (min-width: 768px) {
-  .panel-display .panel-panel #front-blog .pane-content {
-    padding: 0 55px;
-  }
+.panel-display .panel-panel #front-magazine {
+  padding-bottom: 50px;
+  background-color: #ffffff;
 }
 /*
  *  Views structure component
@@ -9471,7 +9423,7 @@ form#user-login {
   width: 100%;
   vertical-align: top;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
   .view-field-notes.view-display-id-block_1 .view-content .views-row {
     width: 50%;
   }
@@ -10962,6 +10914,10 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-article.view-mode-teaser > .row > div.col-sm-12 .field-name-title .field-item a:hover {
   text-decoration: none;
+}
+.node.node-article.view-mode-teaser > .row > div.col-sm-12 .field-name-field-image .field-item img {
+  width: 100%;
+  height: auto;
 }
 .node.node-article.view-mode-teaser > .row > div.col-sm-12 .field-name-body {
   margin: 20px auto;
@@ -14466,7 +14422,7 @@ body.page-field-notes .container {
     width: 3%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .view.view-field-notes .view-content > .pe-container .grid-sizer,
   .view.view-field-notes .view-content > .pe-container .pe-item {
     width: 31.33333%;
@@ -14769,6 +14725,12 @@ body.page-field-notes .container {
     right: 0;
   }
 }
+@media screen and (min-width: 768px) {
+  .view.view-main-banner .view-content .carousel {
+    margin: 0 -55px;
+    width: auto;
+  }
+}
 /*
  *  Header section (navigation)
  * --------------------------------------------------*/
@@ -14985,13 +14947,11 @@ header#navbar .container .navbar-collapse nav ul.navbar-nav li a.active {
 }
 html {
   height: 100%;
-  overflow-x: hidden;
 }
 body {
   position: relative;
   height: 100%;
   min-height: 320px;
-  overflow-x: hidden;
 }
 body .main-container {
   position: relative;
@@ -15081,6 +15041,12 @@ body .main-container .row section ul.action-links li {
 body .main-container .row section ul.action-links li a {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 14px;
+}
+body.front .main-container > .row {
+  margin: 0;
+}
+body.front .main-container > .row > .col-sm-12 {
+  padding: 0;
 }
 body.not-front .main-container a.logo {
   display: none;

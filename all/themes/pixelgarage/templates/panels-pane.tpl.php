@@ -16,11 +16,16 @@
  * - $display: The complete panels display object containing all kinds of
  *   data including the contexts and all of the other panes being displayed.
  */
+
 ?>
 <?php if ($pane_prefix): ?>
   <?php print $pane_prefix; ?>
 <?php endif; ?>
 <div class="<?php print $classes; ?>" <?php print $id; ?> <?php print $attributes; ?>>
+  <?php if ($is_front): ?>
+    <div class="container">
+  <?php endif; ?>
+
   <?php if ($admin_links): ?>
     <?php print $admin_links; ?>
   <?php endif; ?>
@@ -53,6 +58,10 @@
     <div class="more-link">
       <div class="link-plus"><span class="fa fa-plus"></span></div>
       <div class="link-more"><?php print $more; ?></div>
+    </div>
+  <?php endif; ?>
+
+  <?php if ($is_front): ?>
     </div>
   <?php endif; ?>
 </div>
