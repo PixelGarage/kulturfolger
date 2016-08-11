@@ -20,6 +20,28 @@
       width: 100%;
       #pxl-mixins.carousel();
 
+      > .carousel-inner {
+        margin-top: 0;
+        .item {
+          div {
+            height: auto !important;
+
+            @media @narrow {
+              height: auto !important;
+            }
+            @media @tablet {
+              height: @img-height-tablet !important;
+            }
+            @media @normal {
+              height: @img-height-normal !important;
+            }
+            @media @wide {
+              height: @img-height-wide !important;
+            }
+          }
+        }
+      }
+
       @media @tablet {
         margin: 0 -55px;
         width: auto;

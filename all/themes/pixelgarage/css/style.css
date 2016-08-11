@@ -14725,6 +14725,32 @@ body.page-field-notes .container {
     right: 0;
   }
 }
+.view.view-main-banner .view-content .carousel > .carousel-inner {
+  margin-top: 0;
+}
+.view.view-main-banner .view-content .carousel > .carousel-inner .item div {
+  height: auto !important;
+}
+@media screen and (min-width: 480px) {
+  .view.view-main-banner .view-content .carousel > .carousel-inner .item div {
+    height: auto !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .view.view-main-banner .view-content .carousel > .carousel-inner .item div {
+    height: 393px !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .view.view-main-banner .view-content .carousel > .carousel-inner .item div {
+    height: 524px !important;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .view.view-main-banner .view-content .carousel > .carousel-inner .item div {
+    height: 655px !important;
+  }
+}
 @media screen and (min-width: 768px) {
   .view.view-main-banner .view-content .carousel {
     margin: 0 -55px;
